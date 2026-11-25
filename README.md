@@ -15,7 +15,7 @@ K&G Vision is an independent technology initiative in development, not yet an in
 | [Project Genesis](https://github.com/Kgasil/genesis) | Independent studies; 75 planned documents, 10 intended public review guides | No guides published yet; no courses, classes or certificates |
 | [Project Vision](https://github.com/Kgasil/vision) | Vendor-neutral AI integration, security, assurance and performance research | V10.2 demonstration laboratory migrated to its own repository |
 | [Project Aeris](https://github.com/Kgasil/aeris) | Lightweight, modular desktop and browser productivity tools | Planning; no public release |
-| [Project Lilium](https://github.com/Kgasil/lilium) | Business intelligence, reporting and strategic automation | Product in planning; no commercial release |
+| [Project Lilium](https://github.com/Kgasil/lilium) | Business intelligence, reporting and strategic automation | Local metrics prototype; no commercial release |
 
 **Learn · Build · Simplify · Transform**
 
@@ -30,7 +30,7 @@ A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ain
 | [Project Genesis](https://github.com/Kgasil/genesis) | Estudo independente; 75 documentos planejados, 10 guias públicos previstos | Nenhum guia publicado; sem cursos, aulas ou certificados |
 | [Project Vision](https://github.com/Kgasil/vision) | Pesquisa em integração, segurança, avaliação e desempenho de IA | Laboratório demonstrativo V10.2 migrado para repositório próprio |
 | [Project Aeris](https://github.com/Kgasil/aeris) | Ferramentas leves e modulares para produtividade | Em planejamento; sem versão pública |
-| [Project Lilium](https://github.com/Kgasil/lilium) | Inteligência empresarial, relatórios e automação estratégica | Produto em planejamento; sem oferta comercial |
+| [Project Lilium](https://github.com/Kgasil/lilium) | Inteligência empresarial, relatórios e automação estratégica | Protótipo local de indicadores; sem oferta comercial |
 
 **Aprender · Construir · Simplificar · Transformar**
 
@@ -44,7 +44,7 @@ O site institucional está em construção. Os livros completos e os materiais i
 | Project Genesis | [O Princípio](https://kgasil.github.io/genesis/) | [Source](https://github.com/Kgasil/genesis) | Independent studies; 10 review guides planned, none published / Estudos independentes; 10 guias previstos, nenhum publicado |
 | Project Vision | [Beyond Boundaries](https://kgasil.github.io/vision/) | [Source](https://github.com/Kgasil/vision) | Local demonstration lab / Laboratório demonstrativo local |
 | Project Aeris | [Naturally good. / Naturalmente bom.](https://kgasil.github.io/aeris/) | [Source](https://github.com/Kgasil/aeris) | Product concept; no downloadable release / Conceito de produto; sem versão para download |
-| Project Lilium | [Where strategy meets intelligence.](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | Business intelligence web app concept / Aplicação web de inteligência empresarial em planejamento |
+| Project Lilium | [Where strategy meets intelligence.](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | Local metrics prototype; business suite planned / Protótipo local de indicadores; aplicação empresarial em planejamento |
 
 **Learn · Build · Simplify · Transform / Aprender · Construir · Simplificar · Transformar**
 
@@ -59,3 +59,11 @@ Open `index.html` in a browser to preview locally. No build or backend is requir
 The previous technical website is preserved in Git history and in the dedicated Project Vision repository. The original pre-migration HTML is at [this revision](https://github.com/Kgasil/kgasil.github.io/blob/eccfefbea8abebd5e9ae537ee2e7a9beca6c4829/index.html).
 
 Contact: [GitHub](https://github.com/Kgasil) · [LinkedIn](https://www.linkedin.com/in/kaio-gabriel-da-silva)
+
+## Identidade K&G Vision / K&G Vision identity
+
+[![K&G Vision — Four-project identity](https://raw.githubusercontent.com/Kgasil/kgasil.github.io/main/assets/brand-banner.svg)](https://kgasil.github.io/)
+
+**Genesis (purple) · Vision (blue) · Aeris (green) · Lilium (rose)**
+
+[Experimentar Lilium Insights / Try Lilium Insights (PT-BR)](https://kgasil.github.io/lilium/demo.html) — local prototype, no connected AI or commercial offering.
