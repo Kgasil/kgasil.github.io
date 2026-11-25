@@ -1,8 +1,16 @@
-# K&G Vision
+<div align="center">
+
+<a href="https://kgasil.github.io/">
+  <img src="assets/brand-banner.svg" alt="K&G Vision — Universal AI Integration, Security & Performance" width="100%">
+</a>
 
 **Universal AI Integration, Security & Performance**
 
 *Intelligence Without Boundaries. Engineered for Trust.*
+
+</div>
+
+<div align="center">
 
 [![Website](https://img.shields.io/badge/Website-GitHub%20Pages-2563eb)](https://kgasil.github.io/)
 ![Version](https://img.shields.io/badge/Version-10.2-0891b2)
@@ -11,6 +19,8 @@
 ![Languages](https://img.shields.io/badge/Languages-PT--BR%20%7C%20EN-475569)
 
 **[Explore the website →](https://kgasil.github.io/)** · [English](#english) · [Português](#português)
+
+</div>
 
 ## English
 
