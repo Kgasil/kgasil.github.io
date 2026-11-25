@@ -8,7 +8,7 @@
 
 ## English
 
-K&G Vision is an independent technology initiative in development, not yet an incorporated company. Our purpose is to connect scientific learning, responsible engineering and useful technology. Our long-term research direction is vendor-neutral AI integration, cybersecurity, AI assurance and performance. These are research objectives, not commercial services currently offered.
+K&G Vision is an independent technology initiative with a clear ambition: turn knowledge into practical technology, engineer AI for trust, simplify everyday work and empower business growth. Our long-term research direction spans vendor-neutral AI integration, cybersecurity, AI assurance and performance. The initiative is in development, is not an incorporated company and does not currently offer commercial services.
 
 | Project | Purpose | Status |
 | --- | --- | --- |
@@ -41,10 +41,10 @@ O site institucional está em construção. Os livros completos e os materiais i
 | Project | Website | Repository | Current stage / Etapa atual |
 | --- | --- | --- | --- |
 | K&G Vision | [Institutional](https://kgasil.github.io/) | [Source](https://github.com/Kgasil/kgasil.github.io) | Independent initiative / Iniciativa independente |
-| Project Genesis | [Sabedoria e Aplicação](https://kgasil.github.io/genesis/) | [Source](https://github.com/Kgasil/genesis) | Independent studies; 10 review guides planned, none published / Estudos independentes; 10 guias previstos, nenhum publicado |
+| Project Genesis | [Wisdom & Application / Sabedoria e Aplicação](https://kgasil.github.io/genesis/) | [Source](https://github.com/Kgasil/genesis) | Independent studies; 10 review guides planned, none published / Estudos independentes; 10 guias previstos, nenhum publicado |
 | Project Vision | [Security & Efficiency](https://kgasil.github.io/vision/) | [Source](https://github.com/Kgasil/vision) | Local demonstration lab / Laboratório demonstrativo local |
 | Project Aeris | [Discreet & Efficient. / Discreto e Eficiente.](https://kgasil.github.io/aeris/) | [Source](https://github.com/Kgasil/aeris) | Product concept; no downloadable release / Conceito de produto; sem versão para download |
-| Project Lilium | [Strategy & Intelligence.](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | Local metrics prototype; business suite planned / Protótipo local de indicadores; aplicação empresarial em planejamento |
+| Project Lilium | [Strategy & Growth / Estratégia e Crescimento](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | Local metrics prototype; business suite planned / Protótipo local de indicadores; aplicação empresarial em planejamento |
 
 **Learn · Build · Simplify · Transform / Aprender · Construir · Simplificar · Transformar**
 
