@@ -12,7 +12,7 @@ K&G Vision is an independent technology initiative in development, not yet an in
 
 | Project | Purpose | Status |
 | --- | --- | --- |
-| Project Genesis | Scientific foundations, study guides and learning paths | Materials in development; public portal planned |
+| Project Genesis | Independent learning; 75 planned documents, 10 public review guides | In development; no official recognition or certificates |
 | [Project Vision](https://github.com/Kgasil/vision) | Vendor-neutral AI integration, security, assurance and performance research | V10.2 demonstration laboratory migrated to its own repository |
 | Project Aeris | Lightweight, modular desktop and browser productivity tools | Planning; no public release |
 
@@ -26,7 +26,7 @@ A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ain
 
 | Projeto | Propósito | Situação |
 | --- | --- | --- |
-| Project Genesis | Formação científica, guias de estudo e trilhas de aprendizado | Materiais em desenvolvimento; portal planejado |
+| Project Genesis | Estudo independente; 75 documentos previstos, 10 guias públicos de revisão | Em desenvolvimento; sem reconhecimento oficial ou certificados |
 | [Project Vision](https://github.com/Kgasil/vision) | Pesquisa em integração, segurança, avaliação e desempenho de IA | Laboratório demonstrativo V10.2 migrado para repositório próprio |
 | Project Aeris | Ferramentas leves e modulares para produtividade | Em planejamento; sem versão pública |
 
