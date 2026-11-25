@@ -42,8 +42,8 @@ O site institucional está em construção. Os livros completos e os materiais i
 | --- | --- | --- | --- |
 | K&G Vision | [Institutional](https://kgasil.github.io/) | [Source](https://github.com/Kgasil/kgasil.github.io) | Independent initiative / Iniciativa independente |
 | Project Genesis | [O Princípio](https://kgasil.github.io/genesis/) | [Source](https://github.com/Kgasil/genesis) | Independent studies; 10 review guides planned, none published / Estudos independentes; 10 guias previstos, nenhum publicado |
-| Project Vision | [Beyond Boundaries](https://kgasil.github.io/vision/) | [Source](https://github.com/Kgasil/vision) | Local demonstration lab / Laboratório demonstrativo local |
-| Project Aeris | [Naturally good. / Naturalmente bom.](https://kgasil.github.io/aeris/) | [Source](https://github.com/Kgasil/aeris) | Product concept; no downloadable release / Conceito de produto; sem versão para download |
+| Project Vision | [Security & Efficiency](https://kgasil.github.io/vision/) | [Source](https://github.com/Kgasil/vision) | Local demonstration lab / Laboratório demonstrativo local |
+| Project Aeris | [Quiet by nature. Efficient by design. / Discreto por natureza. Eficiente por design.](https://kgasil.github.io/aeris/) | [Source](https://github.com/Kgasil/aeris) | Product concept; no downloadable release / Conceito de produto; sem versão para download |
 | Project Lilium | [Where strategy meets intelligence.](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | Local metrics prototype; business suite planned / Protótipo local de indicadores; aplicação empresarial em planejamento |
 
 **Learn · Build · Simplify · Transform / Aprender · Construir · Simplificar · Transformar**
