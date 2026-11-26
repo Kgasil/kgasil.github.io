@@ -13,7 +13,7 @@
 | 03 | Implemented; browser verification pending | Project catalogue | Categories, filters, clear project status, links and source documentation |
 | 04 | Implemented; browser verification pending | Case studies | Business problem, methodology, architecture, evidence, limitations; synthetic data clearly labelled |
 | 05 | Implemented; 16 logic assertions passed; browser verification pending | Interactive lab | Browser-based analytical dashboard, process simulations and practical mini tools; deterministic fixtures and tests |
-| 06 | Planned | Digital résumé | Recruiter view, print styling and approved downloadable résumé without private contact details |
+| 06 | Implemented; print and browser verification pending | Digital résumé | Recruiter view, print styling and approved downloadable résumé without private contact details |
 | 07 | Planned | Professional integration | GitHub profile, LinkedIn, K&G Vision links, cohesive branding |
 | 08 | Planned | Release audit and 1.0 | Accessibility, responsive/mobile review, link validation, translation review, performance, deployment and public smoke test |
 
@@ -63,10 +63,20 @@
 - 16 logic assertions executed successfully before commit; same selfTest function available in the lab. Static IDs and fragment checks passed. Browser interaction tests still pending.
 - Source commits: 6c6ca0b6568bacd072c367981fbc2e7704f919b4, abb5b0f817c4fa2586353285af4002a05fbcf0c9, f10ff5e92f5a168752d6a03ba05b981432d310b1 and 143b5df860a876bcc4b53dfe85db48626cccea6e.
 
+## Phase 06 changes
+
+- Dedicated bilingual recruiter résumé at /portfolio/resume.html, with a single-column reading and A4 print layout.
+- Professional summary, experience, education, technical capabilities, independent projects and self-reported language levels.
+- Browser print / save as PDF and downloadable UTF-8 plain text in either language. No separate pre-generated PDF file or ATS certification claimed.
+- Public contact links only; no telephone, personal email or residential address. Bosch end date omitted pending confirmation.
+- Homepage navigation and hero link to the résumé; English selection retained on outbound links.
+- Static checks: unique IDs and valid internal fragments. Browser download, print pagination and public deployment still need verification.
+- Source commits: e4c273d2f30b553d46a84d2538b011a7e4e72a2f and 163beb5829a8488621dbc02235b47eb5a3addce1.
+
 ## Guardrails
 
 Do not claim verified business impact, production deployment, professional certification or independent security validation without evidence. Keep employer/client data private. Distinguish professional experience from personal demonstrations and AI-assisted learning. Avoid publishing personal contact information without approval. Use the same visual palette and preserve the existing institutional site.
 
 ## Next task
 
-Phase 06: create a recruiter-focused digital résumé, print styling and a downloadable public résumé using verified or user-provided facts and no private contact information.
+Phase 07: integrate professional touchpoints, GitHub profile README, portfolio pages and K&G Vision links with consistent personal branding and language navigation.
