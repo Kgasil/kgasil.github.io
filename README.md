@@ -1,4 +1,4 @@
-<p align="center"><a href="https://kgasil.github.io/"><img src="assets/brand-banner.svg" alt="K&amp;G Vision — Intelligence Without Boundaries. Engineered for Trust." width="100%"></a></p>
+<p align="center"><a href="https://kgasil.github.io/"><img src="assets/brand-banner.svg?v=20261126-2" alt="K&amp;G Vision — Intelligence Without Boundaries. Engineered for Trust." width="100%"></a></p>
 
 # K&G Vision
 
@@ -73,7 +73,7 @@ Contact: [GitHub](https://github.com/Kgasil) · [LinkedIn](https://www.linkedin.
 
 ## Identidade K&G Vision / K&G Vision identity
 
-[![K&G Vision — stacked wordmark, five-project GRAAL identity](https://raw.githubusercontent.com/Kgasil/kgasil.github.io/main/assets/brand-banner.svg)](https://kgasil.github.io/)
+[![K&G Vision — stacked wordmark, five-project GRAAL identity](https://raw.githubusercontent.com/Kgasil/kgasil.github.io/main/assets/brand-banner.svg?v=20261126-2)](https://kgasil.github.io/)
 
 [Versão vertical / Vertical lockup](https://github.com/Kgasil/kgasil.github.io/blob/main/assets/brand-stacked.svg) · [Escudo / Shield](https://github.com/Kgasil/kgasil.github.io/blob/main/assets/kg-symbol.svg)
 
@@ -90,3 +90,5 @@ O escudo preserva as quatro cores laterais e o núcleo branco; Rubedo ocupa apen
 **25 NOV 2026 — Lilium Web Lab 1.0:** [Comunicado / Announcement](https://github.com/Kgasil/lilium/blob/main/docs/web-lab-v1.0.md) · Public browser demonstrations / Demonstrações públicas no navegador. Desktop v0.14.0 remains a controlled preview / continua em prévia controlada.
 
 **Aeris Extension 1.0.0** — 16 ferramentas, 50 testes automatizados aprovados; instalação manual disponível pelo GitHub. / 16 tools, 50 automated tests passed; manual installation available on GitHub. [Instalação / Installation](https://kgasil.github.io/aeris/extension-preview.html) · [Notas / Release notes](https://github.com/Kgasil/aeris/blob/main/release/extension-1.0.0-notes.md).
+
+[![K&G Vision — GRAAL](https://raw.githubusercontent.com/Kgasil/kgasil.github.io/main/assets/kg-symbol.svg?v=20261126-2)](https://kgasil.github.io/) **GRAAL · Marco 01** — identidade integrada / integrated identity.
