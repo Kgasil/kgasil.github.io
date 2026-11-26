@@ -14,7 +14,7 @@
 | 04 | Implemented; browser verification pending | Case studies | Business problem, methodology, architecture, evidence, limitations; synthetic data clearly labelled |
 | 05 | Implemented; 16 logic assertions passed; browser verification pending | Interactive lab | Browser-based analytical dashboard, process simulations and practical mini tools; deterministic fixtures and tests |
 | 06 | Implemented; print and browser verification pending | Digital résumé | Recruiter view, print styling and approved downloadable résumé without private contact details |
-| 07 | Planned | Professional integration | GitHub profile, LinkedIn, K&G Vision links, cohesive branding |
+| 07 | Implemented; browser verification pending | Professional integration | GitHub profile, LinkedIn, K&G Vision links, cohesive branding |
 | 08 | Planned | Release audit and 1.0 | Accessibility, responsive/mobile review, link validation, translation review, performance, deployment and public smoke test |
 
 ## Phase 01 changes
@@ -73,10 +73,20 @@
 - Static checks: unique IDs and valid internal fragments. Browser download, print pagination and public deployment still need verification.
 - Source commits: e4c273d2f30b553d46a84d2538b011a7e4e72a2f and 163beb5829a8488621dbc02235b47eb5a3addce1.
 
+## Phase 07 changes
+
+- Shared KG header, monogram, professional footer, active-page indication and mobile navigation across homepage, case studies, lab and résumé.
+- Consistent palette via shared.css and language-aware page navigation via shared.js.
+- Homepage section shortcuts retained; public GitHub avatar added discreetly with user approval and graceful image-failure fallback.
+- Main GitHub profile README now links directly to the résumé, case studies and interactive lab; existing clickable banner and ecosystem visuals preserved.
+- Institutional K&G Vision site and other projects remain unchanged.
+- Static unique-ID checks passed for all four pages during integration. Public deployment, avatar rendering and cross-page browser interaction remain to be verified.
+- Source commits: 0b9f2920f99babf7f03af57bdf2011d080b4e33d, 1dd8bb4693ff039ec945a3859d003be21a52baa9, 5e14ea83517cab3a02f73415ef67a9291149559d, 3561f9fb04f0d5884809eb5823211e09e89ed427, 72f7b1da90b93e5ac2f392dcc02279862b597f81, 1267a46e08b86b4dc1772a8360ac86ee1baecaf3 and 5c8e31719d162a5431f0699383a8e525ef805907; profile README e9cf4867d55052a95371237ef5e884c5ad005141.
+
 ## Guardrails
 
 Do not claim verified business impact, production deployment, professional certification or independent security validation without evidence. Keep employer/client data private. Distinguish professional experience from personal demonstrations and AI-assisted learning. Avoid publishing personal contact information without approval. Use the same visual palette and preserve the existing institutional site.
 
 ## Next task
 
-Phase 07: integrate professional touchpoints, GitHub profile README, portfolio pages and K&G Vision links with consistent personal branding and language navigation.
+Phase 08: audit all pages, translations, accessibility, mobile layout, links, lab logic and public deployment; resolve confirmed issues before declaring release 1.0.
