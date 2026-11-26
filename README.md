@@ -8,6 +8,8 @@
 
 > **Marco 1.0 do ecossistema / Ecosystem milestone 1.0 — 25/11/2026.** Quatro projetos com entregas públicas distintas: conhecimento, engenharia de IA, produtividade e inteligência empresarial. See component versions below / Consulte as versões de cada componente abaixo.
 
+**Papel no ecossistema / Ecosystem role:** Hoje, os projetos são desenvolvidos individualmente. A visão de longo prazo é a de frentes especializadas com autonomia e missões complementares, coordenadas pela K&G Vision. / Today, the projects are developed individually. The long-term vision is specialized initiatives with autonomy and complementary missions, coordinated by K&G Vision.
+
 ## English
 
 K&G Vision is an independent technology initiative with a clear ambition: turn knowledge into practical technology, engineer AI for trust, simplify everyday work and empower business growth. Our long-term research direction spans vendor-neutral AI integration, cybersecurity, AI assurance and performance. The initiative is in development, is not an incorporated company and does not currently offer commercial services.
