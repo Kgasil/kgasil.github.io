@@ -14,7 +14,7 @@
 
 [Website](https://kgasil.github.io/) · [English](#english) · [Português](#português)
 
-> **Marco 1.0 do ecossistema / Ecosystem milestone 1.0 — 25/11/2026.** Quatro projetos com entregas públicas distintas: conhecimento, engenharia de IA, produtividade e inteligência empresarial. See component versions below / Consulte as versões de cada componente abaixo.
+> **Marco 1.0 do ecossistema / Ecosystem milestone 1.0 — 25/11/2026.** Cinco projetos com entregas públicas distintas: conhecimento, ciência e inovação, engenharia de IA, produtividade e inteligência empresarial. / Five projects with distinct public deliverables: knowledge, science and innovation, AI engineering, productivity and business intelligence. See component versions below / Consulte as versões de cada componente abaixo.
 
 > **Marco 01 — GRAAL (26/11/2026).** Rubedo integra o ecossistema como quinta frente; o registro anterior permanece preservado. / Rubedo joins as the fifth initiative; previous records are preserved.
 
