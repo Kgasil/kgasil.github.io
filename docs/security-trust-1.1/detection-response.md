@@ -45,3 +45,7 @@ Evidência do titular: Histórico de proteção de 26/11/2026 às 15:18, categor
 
 ## Segundo incidente — Argus Mini
 Captura do titular confirma detecção grave de Cavalo de Troia, ZIP Argus Mini 0.1.0 removido em 26/11/2026 16:45. [Issue #1](https://github.com/Kgasil/argus/issues/1). Nome/ID da ameaça ainda pendentes, causa e falso positivo não confirmados. Suspender links e instruções de instalação, preservar bytes originais; manter Mini Lab web. Genesis permanece aberto. Rubedo, Aeris Extension e Lilium Mini passaram segundo relato do titular; não atribuir aprovação independente ou extrapolar para desktop. Ver [registro de validação](defender-validation.md).
+
+
+## Identificador comum confirmado — 26/11/2026
+O titular forneceu o link Saiba mais do Argus: Trojan:Script/Ulthar.A!ml, ThreatID 2147751841, também relatado no Genesis. Isso identifica a mesma classificação do Defender, não comprova causa comum nem falso positivo. Avisos destacados bilíngues atualizados nos sites, READMEs e SECURITY.md dos dois projetos; instalações permanecem suspensas, Mini Labs web disponíveis. Solicitação de revisão à Microsoft em preparação, não submetida; não afirmar contato direto, autorização ou liberação. Nenhum pacote alterado, nenhuma proteção contornada. [Argus #1](https://github.com/Kgasil/argus/issues/1) · [Genesis #1](https://github.com/Kgasil/genesis/issues/1).
