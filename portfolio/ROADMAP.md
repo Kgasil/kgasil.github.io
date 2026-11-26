@@ -9,7 +9,7 @@
 | Phase | Status | Deliverable | Acceptance criteria |
 | --- | --- | --- | --- |
 | 01 | Implemented; deployment verification pending | Executive visual foundation and homepage | KG monogram, institutional navy, clear professional positioning, three featured projects, responsive layout, bilingual copy |
-| 02 | Planned | Professional experience and capabilities | Evidence-based experience, education, tools, career narrative, no invented outcomes |
+| 02 | Implemented; deployment verification pending | Professional experience and capabilities | Evidence-based experience, education, tools, career narrative, no invented outcomes |
 | 03 | Planned | Project catalogue | Categories, filters, clear project status, links and source documentation |
 | 04 | Planned | Case studies | Business problem, methodology, architecture, evidence, limitations; synthetic data clearly labelled |
 | 05 | Planned | Interactive lab | Browser-based analytical dashboard, process simulations and practical mini tools; deterministic fixtures and tests |
@@ -26,10 +26,20 @@
 - Existing project catalogue, bilingual switch and print capability retained.
 - Source commit: 8a93230a436105e44db018c8386f32a12f1b1f69.
 
+## Phase 02 changes
+
+- Bilingual career narrative connecting industrial operations, technical quoting, data governance and automation.
+- Three experience cards with responsibilities and relevant skills, without unsupported performance figures.
+- Four capability areas linked to independent public portfolio demonstrations.
+- Education and self-reported language levels, plus current learning interests.
+- New navigation section, responsive styling and print adjustments.
+- Static validation: unique HTML IDs and all internal fragment links resolve.
+- Source commit: 6665913c02e1642f453979a6bf1b091e97bb4a7a.
+
 ## Guardrails
 
 Do not claim verified business impact, production deployment, professional certification or independent security validation without evidence. Keep employer/client data private. Distinguish professional experience from personal demonstrations and AI-assisted learning. Avoid publishing personal contact information without approval. Use the same visual palette and preserve the existing institutional site.
 
 ## Next task
 
-Phase 02: deepen the career narrative and capabilities, verify employment and education claims against available information, and keep the site concise and professional.
+Phase 03: build the interactive project catalogue with categories, filters, clear project status and source documentation.
