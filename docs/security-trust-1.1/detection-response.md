@@ -49,3 +49,7 @@ Captura do titular confirma detecção grave de Cavalo de Troia, ZIP Argus Mini 
 
 ## Identificador comum confirmado — 26/11/2026
 O titular forneceu o link Saiba mais do Argus: Trojan:Script/Ulthar.A!ml, ThreatID 2147751841, também relatado no Genesis. Isso identifica a mesma classificação do Defender, não comprova causa comum nem falso positivo. Avisos destacados bilíngues atualizados nos sites, READMEs e SECURITY.md dos dois projetos; instalações permanecem suspensas, Mini Labs web disponíveis. Solicitação de revisão à Microsoft em preparação, não submetida; não afirmar contato direto, autorização ou liberação. Nenhum pacote alterado, nenhuma proteção contornada. [Argus #1](https://github.com/Kgasil/argus/issues/1) · [Genesis #1](https://github.com/Kgasil/genesis/issues/1).
+
+
+## Submissões confirmadas por capturas — 26/11/2026
+Genesis Mini às 17:05:23 e Argus Mini às 17:07:43 (horários exibidos). Ambos constam como Submitted no Microsoft Security Intelligence. User Opinion exibida: Malware, embora o objetivo informado seja análise de possível falso positivo. Protocolos e capturas mantidos privados; não há confirmação independente do hash submetido ou parecer final. Instalação dos dois permanece suspensa. Este registro atualiza a situação anterior de submissões em preparação.
