@@ -5,46 +5,46 @@
 
 /* KG personal portfolio — blue editorial identity */
 @media screen {
-:root{--paper:#DCE5EF;--line:#BFCFDF;--ink:#172B43;--muted:#40566E;--accent:#245681;--kg-surface:#EAF0F6;--kg-navy:#14263D;--kg-hero:radial-gradient(ellipse at 82% 20%,#345D86 0%,transparent 55%),linear-gradient(135deg,#14243A,#1C3755 100%)}
+:root{--paper:#CFDAE6;--line:#AFC2D5;--ink:#14263D;--muted:#385069;--accent:#1F517C;--kg-surface:#E1E9F1;--kg-navy:#122236;--kg-hero:radial-gradient(ellipse at 82% 20%,#2F557A 0%,transparent 55%),linear-gradient(135deg,#112033,#19314C 100%)}
 body{background:var(--paper);color:var(--ink)}
-header,.kg-header{background:#DCE5EF;border-bottom-color:var(--line)}
-.kg-footer,footer{background:#CEDBE9;border-top-color:var(--line);color:var(--muted)}
-.kg-languages button:not([aria-pressed=true]),button:not([aria-pressed=true]):not(.primary),.action:not(.primary){background:#EAF0F6;border-color:#A9BED2}
-.kg-nav a:hover,.kg-section-links a:hover{color:#17466F}
-.hero{position:relative;isolation:isolate;background:var(--kg-hero);color:#EDF4FF;border-bottom:3px solid #7BA7CF}
+header,.kg-header{background:#CFDAE6;border-bottom-color:var(--line)}
+.kg-footer,footer{background:#C3D2E1;border-top-color:var(--line);color:var(--muted)}
+.kg-languages button:not([aria-pressed=true]),button:not([aria-pressed=true]):not(.primary),.action:not(.primary){background:#E1E9F1;border-color:#98B0C7}
+.kg-nav a:hover,.kg-section-links a:hover{color:#143F67}
+.hero{position:relative;isolation:isolate;background:var(--kg-hero);color:#EDF4FF;border-bottom:3px solid #709DC7}
 .hero:before{background:none}
-.hero h1{color:#F5F8FC}.hero .eyebrow{color:#B7D7F4}.hero .lead,.hero p{color:#DCE8F5}.hero .positioning{color:#C9DAEB;line-height:1.7}
-.hero .btn.primary{background:#DCEBFA;border-color:#DCEBFA;color:#14263D}
-.hero .btn{border-color:#9BB5CF}
-.signature{background:radial-gradient(ellipse at 65% 15%,#365979,transparent 65%),linear-gradient(145deg,#243E5B,#182B44);border-color:#607C99;box-shadow:0 18px 48px #0C1B3040}
+.hero h1{color:#F5F8FC}.hero .eyebrow{color:#B7D7F4}.hero .lead,.hero p{color:#D5E3F1}.hero .positioning{color:#C3D4E6;line-height:1.7}
+.hero .btn.primary{background:#D5E7F8;border-color:#D5E7F8;color:#122236}
+.hero .btn{border-color:#8EAACA}
+.signature{background:radial-gradient(ellipse at 65% 15%,#304F6F,transparent 65%),linear-gradient(145deg,#213852,#16273D);border-color:#577391;box-shadow:0 18px 48px #0C1B3040}
 .signature .monogram svg{filter:drop-shadow(0 0 12px #75BAFF22)}
-.signature:after{border-color:#819CB640}
-.proof{background:#CFDDEC;border-bottom-color:var(--line)}
-.proof-item{border-left-color:#628BB1}
-.kg-section-links{background:#D5E1ED;border-bottom-color:var(--line)}
-.showcase,#projetos{background:linear-gradient(115deg,#DCE5EF,#D5E2F0)}
-#sobre,#laboratorio{background:#E1E9F1}
-#experiencia{background:#D4E0ED}
-.capabilities{background:#DCE6F0}
+.signature:after{border-color:#6E8AA540}
+.proof{background:#C7D7E7;border-bottom-color:var(--line)}
+.proof-item{border-left-color:#5C83A8}
+.kg-section-links{background:#CCD8E5;border-bottom-color:var(--line)}
+.showcase,#projetos{background:linear-gradient(115deg,#CFDAE6,#C9D7E5)}
+#sobre,#laboratorio{background:#D7E1EB}
+#experiencia{background:#CBD8E6}
+.capabilities{background:#D3DFEB}
 .card,.career-card,.featured-card,.case,.panel,.toc,.sheet{background:var(--kg-surface);border-color:var(--line);box-shadow:0 5px 18px #14263D0A}
 .featured-card{border-radius:14px}
-.featured-visual{background:radial-gradient(ellipse at 50% 20%,#365A80,#182C46 85%);border-bottom:3px solid #82B3E0}
-.featured-card:nth-child(2) .featured-visual{background:radial-gradient(ellipse at 50% 20%,#3C638A,#203650 85%)}
-.featured-card:nth-child(3) .featured-visual{background:radial-gradient(ellipse at 50% 20%,#2E5279,#14263D 85%)}
-.career-card{border-left:3px solid #668DB2}
-.capability-grid .card,.catalog-card{border-top:2px solid #7598BA}
-.profile-note,.catalog-controls,.limit,.metric,.skill-tags span,.project-status,.status,.command,.formula{background:#D7E3EF;border-color:#B7CADD}
-.catalog-search input,input:not([type=checkbox]),select,textarea,.index a{background:#EAF0F6;border-color:#A9BED2}
-.contact{background:linear-gradient(120deg,#14263D,#254C70);color:#EDF4FF}
-.contact .eyebrow,.contact p,.contact .intro{color:#DCE8F5}.contact a{color:#EDF4FF}
-.case,.panel{border-top:3px solid #668DB2}
-.sheet .cv-head{border-bottom-color:#668DB2}.cv-section h2{color:#245681}
+.featured-visual{background:radial-gradient(ellipse at 50% 20%,#304F73,#15283F 85%);border-bottom:3px solid #79A9D6}
+.featured-card:nth-child(2) .featured-visual{background:radial-gradient(ellipse at 50% 20%,#355879,#1A3048 85%)}
+.featured-card:nth-child(3) .featured-visual{background:radial-gradient(ellipse at 50% 20%,#294A6A,#122236 85%)}
+.career-card{border-left:3px solid #5F87AF}
+.capability-grid .card,.catalog-card{border-top:2px solid #6E92B7}
+.profile-note,.catalog-controls,.limit,.metric,.skill-tags span,.project-status,.status,.command,.formula{background:#CEDBE8;border-color:#ABC0D3}
+.catalog-search input,input:not([type=checkbox]),select,textarea,.index a{background:#E1E9F1;border-color:#98B0C7}
+.contact{background:linear-gradient(120deg,#122236,#214667);color:#EDF4FF}
+.contact .eyebrow,.contact p,.contact .intro{color:#D5E3F1}.contact a{color:#EDF4FF}
+.case,.panel{border-top:3px solid #5F87AF}
+.sheet .cv-head{border-bottom-color:#5F87AF}.cv-section h2{color:#1F517C}
 .section h2{max-width:24ch;line-height:1.15}.section .intro,.profile-copy p{max-width:72ch;line-height:1.75}
 .card p,.featured-content p,.career-card li,.case p,.panel p{line-height:1.7}
-.card a,.featured-content a{color:#20527E}
+.card a,.featured-content a{color:#1B4E79}
 .card a:hover,.featured-content a:hover{text-decoration-thickness:2px}
 .catalog-card a.case-link{color:#EDF4FF}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#28669C}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#245F92}
 .hero a:focus-visible,.contact a:focus-visible{outline-color:#B7D7F4}
 @media(min-width:801px){.section{padding:68px 0}.hero{padding-top:80px;padding-bottom:72px}}
 @media(max-width:800px){.section{padding:42px 0}.hero h1{font-size:clamp(38px,9vw,58px)}.section h2{max-width:none}.signature{padding:24px}}
