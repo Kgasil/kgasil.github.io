@@ -1,0 +1,28 @@
+# GRAAL Security & Trust 1.1 — Etapa 09 / Windows Defender
+Data: 2026-11-26. Estado inicial: **NOT_TESTED / aguardando ambiente elegível**. Nenhuma aprovação de distribuição ou novo scan declarado.
+
+## Gate obrigatório
+Workflow [45881299133](https://github.com/Kgasil/kgasil.github.io/actions/runs/45881299133), commit b867703393d18d2455a3b2ad2c0981ff40dbd38d: verifica em windows-2022 e windows-2025 se o serviço e antivírus estão ativos, proteção em tempo real ativa, modo Normal, definições de até 24 h, scan de arquivos compactados habilitado e nenhuma exclusão explícita. Gate conservador: qualquer exclusão exige revisão; não apagar exclusões, modificar configurações, usar opções de diagnóstico para substituir scan normal, desligar SmartScreen ou executar os pacotes. O workflow é somente pré-verificação; mesmo gate aprovado não é scan. Registra JSON sem divulgar caminhos de exclusão.
+
+## Alvos originais (SHA-256 de referência)
+| Produto/arquivo | SHA-256 | Novo scan |
+|---|---|---|
+| Genesis-Mini-v0.1.0-install.zip | 654d46b77439a4c196bd6c70bda0fc664f1f59e8a6fe745cad76e10ed7fc67b4 | NOT_TESTED; alerta original não esclarecido |
+| Argus-Mini-v0.1.0-install.zip | 3248c6c204b5651a9f63c5630547e1a18f021a0ffdc08feaba1566e7925fb8b1 | NOT_TESTED |
+| Rubedo-Mini-v1.0.0-install.zip | 1799dc6ccadd786eb960f38c4f7d67cf241e9630942a9e69daebfe96fcfe6ab2 | NOT_TESTED |
+| Rubedo-Mini-v0.3.0-install.zip (histórico) | ee1bcf4a225783dd60a332ba1720d14127c2c9b88f213ee8e29f4872bd12f1c8 | NOT_TESTED |
+| Aeris-Extension-v1.0.0-install.zip | e77e6e8596c14e54f22303e7a5d368356c19eaa79df8c8597752790755d9a0d9 | NOT_TESTED |
+| Aeris-Extension-v1.0.0-completa.zip | d0f064c1b73c46465171cc1fb208b530ed66573e054c2ca211b216547bbb3c00 | NOT_TESTED |
+| Lilium-Mini-0.1.1-experimental.zip | 5fde935bfcd3bb3f2e1dda983b54a431b380f56c9ce85808608e17b89a524cf7 | NOT_TESTED |
+| Lilium-0.14.0-windows-x64-preview.zip | 95ef0b0b96824b47c87e3784e8c9985796cefdfb76e1bea445b3e09ab0efe392 | NOT_TESTED |
+| Aeris-1.0.0rc5-Windows-x64-Setup-terms1.exe | f5499cc2383e4d3a0acee8a0d84e173fa1a44a098ac0ba478c1febbcfe4e774b | diagnóstico histórico; novo scan pendente; etapa 07 separada |
+| Aeris-1.0.0rc5-Windows-x64-portable.zip | ffbda95354b563e1d6a1b8f90fc43184a197585488c3da8609ac6970ffee9701 | diagnóstico histórico; novo scan pendente; etapa 07 separada |
+
+Fontes: relatórios das etapas [02](https://github.com/Kgasil/genesis/blob/main/docs/security-trust-1.1/genesis-mini-review.md), [03](https://github.com/Kgasil/argus/blob/main/docs/security-trust-1.1/argus-mini-review.md), [04](https://github.com/Kgasil/rubedo/blob/main/docs/security-trust-1.1/rubedo-mini-review.md), [05](https://github.com/Kgasil/aeris/blob/main/docs/security-trust-1.1/aeris-extension-review.md), [06](https://github.com/Kgasil/lilium/blob/main/docs/security-trust-1.1/lilium-mini-review.md), [08](https://github.com/Kgasil/lilium/blob/main/docs/security-trust-1.1/lilium-desktop-review.md). O ZIP público gerado pelo GitHub para Lilium Mini (commit 447d7414f20e28f6c0440647f2b7be71fc44e71d) é diferente do ZIP experimental mínimo; ainda requer scan próprio e registro do hash efetivamente obtido. Não presumir equivalência entre arquivos de compactação diferentes. Preservar cópias originais e artefatos CI, sem restaurar quarentena.
+
+## Evidência histórica do Aeris Desktop
+[Registro](https://github.com/Kgasil/aeris/blob/main/downloads/rc5-defender-diagnostic-evidence.json) de 26/11/2026: diagnóstico sem ameaças no Setup terms1, portátil e conteúdo extraído; controle positivo detectado. Plataforma 4.18.26100.4, definições 1.463.481.0, Windows Server 2022. Proteção em tempo real inativa. Duas tentativas padrão bloqueadas por exclusões do runner e scan de arquivos compactados desabilitado. Esse resultado não satisfaz o gate desta etapa nem demonstra ausência de malware.
+
+## Procedimento em Windows cliente
+Usar ambiente descartável atualizado com Defender ativo, sem dados reais. Atualizar definições pelos meios normais da Segurança do Windows. Registrar os estados de proteção e confirmar ausência de exclusões relevantes; se houver política corporativa ou bloqueio, parar. Obter os originais dos commits/artefatos aprovados, não reempacotar. Conferir Get-FileHash -Algorithm SHA256 antes de analisar. Usar análise personalizada pelo Defender nos ZIPs/EXE e, se não houver detecção, conteúdo extraído verificado em pasta nova; não executar. Revisar Histórico de proteção, eventos de início/fim/detecção, escopo, hashes pós-scan e versão das definições. Um retorno zero sozinho não prova ausência de ameaças. Para Genesis, se houver detecção, interromper, registrar nome da ameaça e hash identificado; não restaurar arquivo bloqueado. Nenhum teste de reputação SmartScreen ou assinatura de editor é substituído por scan.
+Registrar somente evidências sem nomes de usuário, caminhos privados ou dados pessoais. Classificar por alvo: NOT_TESTED, BLOCKED_OR_INCOMPLETE, DETECTION_REVIEW_REQUIRED ou SCAN_COMPLETED_REVIEW_REQUIRED. Aprovação de distribuição exige revisão separada. Não publicar amostra detectada ou alterar bytes para evitar alertas. Sem custo contratado, sem mudança de design, versão, pacote ou funcionalidade. Etapa 07 permanece separada.
