@@ -2432,7 +2432,7 @@
       "manifest": "extension/manifest.json",
       "permissions": [],
       "distribution": "Pinned source archive commit 447d7414f20e28f6c0440647f2b7be71fc44e71d; dedicated packaging workflow",
-      "status": "Pinned archive and latest CI package not independently fetched in this phase."
+      "status": "Pinned commit manifest fetched and matches baseline Git blob; archive bytes and latest CI package remain pending."
     },
     {
       "product": "Aeris Desktop",
@@ -2446,7 +2446,17 @@
         "downloads/Aeris-Desktop-v1.0.0rc1-fix1-codigo-fonte.zip"
       ],
       "rc1_fix1_build_dependency": "PyInstaller==6.19.0 (extracted from tracked ZIP; does not establish RC5 dependency inventory)",
-      "status": "Existing documented on-demand Defender diagnostic, matching published asset digest, no threats detected; Windows Server 2022, real-time protection inactive, not a new scan or Windows client approval; no signature. Previous RC5 draft must not be published."
+      "status": "Existing documented on-demand Defender diagnostic, matching published asset digest, no threats detected; Windows Server 2022, real-time protection inactive, not a new scan or Windows client approval; no signature. Previous RC5 draft must not be published.",
+      "rc5_build_environment": [
+        "altgraph==0.17.5",
+        "packaging==26.4",
+        "pefile==2024.8.26",
+        "pip==26.2.2",
+        "pyinstaller==6.22.3",
+        "pyinstaller-hooks-contrib==2026.10",
+        "pywin32-ctypes==0.2.3",
+        "setuptools==84.2.1"
+      ]
     },
     {
       "product": "Lilium Desktop",
@@ -2463,7 +2473,44 @@
         "pyinstaller==6.16.0",
         "Pillow==13.0.0"
       ],
-      "status": "CI candidate for manual acceptance only; no public release; Defender pending."
+      "status": "CI candidate for manual acceptance only; no public release; Defender pending.",
+      "resolved_build_environment": [
+        "altgraph==0.17.5",
+        "annotated-doc==0.0.7",
+        "annotated-types==0.8.0",
+        "anyio==4.16.0",
+        "argcomplete==3.7.2",
+        "certifi==2026.11.20",
+        "click==8.5.1",
+        "colorama==0.4.6",
+        "defusedxml==0.7.1",
+        "et_xmlfile==2.0.0",
+        "fastapi==0.165.0",
+        "filelock==4.2.10",
+        "h11==0.16.0",
+        "httpcore==1.0.9",
+        "httpx==0.28.1",
+        "idna==3.20",
+        "openpyxl==3.1.5",
+        "opentelemetry-api==1.45.2",
+        "packaging==26.3",
+        "pefile==2023.2.7",
+        "pillow==13.0.0",
+        "pip==26.3",
+        "pipx==1.18.16",
+        "platformdirs==4.14.5",
+        "pydantic==2.14.4",
+        "pydantic_core==2.50.5",
+        "pyinstaller==6.16.0",
+        "pyinstaller-hooks-contrib==2026.10",
+        "pywin32-ctypes==0.2.3",
+        "setuptools==84.2.1",
+        "starlette==1.10.0",
+        "typing-inspection==0.4.5",
+        "typing_extensions==4.16.0",
+        "userpath==1.9.2",
+        "uvicorn==0.48.0"
+      ]
     }
   ],
   "external_artifacts": [
@@ -2475,7 +2522,11 @@
       "sha256": "72ebc3cdcbc83d5f5fc94e475557537eb2de3c646ff34142e691f80e5d4ae1d5",
       "inner_documented_sha256": "95ef0b0b96824b47c87e3784e8c9985796cefdfb76e1bea445b3e09ab0efe392",
       "expires": "2026-12-09T23:36:45Z",
-      "expired": false
+      "expired": false,
+      "downloaded_in_phase_1": true,
+      "sha256_recomputed_and_matched": true,
+      "zip_crc_pass": true,
+      "backup": "Original bytes preserved in private handoff archive; maintainer must save outside temporary CI/chat storage."
     },
     {
       "repository": "lilium",
@@ -2484,7 +2535,11 @@
       "bytes": 1098,
       "sha256": "38a68bc32f55178719e136c50add7451c2b269fc9cc1fa4c2326ce3e1c3590f6",
       "expires": "2026-12-09T23:35:35Z",
-      "expired": false
+      "expired": false,
+      "downloaded_in_phase_1": true,
+      "sha256_recomputed_and_matched": true,
+      "zip_crc_pass": true,
+      "backup": "Original bytes preserved in private handoff archive; maintainer must save outside temporary CI/chat storage."
     },
     {
       "repository": "aeris",
@@ -2493,7 +2548,11 @@
       "bytes": 12303783,
       "sha256": "74b6b7f76a3ac5dbc6ce3f926b979c020f001434a30937420664d2d30a069131",
       "expires": "2026-12-26T17:16:25Z",
-      "expired": false
+      "expired": false,
+      "downloaded_in_phase_1": true,
+      "sha256_recomputed_and_matched": true,
+      "zip_crc_pass": true,
+      "backup": "Original bytes preserved in private handoff archive; maintainer must save outside temporary CI/chat storage."
     },
     {
       "repository": "aeris",
@@ -2502,7 +2561,11 @@
       "bytes": 610469,
       "sha256": "47b1eb68f1892c72c2960bafcc01a03dcbc5b1ced55ed86dc0585921c731101b",
       "expires": "2026-12-26T17:00:22Z",
-      "expired": false
+      "expired": false,
+      "downloaded_in_phase_1": true,
+      "sha256_recomputed_and_matched": true,
+      "zip_crc_pass": true,
+      "backup": "Original bytes preserved in private handoff archive; maintainer must save outside temporary CI/chat storage."
     },
     {
       "repository": "aeris",
@@ -2511,13 +2574,32 @@
       "bytes": 26701152,
       "sha256": "09aa2076cac6f9bc8a543869027fe2617f0590fd4509a6f18261def0e797ba9a",
       "expires": "2026-12-26T17:03:32Z",
-      "expired": false
+      "expired": false,
+      "downloaded_in_phase_1": true,
+      "sha256_recomputed_and_matched": true,
+      "zip_crc_pass": true,
+      "backup": "Original bytes preserved in private handoff archive; maintainer must save outside temporary CI/chat storage."
     }
   ],
   "limitations": [
     "No new antivirus scan, no executable run, no binary rebuild, no feature changes.",
-    "Release/API digests and previously documented SHA-256 values are cataloged, not freshly recalculated.",
-    "External artifact byte copies not archived durably in this phase; no publication of unapproved packages.",
-    "Complete transitive/runtime dependency inventory (SBOM) and LFS/submodule verification pending where applicable."
-  ]
+    "Git-tracked ZIP SHA-256 values taken from existing documentation are not freshly recalculated in this phase; Git blob IDs recorded. Five CI ZIPs and listed inner packages freshly hashed; matching public Aeris terms1 release API digest, direct release download not repeated.",
+    "Five critical external CI artifacts preserved in private handoff archive, not a durable remote backup until owner saves it. Other historical CI artifacts/releases not all mirrored.",
+    "Complete native runtime SBOM, license review, LFS/submodule verification where applicable, Windows client and Defender validation pending."
+  ],
+  "artifact_backup": {
+    "filename": "GRAAL-1.1-backup-artefatos-CI-2026-11-26.zip",
+    "bytes": 63488524,
+    "sha256": "d21038e41342bd829e5eaf9f74c1c5bd9a43f91c36a76a61c03baf964869fe17",
+    "original_zip_count": 5,
+    "verified": true,
+    "storage": "Private handoff; not uploaded to public GitHub; maintainer must retain locally."
+  },
+  "verified_inner_sha256": {
+    "Aeris RC5 terms1 setup": "f5499cc2383e4d3a0acee8a0d84e173fa1a44a098ac0ba478c1febbcfe4e774b",
+    "Aeris RC5 original setup — archival only, do not use": "54ab3ab65672a32dc944259bb291f5c66ed735d4c5d5876641725131c9915aa8",
+    "Aeris RC5 portable": "ffbda95354b563e1d6a1b8f90fc43184a197585488c3da8609ac6970ffee9701",
+    "Aeris RC5 source": "fe393db2e8903ae9c181d23639729204bad96fefcbdc60de4c7cec2170debc18",
+    "Lilium corrected portable": "95ef0b0b96824b47c87e3784e8c9985796cefdfb76e1bea445b3e09ab0efe392"
+  }
 }
