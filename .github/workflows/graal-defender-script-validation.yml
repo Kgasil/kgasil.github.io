@@ -1,0 +1,40 @@
+name: GRAAL - validate Defender evidence script
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'validation/defender/scan-original.ps1'
+      - '.github/workflows/graal-defender-script-validation.yml'
+permissions:
+  contents: read
+jobs:
+  syntax-and-policy:
+    runs-on: windows-2025
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Parse script and check reference hashes without scanning
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $file = Join-Path $env:GITHUB_WORKSPACE 'validation/defender/scan-original.ps1'
+          $tokens = $null
+          $errors = $null
+          $ast = [System.Management.Automation.Language.Parser]::ParseFile($file, [ref]$tokens, [ref]$errors)
+          if ($errors.Count) { throw ($errors | Out-String) }
+          $commands = @($ast.FindAll({param($n) $n -is [System.Management.Automation.Language.CommandAst]}, $true) | ForEach-Object { $_.GetCommandName() })
+          if ($commands -contains $null) { throw 'Dynamic command requires review' }
+          if ($commands | Where-Object { $_ -match '^(Set|Add|Remove)-MpPreference$|^Stop-Service$|^Set-Service$|^Invoke-Expression$|^Start-Process$' }) { throw 'Unexpected protection change or process launch' }
+          if ($commands -notcontains 'Start-MpScan') { throw 'Missing native Defender scan command' }
+          $text = Get-Content -LiteralPath $file -Raw
+          $matrix = Get-Content -LiteralPath 'docs/security-trust-1.1/defender-validation.md' -Raw
+          $matches = [regex]::Matches($text, "(?m)^\s*'([^']+\.zip)' = '([a-f0-9]{64})'\s*$")
+          if ($matches.Count -ne 8) { throw 'Expected eight original non-Aeris-Desktop packages' }
+          foreach ($m in $matches) {
+            $row = '| ' + $m.Groups[1].Value
+            if (-not $matrix.Contains($row) -or -not $matrix.Contains($m.Groups[2].Value)) { throw 'Reference manifest mismatch' }
+          }
+          Write-Host 'PASS: syntax and limited command/hash policy checks; no Defender scan or product execution.'
