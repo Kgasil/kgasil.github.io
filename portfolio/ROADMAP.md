@@ -15,7 +15,7 @@
 | 05 | Implemented; 16 logic assertions passed; browser verification pending | Interactive lab | Browser-based analytical dashboard, process simulations and practical mini tools; deterministic fixtures and tests |
 | 06 | Implemented; print and browser verification pending | Digital résumé | Recruiter view, print styling and approved downloadable résumé without private contact details |
 | 07 | Implemented; browser verification pending | Professional integration | GitHub profile, LinkedIn, K&G Vision links, cohesive branding |
-| 08 | Planned | Release audit and 1.0 | Accessibility, responsive/mobile review, link validation, translation review, performance, deployment and public smoke test |
+| 08 | Source release 1.0 completed; public browser smoke test pending | Release audit and 1.0 | Accessibility, responsive/mobile review, link validation, translation review, performance, deployment and public smoke test |
 
 ## Phase 01 changes
 
@@ -83,10 +83,19 @@
 - Static unique-ID checks passed for all four pages during integration. Public deployment, avatar rendering and cross-page browser interaction remain to be verified.
 - Source commits: 0b9f2920f99babf7f03af57bdf2011d080b4e33d, 1dd8bb4693ff039ec945a3859d003be21a52baa9, 5e14ea83517cab3a02f73415ef67a9291149559d, 3561f9fb04f0d5884809eb5823211e09e89ed427, 72f7b1da90b93e5ac2f392dcc02279862b597f81, 1267a46e08b86b4dc1772a8360ac86ee1baecaf3 and 5c8e31719d162a5431f0699383a8e525ef805907; profile README e9cf4867d55052a95371237ef5e884c5ad005141.
 
+## Phase 08 changes
+
+- Release polish: KG favicon, page metadata, keyboard focus, reduced-motion support, long-output wrapping and input autocomplete controls.
+- Hardened pricing against numeric overflow and priority scoring against fractional SLA days.
+- Final repository audit: 4 HTML pages, 82 local resource/fragment references, zero detected missing local targets or duplicate IDs; all inline and external JavaScript parsed successfully.
+- Executed the fetched lab-core.js selfTest: 20 of 20 assertions passed.
+- Previous GitHub Pages deployment for phase 07 completed successfully (run 45826523268). The release commit's deployment must be checked separately.
+- Public HTTP/browser smoke testing could not be performed from the available environment; visual review, actual print pagination, downloads and interactive browser behavior remain pending. This is not an accessibility certification or production security audit.
+
 ## Guardrails
 
 Do not claim verified business impact, production deployment, professional certification or independent security validation without evidence. Keep employer/client data private. Distinguish professional experience from personal demonstrations and AI-assisted learning. Avoid publishing personal contact information without approval. Use the same visual palette and preserve the existing institutional site.
 
 ## Next task
 
-Phase 08: audit all pages, translations, accessibility, mobile layout, links, lab logic and public deployment; resolve confirmed issues before declaring release 1.0.
+Version 1.0 source delivery complete. Perform a real-browser smoke test on the public URLs after deployment; log any defects before further features.
