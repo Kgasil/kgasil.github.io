@@ -1,0 +1,2523 @@
+{
+  "schema": 1,
+  "date": "2026-11-26",
+  "milestone": "GRAAL Security & Trust 1.1",
+  "scope": "Tracked main-branch snapshots only. Git blob SHA is not a SHA-256 file digest. External binaries, other branches, LFS objects if any, and CI artifacts are not backed up by a Git branch.",
+  "repositories": [
+    {
+      "repository": "Kgasil/kgasil.github.io",
+      "backup_branch": "backup-graal-security-trust-1.1-2026-11-26",
+      "commit": "0997071e322e6b809130a99e43d6b10371fe6df4",
+      "tree": "4c9d06ff302f0978ad113d8e292168dad32bac20",
+      "comparison": "identical to main before documentation",
+      "file_count": 20,
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 14207,
+          "git_blob_sha": "b62a92a6c27ba406f5ad96f8172d029ca301504b",
+          "mode": "100644"
+        },
+        {
+          "path": "SECURITY.md",
+          "bytes": 2452,
+          "git_blob_sha": "dbf96e2cd5b4e1fcfe5a047568c48df25331e061",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/brand-banner.svg",
+          "bytes": 1854,
+          "git_blob_sha": "c3b8be6e9037215fe4b399c168d3c6271bf67df2",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/brand-stacked.svg",
+          "bytes": 1858,
+          "git_blob_sha": "5dca3df23e2e2d10a8e1c832188f5a1c9fb7c6fa",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/kg-symbol.svg",
+          "bytes": 900,
+          "git_blob_sha": "faac652f196fe91cb5f9cd6c62d34ab12549ef76",
+          "mode": "100644"
+        },
+        {
+          "path": "backups/shield-2026-11-26/assets/brand-banner.svg",
+          "bytes": 1982,
+          "git_blob_sha": "1d75dea6a87fc68e14e85aaa4f60111e3aa6f2cd",
+          "mode": "100644"
+        },
+        {
+          "path": "backups/shield-2026-11-26/assets/kg-symbol.svg",
+          "bytes": 1028,
+          "git_blob_sha": "a1d1591123f94cf98f3c778b81abe749e9f89491",
+          "mode": "100644"
+        },
+        {
+          "path": "backups/shield-2026-11-26/index.html",
+          "bytes": 43308,
+          "git_blob_sha": "e0e13c9769c3f0595c306b2d010a5d562dfbe116",
+          "mode": "100644"
+        },
+        {
+          "path": "index.html",
+          "bytes": 55542,
+          "git_blob_sha": "be7c9b503beb08b51be76c17d5152383958f73d1",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/RELEASE-1.0.md",
+          "bytes": 1997,
+          "git_blob_sha": "38ff062623eb42b35bccad231c58f5a054eb01de",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/ROADMAP.md",
+          "bytes": 8931,
+          "git_blob_sha": "dc94434719d8ff7dea363bbb29aee1de4cafa217",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/cases.html",
+          "bytes": 34532,
+          "git_blob_sha": "f88c24ece84bb3e10181af72c604c0dec5425969",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/favicon.svg",
+          "bytes": 853,
+          "git_blob_sha": "052957aed64d865c5428c09342d8753ee0b87a1c",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/index.html",
+          "bytes": 65822,
+          "git_blob_sha": "bc8b0609509fb6eb6232fa2dbc20bffec8787550",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/lab-core.js",
+          "bytes": 4093,
+          "git_blob_sha": "a2ad6bb692154eaa883679f808dd328f8eddf08b",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/lab-ui.js",
+          "bytes": 5007,
+          "git_blob_sha": "13920b4aeffe9a92804936ed86ed1907566bc70f",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/lab.html",
+          "bytes": 20061,
+          "git_blob_sha": "f0bdcf33ab5819486819e79917abbb02a7a961cd",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/resume.html",
+          "bytes": 26520,
+          "git_blob_sha": "44bb8db3568954c712776db8e43769ebfe6c9913",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/shared.css",
+          "bytes": 6255,
+          "git_blob_sha": "937d68dbaadba5af01caa16cd345bd634cfa95a8",
+          "mode": "100644"
+        },
+        {
+          "path": "portfolio/shared.js",
+          "bytes": 481,
+          "git_blob_sha": "5d15035d1b4d3de14642658c9b87e10e906f37b6",
+          "mode": "100644"
+        }
+      ]
+    },
+    {
+      "repository": "Kgasil/genesis",
+      "backup_branch": "backup-graal-security-trust-1.1-2026-11-26",
+      "commit": "4c255490569cfadee6839d316f14dd7e67de7909",
+      "tree": "e85050020ff6c764c0c681b1a5232717566ac213",
+      "comparison": "identical to main before documentation",
+      "file_count": 17,
+      "files": [
+        {
+          "path": ".github/workflows/mini-validation.yml",
+          "bytes": 511,
+          "git_blob_sha": "f0792af81bc39a409266827057708e5c778c4a90",
+          "mode": "100644"
+        },
+        {
+          "path": "README.md",
+          "bytes": 18566,
+          "git_blob_sha": "04cc4db40f0377c0cee885fd8c701b8385045f43",
+          "mode": "100644"
+        },
+        {
+          "path": "SECURITY.md",
+          "bytes": 2790,
+          "git_blob_sha": "2aade438b9529ed813104dda4288e3a337f32fea",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/brand-banner.svg",
+          "bytes": 1263,
+          "git_blob_sha": "7922678b4c0c4c10ceeaae2824de90ae238f74cb",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/genesis-symbol.svg",
+          "bytes": 464,
+          "git_blob_sha": "32e60f6d12729ca0021beac07a68a7d1beea84b6",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/readme-cover.svg",
+          "bytes": 1594,
+          "git_blob_sha": "99df4e0a95fd993df3196df6c3cabfab36ef2b5e",
+          "mode": "100644"
+        },
+        {
+          "path": "biblioteca.html",
+          "bytes": 310215,
+          "git_blob_sha": "c9a64f5c111e773ac8b2a1124b78876fc086160c",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Genesis-Mini-v0.1.0-install.zip",
+          "bytes": 10651,
+          "git_blob_sha": "323c674cf71a0336f519e37446f5f1806e3a7f17",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/README.md",
+          "bytes": 2227,
+          "git_blob_sha": "cc75376ab213bad1fcfb2ce1034245ec528bb6ca",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/core.js",
+          "bytes": 2128,
+          "git_blob_sha": "ca1e9d8a3f739c35be158e5c3649901bff4c449c",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/manifest.json",
+          "bytes": 246,
+          "git_blob_sha": "6a560de7381bb18da3663a0e82237f3a8fc6ac9e",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/popup.html",
+          "bytes": 2328,
+          "git_blob_sha": "2945c5d0b7849bf4f13bae377cead6459d0a22b4",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/style.css",
+          "bytes": 1785,
+          "git_blob_sha": "aa9966aa9cfb8d3d3c5c70567adf0ba86f4c395d",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/ui.js",
+          "bytes": 3674,
+          "git_blob_sha": "893a58c1f2a2ab70f35c92bf933cfa1ecd447deb",
+          "mode": "100644"
+        },
+        {
+          "path": "index.html",
+          "bytes": 72328,
+          "git_blob_sha": "620c25df0132cd75437c72d13d9a68e1c5d4b52c",
+          "mode": "100644"
+        },
+        {
+          "path": "mini/index.html",
+          "bytes": 6657,
+          "git_blob_sha": "a43f89913a203b6a4bb0a2863bffc9c600b48182",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/mini.test.js",
+          "bytes": 1554,
+          "git_blob_sha": "353e520ca5e3ed815de98468ce40a7ba2e6bfd90",
+          "mode": "100644"
+        }
+      ]
+    },
+    {
+      "repository": "Kgasil/rubedo",
+      "backup_branch": "backup-graal-security-trust-1.1-2026-11-26",
+      "commit": "cf5274868c11e5b6cfb41a5ad1a1c49c2cf1fa45",
+      "tree": "f36160f45207a9ed46b4799259c33f94ded318ec",
+      "comparison": "identical to main before documentation",
+      "file_count": 56,
+      "files": [
+        {
+          "path": ".github/workflows/validate.yml",
+          "bytes": 939,
+          "git_blob_sha": "fd23455fd97d0bd48b123b196460083ba96d4d82",
+          "mode": "100644"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 3431,
+          "git_blob_sha": "221290f2f46b04896028fc48f1220f2dfdef4ca4",
+          "mode": "100644"
+        },
+        {
+          "path": "README.md",
+          "bytes": 12482,
+          "git_blob_sha": "8ae3e682ce0839ed5161e51b6607302adc1b7b72",
+          "mode": "100644"
+        },
+        {
+          "path": "SECURITY.md",
+          "bytes": 2452,
+          "git_blob_sha": "dbf96e2cd5b4e1fcfe5a047568c48df25331e061",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/demo.js",
+          "bytes": 1169,
+          "git_blob_sha": "e9d72707801acd9240654b3932d92dc680cb9217",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/kg-symbol.svg",
+          "bytes": 900,
+          "git_blob_sha": "faac652f196fe91cb5f9cd6c62d34ab12549ef76",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/readme-cover.svg",
+          "bytes": 1480,
+          "git_blob_sha": "c533face22f7162412034e33878093e19807b9bb",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/rubedo-symbol.svg",
+          "bytes": 752,
+          "git_blob_sha": "e0d33aa2a99299b2085e0f2f2621e1b9fec590d4",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/site.css",
+          "bytes": 5509,
+          "git_blob_sha": "cdee0a0bcf426e7e61f3a701dc99fa36ad253b46",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/site.js",
+          "bytes": 395,
+          "git_blob_sha": "ee6c782236c1e884275d494e0afb573ac254f34e",
+          "mode": "100644"
+        },
+        {
+          "path": "backups/shield-2026-11-26/assets/kg-symbol.svg",
+          "bytes": 1028,
+          "git_blob_sha": "a1d1591123f94cf98f3c778b81abe749e9f89491",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/ecossistema.md",
+          "bytes": 2479,
+          "git_blob_sha": "a6a6229e09463bcb86d6b5da1a4a54622ec4d0f0",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/experimentos.md",
+          "bytes": 3354,
+          "git_blob_sha": "2c7d1383d332fa81d3d7e3e70ae9454df6e9f4bc",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/modelos.md",
+          "bytes": 6109,
+          "git_blob_sha": "30f5b32882e36ebf67e12e190c201c813d8a9e80",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/planejamento.md",
+          "bytes": 4010,
+          "git_blob_sha": "cdff2b3786e088ce86924e9cd08614baddafb032",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/publicacao.md",
+          "bytes": 1110,
+          "git_blob_sha": "9479c93c8794be51a65a311611bce4a90b035ba8",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/research-workspace-v1.0.md",
+          "bytes": 944,
+          "git_blob_sha": "02f3608880b1a8895a16e7a3bbd9642c851cfc66",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/retomar.txt",
+          "bytes": 1192,
+          "git_blob_sha": "b8b968fe866abf8977110cb86a08763bc77e30a1",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/validacao-local.md",
+          "bytes": 2636,
+          "git_blob_sha": "2bed09bff5d4c22ce15a5c41f6cb8412cad6272a",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Rubedo-Mini-v0.3.0-install.zip",
+          "bytes": 21671,
+          "git_blob_sha": "9bfa52643f4a082292c8394224a60e1c1b14ad2e",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Rubedo-Mini-v1.0.0-install.zip",
+          "bytes": 32089,
+          "git_blob_sha": "6e2cc0c5ce73c1158ad0c2a87b210f72c700514e",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/SHA256SUMS.txt",
+          "bytes": 97,
+          "git_blob_sha": "63060f0be594407359451e6dd3f10e82ab87265f",
+          "mode": "100644"
+        },
+        {
+          "path": "examples/reference-results.json",
+          "bytes": 5153,
+          "git_blob_sha": "d352abb803430fadf6960551fc159c9df8bf7bcf",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/README.md",
+          "bytes": 2267,
+          "git_blob_sha": "5c9705aa38253d481b5d48dc4157a72053818c30",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/core.js",
+          "bytes": 2660,
+          "git_blob_sha": "059ae4451cccf03318d5093bce5ffcb31853fdf5",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/icons/icon-128.png",
+          "bytes": 9245,
+          "git_blob_sha": "dc4403dbfd3e8c4a1aef9158a09019c814f87153",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/icons/icon-16.png",
+          "bytes": 556,
+          "git_blob_sha": "d7c95a65b321548af11d1d31b858bba1c86e611b",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/icons/icon-32.png",
+          "bytes": 1482,
+          "git_blob_sha": "317d3562307b15e00af57e94c79ef558af504885",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/icons/icon-48.png",
+          "bytes": 2656,
+          "git_blob_sha": "04205db9cbbef9511371b557a1e59263f3e8f12e",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/manifest.json",
+          "bytes": 568,
+          "git_blob_sha": "934ea9716aa488db3757ff125e61b8a847e7f1f3",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/popup.html",
+          "bytes": 5554,
+          "git_blob_sha": "4b22ed9d14fed26f9e4cfb7bff201c24b0b40a6c",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/style.css",
+          "bytes": 2156,
+          "git_blob_sha": "0c886bbdc69c42162701e01796a82ef6b8db9bcd",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/ui.js",
+          "bytes": 6280,
+          "git_blob_sha": "238cb7bf67bf7df5563e3a2e0d8b2e6d962411bc",
+          "mode": "100644"
+        },
+        {
+          "path": "index.html",
+          "bytes": 41397,
+          "git_blob_sha": "b12ac53cc7c82492764fc32c8ce12b5507d9b579",
+          "mode": "100644"
+        },
+        {
+          "path": "mini/index.html",
+          "bytes": 10008,
+          "git_blob_sha": "fc195c4f5e2260ada5959a6296999bb1f4a91240",
+          "mode": "100644"
+        },
+        {
+          "path": "mini/scenario.js",
+          "bytes": 902,
+          "git_blob_sha": "074ee474c4959d9b897158364c0f0f0c89155a36",
+          "mode": "100644"
+        },
+        {
+          "path": "research/advanced-ui.js",
+          "bytes": 6192,
+          "git_blob_sha": "5b57cc0c42df680bc7f7658af8c8c297bacd9a4a",
+          "mode": "100644"
+        },
+        {
+          "path": "research/advanced.js",
+          "bytes": 4206,
+          "git_blob_sha": "5f0f9d45871974fcc5fed553c11a1a242f6b1d52",
+          "mode": "100644"
+        },
+        {
+          "path": "research/core.js",
+          "bytes": 1993,
+          "git_blob_sha": "4607adb5609d005b2dad579b23619551c1b6b565",
+          "mode": "100644"
+        },
+        {
+          "path": "research/index.html",
+          "bytes": 29860,
+          "git_blob_sha": "31a66b02762c0c3f77aa6f721ef19423e0609759",
+          "mode": "100644"
+        },
+        {
+          "path": "research/monte.js",
+          "bytes": 1358,
+          "git_blob_sha": "0fead0b4af15a441650351e78cc5a6fb396c38d0",
+          "mode": "100644"
+        },
+        {
+          "path": "research/precision.js",
+          "bytes": 1191,
+          "git_blob_sha": "3524f174d75e25bc79ccfb9f2941132d7facfbd2",
+          "mode": "100644"
+        },
+        {
+          "path": "research/statistics.js",
+          "bytes": 2617,
+          "git_blob_sha": "204eb2ba7fc8d48e00c376cf6b3943c4cdc1d100",
+          "mode": "100644"
+        },
+        {
+          "path": "research/studio.js",
+          "bytes": 2179,
+          "git_blob_sha": "9814c67a39d794a3051fe29ccbeff348a091d441",
+          "mode": "100644"
+        },
+        {
+          "path": "research/ui.js",
+          "bytes": 5541,
+          "git_blob_sha": "f625583f7d9b7ded5ae90628548f0bca705f7cba",
+          "mode": "100644"
+        },
+        {
+          "path": "scripts/package_extension.py",
+          "bytes": 963,
+          "git_blob_sha": "4124f22d821edf21aa75f1ad98600161de9de09e",
+          "mode": "100644"
+        },
+        {
+          "path": "scripts/reference_results.js",
+          "bytes": 1444,
+          "git_blob_sha": "aae0c3a4817593808fc8eb61f7ba8397d1f43c5a",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/advanced.test.js",
+          "bytes": 2149,
+          "git_blob_sha": "7293bfae40a44aa11323285faf20876744b9dff4",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/browser_smoke.py",
+          "bytes": 9148,
+          "git_blob_sha": "a8ffaced3bf5e6aaf1c1553ff84a7a3606e3e726",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/check_package.py",
+          "bytes": 2016,
+          "git_blob_sha": "74fe5e66d62f43c5c2d5bcfa026db2405da73c3b",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/mini.test.js",
+          "bytes": 2452,
+          "git_blob_sha": "670bdc7e8359986378e062e3752d7f380fc963b3",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/monte.test.js",
+          "bytes": 442,
+          "git_blob_sha": "d3a5418ad0bb55677f1f3f1c349abcf7db8aaad9",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/precision.test.js",
+          "bytes": 360,
+          "git_blob_sha": "16a3ebb7e5881195ca8f63126b12b43c913e9c0b",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/research.test.js",
+          "bytes": 2113,
+          "git_blob_sha": "e25e4c139570c7f15267d09e2af648e3f446e3a2",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/scenario.test.js",
+          "bytes": 536,
+          "git_blob_sha": "e459a861a95c80e697b584aac097a6e0193d8f59",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/statistics.test.js",
+          "bytes": 738,
+          "git_blob_sha": "6460ef3fbcaca72c5d2a49871169ab14051cd34b",
+          "mode": "100644"
+        }
+      ]
+    },
+    {
+      "repository": "Kgasil/argus",
+      "backup_branch": "backup-graal-security-trust-1.1-2026-11-26",
+      "commit": "3c498bc9d776fe8c0919e5d003ff23ac22dee0aa",
+      "tree": "1b1b15f712967df8fbebe6a07785b3099ebea6a1",
+      "comparison": "identical to main before documentation",
+      "file_count": 15,
+      "files": [
+        {
+          "path": ".github/workflows/mini-validation.yml",
+          "bytes": 509,
+          "git_blob_sha": "42aa2327620fe54f9fb9f384d0607f047e9e4857",
+          "mode": "100644"
+        },
+        {
+          "path": "README.md",
+          "bytes": 15178,
+          "git_blob_sha": "0f018107f5754ea99c9b9278aa59820a6969ed23",
+          "mode": "100644"
+        },
+        {
+          "path": "SECURITY.md",
+          "bytes": 2452,
+          "git_blob_sha": "dbf96e2cd5b4e1fcfe5a047568c48df25331e061",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/brand-banner.svg",
+          "bytes": 1193,
+          "git_blob_sha": "ab1ed194f12c2b20ac9820ef2a38c0b5c3f7b077",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/readme-cover.svg",
+          "bytes": 1666,
+          "git_blob_sha": "3b9f4a64784249c668de1b4e01fdcab5e7c6ea11",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Argus-Mini-v0.1.0-install.zip",
+          "bytes": 10311,
+          "git_blob_sha": "af5ec6c2df362ac3018cd00afd60b1dc87ccfdc1",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/README.md",
+          "bytes": 2230,
+          "git_blob_sha": "c78f8e0eb6c7cf5a947f64adbcc70a1375299013",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/core.js",
+          "bytes": 2767,
+          "git_blob_sha": "9f858f5f15ad78b978698ee7bdb23e78cc6b1016",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/manifest.json",
+          "bytes": 271,
+          "git_blob_sha": "1fc84ac1661625a987d89188af8f316e83d2d711",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/popup.html",
+          "bytes": 1687,
+          "git_blob_sha": "9ba3e6300ca9e79274ba0d1b8007e75ccb251202",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/style.css",
+          "bytes": 1752,
+          "git_blob_sha": "710818d66e9b32ead80e428a022d896e5f0fe7d2",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/ui.js",
+          "bytes": 3344,
+          "git_blob_sha": "a9d7e5ce995c1b1cec366c3cbed3c202b16fc15d",
+          "mode": "100644"
+        },
+        {
+          "path": "index.html",
+          "bytes": 374136,
+          "git_blob_sha": "34b6b1a2e9844f818fa70b26438f40c5179276be",
+          "mode": "100644"
+        },
+        {
+          "path": "mini/index.html",
+          "bytes": 6347,
+          "git_blob_sha": "d92cad4183a4852c201c4c9e30c88b315ff07847",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/mini.test.js",
+          "bytes": 2141,
+          "git_blob_sha": "b4974cf37d31200b3c8ec122533916d6708ac8d0",
+          "mode": "100644"
+        }
+      ]
+    },
+    {
+      "repository": "Kgasil/aeris",
+      "backup_branch": "backup-graal-security-trust-1.1-2026-11-26",
+      "commit": "35fa603bf110f2d23d98012b06547d33c9c7a2de",
+      "tree": "8d3b4f8f832b859d128a6a74dec145fe48cb3d51",
+      "comparison": "identical to main before documentation",
+      "file_count": 171,
+      "files": [
+        {
+          "path": ".gitattributes",
+          "bytes": 51,
+          "git_blob_sha": "abc9251b0852dcdea855d5a42723b46e5adfc56a",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-audio-ocr-validation.yml",
+          "bytes": 4365,
+          "git_blob_sha": "a5b7b3325e2b678288b951423b4be63925fd7d94",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-business.yml",
+          "bytes": 9325,
+          "git_blob_sha": "7d23aaa16d80dc2ec6595039e86c03537fee4477",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-communication.yml",
+          "bytes": 7617,
+          "git_blob_sha": "1facf10136f5ae8ea6f6f20005c3eb279167fafc",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-core.yml",
+          "bytes": 4893,
+          "git_blob_sha": "dd5098aea6763362052a34c7d63b4f2600a1580b",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-files.yml",
+          "bytes": 9812,
+          "git_blob_sha": "9311ea7f4e7d3615e3f5533a5252a701eaba5764",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-integrated-candidate.yml",
+          "bytes": 41467,
+          "git_blob_sha": "bb69d21268d86dc2000facdb677e36f0fbe50939",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-intelligence.yml",
+          "bytes": 8821,
+          "git_blob_sha": "9c0a467190708701b58fec220ec3ee5ea2d8d7dd",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-learning.yml",
+          "bytes": 8118,
+          "git_blob_sha": "ab67fee9923c73b4a2d6edc55de8652710842f03",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-memory.yml",
+          "bytes": 6141,
+          "git_blob_sha": "7f8ef80230e638da6239806a960c7a966f60b6f8",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-productivity.yml",
+          "bytes": 5646,
+          "git_blob_sha": "651915a4296a3dc184568babf7683c2284ed1169",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-quick-actions.yml",
+          "bytes": 6975,
+          "git_blob_sha": "eff99814f29aeeff498d684aa87db5dca9085c5a",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-functional-security.yml",
+          "bytes": 10438,
+          "git_blob_sha": "f7729d2c0b1ba693f8a777f9bb012156e902aa99",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-integrated-candidate.yml",
+          "bytes": 28063,
+          "git_blob_sha": "3f3fd49fc866d6c019662ffd9e3f9417e69cfe73",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-local-ai-validation.yml",
+          "bytes": 5426,
+          "git_blob_sha": "19d873e65af45678eb0de214b02be3722e977b8b",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-performance-accessibility.yml",
+          "bytes": 6475,
+          "git_blob_sha": "bfb0c9f1b96f394b399046463f29b892c9e48cf8",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc3-distribution-review.yml",
+          "bytes": 7810,
+          "git_blob_sha": "67b1ed506d784dee36142aa571ec0f0311fc5430",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc3-final-review.yml",
+          "bytes": 4673,
+          "git_blob_sha": "163dcc7b5476bfe878b9d06df087e2941a1dd1c1",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc4-distribution-review.yml",
+          "bytes": 5507,
+          "git_blob_sha": "d94c379878563e5dd1f3dcee301e6f4720d1dccb",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc4-final-review.yml",
+          "bytes": 4673,
+          "git_blob_sha": "f350695e8466582cb061a413ba38fc6ea4388945",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc4-upgrade-review.yml",
+          "bytes": 3392,
+          "git_blob_sha": "c83ca99b5bda2d2b7339c0cfc210bf46d43ab95e",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-defender-diagnostic.yml",
+          "bytes": 10439,
+          "git_blob_sha": "a425ccde4b333d9f12fef3749addef886f8a9bac",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-defender-review-2025.yml",
+          "bytes": 9653,
+          "git_blob_sha": "c5c2b7b38bb1e4842d44177aaf4f99fc842bd257",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-defender-review.yml",
+          "bytes": 9640,
+          "git_blob_sha": "8054bc387231bd7a3df8f568a94fa911c31632c8",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-distribution-review.yml",
+          "bytes": 5507,
+          "git_blob_sha": "3b7ea811896711c88eb88e697b07bc6cab360cce",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-persist-source.yml",
+          "bytes": 5599,
+          "git_blob_sha": "36a5d17fa6874a99f955634b1bf3322eb202b91d",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-publish-defender-result.yml",
+          "bytes": 4599,
+          "git_blob_sha": "e277c6bbb4f45558ba3f5194bcbfb119dd3f3bc4",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-stage-download.yml",
+          "bytes": 6467,
+          "git_blob_sha": "0c48a9d84afbb45268da7940864c1e10e26a736a",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-terms-installer.yml",
+          "bytes": 10456,
+          "git_blob_sha": "09774e6bafc80fea2988b8b084f580d267bc95ed",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-terms1-public-preview.yml",
+          "bytes": 7522,
+          "git_blob_sha": "433203a1f9138312bd6c7cd60e0c3e565402a1f4",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-terms1-scan.yml",
+          "bytes": 5971,
+          "git_blob_sha": "9a3f7d056717aed83cf751bbce9a146e157b135b",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-rc5-upgrade-review.yml",
+          "bytes": 3392,
+          "git_blob_sha": "d4970374590aea779efbbed1a1ea6a3518ba92b0",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-reduced-runtime-candidate.yml",
+          "bytes": 31751,
+          "git_blob_sha": "a543519b88ebeb3d378705cf8b05de2a2b98ce74",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-windows-installer-preview.yml",
+          "bytes": 11163,
+          "git_blob_sha": "8eab3b07c27f2ff74a3879690d11a89800266eb9",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-windows-native-security.yml",
+          "bytes": 3297,
+          "git_blob_sha": "c3cc3aaaa0fedd9ea205dcac0afc6e510d4263e6",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-windows-preview.yml",
+          "bytes": 4357,
+          "git_blob_sha": "e53962f641b9dc4e8e28573db24f827babf5ab0b",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-windows-security-candidate.yml",
+          "bytes": 23862,
+          "git_blob_sha": "97170023c4a4e8953a5744c4e546d60f17aa6dc9",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/aeris-windows-upgrade-recovery.yml",
+          "bytes": 21997,
+          "git_blob_sha": "0d3ab95caf4ee306dfedc87495449e53b174abf1",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/publish-aeris-rc1.yml",
+          "bytes": 3037,
+          "git_blob_sha": "a4009722c1922d45c4e628787b54a494d5ccec4f",
+          "mode": "100644"
+        },
+        {
+          "path": "README.md",
+          "bytes": 27419,
+          "git_blob_sha": "d21fc86bdcdbbeb70a5333ede5dc73dea9e5562b",
+          "mode": "100644"
+        },
+        {
+          "path": "ROADMAP-DESKTOP.md",
+          "bytes": 33474,
+          "git_blob_sha": "6c2c83328916048704cf7c585d00ed581ceee757",
+          "mode": "100644"
+        },
+        {
+          "path": "SECURITY.md",
+          "bytes": 2452,
+          "git_blob_sha": "dbf96e2cd5b4e1fcfe5a047568c48df25331e061",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/aeris-symbol.svg",
+          "bytes": 250,
+          "git_blob_sha": "034d7f3f672c2a61722bf758805f0cc88ced1f71",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/brand-banner.svg",
+          "bytes": 1076,
+          "git_blob_sha": "a29dd37cea2d263049f3c72954f5d0e5db50ebb8",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/readme-cover.svg",
+          "bytes": 1380,
+          "git_blob_sha": "84bcd5b022808fd83f4e224b6d86492824b298b8",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/web-lab.js",
+          "bytes": 3461,
+          "git_blob_sha": "907db5d319ad51174e2a284d7a48c7a54e5ad16c",
+          "mode": "100644"
+        },
+        {
+          "path": "demo.html",
+          "bytes": 9916,
+          "git_blob_sha": "99f9deaa79ca9f8693f890260f231c21e527ebfa",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Aeris-Desktop-v1.0.0rc1-codigo-fonte.zip",
+          "bytes": 575994,
+          "git_blob_sha": "0bb560e2226b580e9e8cbbfdbcc18dfbad09a33e",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Aeris-Desktop-v1.0.0rc1-fix1-codigo-fonte.zip",
+          "bytes": 581228,
+          "git_blob_sha": "c9fbb0cd9d3833078e8c0345b35120759a1aa6ed",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Aeris-Extension-v1.0.0-SHA256SUMS.txt",
+          "bytes": 203,
+          "git_blob_sha": "540130acd7acd7641b4c8abd307d0b7ac24e4a3e",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Aeris-Extension-v1.0.0-completa.zip",
+          "bytes": 53997,
+          "git_blob_sha": "ce14fbf5351d32ed191fa4177849897527ccbc5b",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/Aeris-Extension-v1.0.0-install.zip",
+          "bytes": 31883,
+          "git_blob_sha": "e49d7a8990b8ad17386f1d0afcd2e2427b49778c",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/SHA256SUMS.txt",
+          "bytes": 219,
+          "git_blob_sha": "5ab92e0fe183e68576a78e4dbbdba9279355ba07",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/audio-ocr-validation-evidence.json",
+          "bytes": 1529,
+          "git_blob_sha": "9f7b7ea958cd964098b0e601df938005d90d15c5",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-business-evidence.json",
+          "bytes": 718,
+          "git_blob_sha": "a8918ab673c4ada49d30bc29d3f3f9aeebabcf9f",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-communication-evidence.json",
+          "bytes": 719,
+          "git_blob_sha": "f10ce2e8b791326773856fdc8ecf1167947789f9",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-core-evidence.json",
+          "bytes": 784,
+          "git_blob_sha": "cb491b29ed1fc45ef96014acc59ac0575fa319d0",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-files-evidence.json",
+          "bytes": 706,
+          "git_blob_sha": "103b04b7d1c9f1a580ce985eb3dfcd560a803dde",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-intelligence-evidence.json",
+          "bytes": 704,
+          "git_blob_sha": "827baf4bd77bf435c4ea8a3997383d02f818ee19",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-learning-evidence.json",
+          "bytes": 708,
+          "git_blob_sha": "2c6ecd14345bbbf0494a13e03816a19a7507ee0e",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-memory-evidence.json",
+          "bytes": 714,
+          "git_blob_sha": "7e4868cc2f98ad8530032935f044515116337376",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-productivity-evidence.json",
+          "bytes": 889,
+          "git_blob_sha": "e309778d8cdbf9fd01c8f2b3c5f4009f6806a4ff",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-quick-actions-evidence.json",
+          "bytes": 759,
+          "git_blob_sha": "1c4fc1b3e68545e6aa7bb7a8e8fef884410d16c7",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-rc5-integrated-evidence.json",
+          "bytes": 4336,
+          "git_blob_sha": "8688101f053e4468568b59695284b0d956ebd037",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-rc5-source-evidence.json",
+          "bytes": 1048,
+          "git_blob_sha": "787067d49c32cdea6bbe644db42591745972c4ab",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/functional-security-evidence.json",
+          "bytes": 812,
+          "git_blob_sha": "6156fb5a80787e778007411932d87448ef00579e",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/local-ai-validation-evidence.json",
+          "bytes": 1217,
+          "git_blob_sha": "60280b1cf5006d333f1148df9bc8d8065db6614d",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/performance-accessibility-evidence.json",
+          "bytes": 1972,
+          "git_blob_sha": "d9a88a1215475cd320397694db51f4662588353e",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/rc3-distribution-review-evidence.json",
+          "bytes": 1447,
+          "git_blob_sha": "b657c606985322d35fcc7fc4d0f07ecefdd23227",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/rc3-final-review-evidence.json",
+          "bytes": 1421,
+          "git_blob_sha": "9366b43fc4474ff60f577ce936b6c8abbb838491",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/rc3-rc4-upgrade-evidence.json",
+          "bytes": 1250,
+          "git_blob_sha": "5ba402af38039530988b9ece1f6747c466164733",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/rc4-clamav-review-evidence.json",
+          "bytes": 587,
+          "git_blob_sha": "cdf73a7e8a5df94ffc16e89886dc3ca0012740e8",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/rc4-final-review-evidence.json",
+          "bytes": 1373,
+          "git_blob_sha": "1bb8e347c7b38c27b99cce61d7c87d1c75174491",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/rc5-defender-diagnostic-evidence.json",
+          "bytes": 2118,
+          "git_blob_sha": "2565b50b6d66001dbaf47eb2e4e02ab837aa13c2",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/rc5-terms1-installer-evidence.json",
+          "bytes": 2584,
+          "git_blob_sha": "e43bf1a64d43418dc42a11ac450f6fc01b7aa945",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-inno674-evidence.json",
+          "bytes": 2516,
+          "git_blob_sha": "e91e4d9c9e4166af4b0bc3aaaa50351b74e45dfc",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-inno674-notices-evidence.json",
+          "bytes": 2083,
+          "git_blob_sha": "e0047e173106a082d3ed8dcc285a3b118d531fc0",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-integrated-rc3-evidence.json",
+          "bytes": 2998,
+          "git_blob_sha": "7bfbd21c100159625214bdab2aabbb3a5ac7facc",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-native-security-evidence.json",
+          "bytes": 881,
+          "git_blob_sha": "2bbd4ce1428c5870e09bbfc56d7ff0c064eba3a3",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-preview-evidence.json",
+          "bytes": 1239,
+          "git_blob_sha": "cfa161018d05ba76975123eecb7eaf4340c60b9c",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-rc2-upgrade-evidence.json",
+          "bytes": 1872,
+          "git_blob_sha": "3b74d0dc7353bd4b51e83a5640d864513dbcfbeb",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-rc4-reduced-runtime-evidence.json",
+          "bytes": 2717,
+          "git_blob_sha": "b567b275b197321fd0a7a7225c49b48b9857660c",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-security-candidate-evidence.json",
+          "bytes": 2634,
+          "git_blob_sha": "c3ad846b954e82a33dbe11ac795f7d9e9966373d",
+          "mode": "100644"
+        },
+        {
+          "path": "downloads/windows-simplified-preview-evidence.json",
+          "bytes": 1927,
+          "git_blob_sha": "ee91657bdddb90c3e3f5add5a3198c7a249c2475",
+          "mode": "100644"
+        },
+        {
+          "path": "extension-preview.html",
+          "bytes": 14552,
+          "git_blob_sha": "e55a05d06b160574c43ed8fbbe3de0a50d7b4bc4",
+          "mode": "100644"
+        },
+        {
+          "path": "extension-validation.html",
+          "bytes": 12588,
+          "git_blob_sha": "25c823994a200fd55219e615beaef6db404d875d",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/README.md",
+          "bytes": 4001,
+          "git_blob_sha": "3e4052eb75353f1b4e570f10cdde445351e49444",
+          "mode": "100644"
+        },
+        {
+          "path": "index.html",
+          "bytes": 56073,
+          "git_blob_sha": "7922eecd13f2b34516ed962febb95a5bfe88d9de",
+          "mode": "100644"
+        },
+        {
+          "path": "release-status.html",
+          "bytes": 22666,
+          "git_blob_sha": "f622ce7a5c286c0cae6054221e83905a78255da7",
+          "mode": "100644"
+        },
+        {
+          "path": "release/desktop-1.0.0-preparation.md",
+          "bytes": 8040,
+          "git_blob_sha": "4b35c34ed61daa7e08121843e51c90e5307c7335",
+          "mode": "100644"
+        },
+        {
+          "path": "release/desktop-distribution-decisions.md",
+          "bytes": 4819,
+          "git_blob_sha": "aa745ef97c72ea7679091e3c52f63213c90a464b",
+          "mode": "100644"
+        },
+        {
+          "path": "release/extension-1.0.0-notes.md",
+          "bytes": 2067,
+          "git_blob_sha": "f6681efb55f62e6263ba0b982be048a906dacd30",
+          "mode": "100644"
+        },
+        {
+          "path": "release/owner-validation-guide.md",
+          "bytes": 7124,
+          "git_blob_sha": "666948358030c6221c14c4be5c2e42007bde5a81",
+          "mode": "100644"
+        },
+        {
+          "path": "release/rc1-notes.md",
+          "bytes": 2406,
+          "git_blob_sha": "c09c46a5ba79536633708ad69986e76ce125ca41",
+          "mode": "100644"
+        },
+        {
+          "path": "release/rc5-distribution-handoff.md",
+          "bytes": 10210,
+          "git_blob_sha": "485e21abf8892b08d7a233414c6c1810c7a193ef",
+          "mode": "100644"
+        },
+        {
+          "path": "release/rc5-terms1-validation.md",
+          "bytes": 3970,
+          "git_blob_sha": "def6b943e737bdf276f51b69e8d238871b8cf124",
+          "mode": "100644"
+        },
+        {
+          "path": "release/zero-cost-plan.md",
+          "bytes": 6026,
+          "git_blob_sha": "52f4ffb507e2ee11cccc2753716059eeb86c86c7",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/audio-ocr/README.md",
+          "bytes": 1792,
+          "git_blob_sha": "655898578f0edb3502636cf7b0a7209b8a8ea4b1",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/audio-ocr/test-speech-wave.ps1",
+          "bytes": 2187,
+          "git_blob_sha": "e4b761360aef7b1e29d24d55e52b96a887fb2ce9",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/audit-desktop-bundle.py",
+          "bytes": 2305,
+          "git_blob_sha": "f4982bed8c4d3e2d8c0aeae27ad8ea4bf29e2bfc",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/desktop-distribution-audit.md",
+          "bytes": 11459,
+          "git_blob_sha": "f6677dfe3e5c97ea8584f9494e6bfb834a82b990",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/desktop-release-checklist.md",
+          "bytes": 4468,
+          "git_blob_sha": "03795248a0f83228d19051dc6858f234a0ec80dc",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/desktop-trust-review.md",
+          "bytes": 17837,
+          "git_blob_sha": "d64d718d486c1d70e45f3c88c7db284ebb9c79d5",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/ROADMAP.md",
+          "bytes": 26833,
+          "git_blob_sha": "f59fd0491cd2b6a2cdb7bedcb9c6c0efa2a0b187",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-business.py",
+          "bytes": 12690,
+          "git_blob_sha": "c87ed156e4cb2671b2f497384030ff8a79ff6a56",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-communication.py",
+          "bytes": 14179,
+          "git_blob_sha": "a9c2723ff823692c16f1219d762ebc327f3b62cc",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-core.py",
+          "bytes": 10010,
+          "git_blob_sha": "e3446b7cfaf77a179c2e8d686c613660feb02123",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-files.py",
+          "bytes": 15674,
+          "git_blob_sha": "54d4884713497dc142d875e2ab308dd1b7958711",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-intelligence.py",
+          "bytes": 17881,
+          "git_blob_sha": "500c55a1a3fc84360ee31589768042e287d122a9",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-learning.py",
+          "bytes": 14939,
+          "git_blob_sha": "c03338ac21eece787f14d342fb17ab856e00c109",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-memory.py",
+          "bytes": 12016,
+          "git_blob_sha": "6444e158a8fe577e92a7cd83a519ee94218592c7",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-productivity.py",
+          "bytes": 8944,
+          "git_blob_sha": "1882478e972202cecb7af21470901b9d272ce239",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-quick-actions.py",
+          "bytes": 12271,
+          "git_blob_sha": "1589163e9eadbb69593744f540dca1dbf678dad7",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/apply-security.py",
+          "bytes": 10803,
+          "git_blob_sha": "c84baf61aea81a9fc3f8a2b530f6640c4a8e1532",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/integrate-source.py",
+          "bytes": 4055,
+          "git_blob_sha": "4607feed79fbd0853a3b458ce638f3042dd69c47",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/security-source-hashes.json",
+          "bytes": 5039,
+          "git_blob_sha": "d917648e9606274f1452734a40e4a61dc04d5f95",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_business_refinement.py",
+          "bytes": 6073,
+          "git_blob_sha": "5762171d467023f4baec82e90f9eeb55d232e599",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_communication_refinement.py",
+          "bytes": 5747,
+          "git_blob_sha": "582e3b9158baadea449d21bb60509dd584e80114",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_core_refinement.py",
+          "bytes": 5190,
+          "git_blob_sha": "66023a26c6f536c73275d3a9b21c9cf966fa616e",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_files_refinement.py",
+          "bytes": 7015,
+          "git_blob_sha": "3d57d6337e7da8ca755290abf1f9cc150bed0ec7",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_intelligence_refinement.py",
+          "bytes": 5970,
+          "git_blob_sha": "ad651fe68edaa59338d857aa0b1d9b2d2ff85a32",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_learning_refinement.py",
+          "bytes": 5679,
+          "git_blob_sha": "8c6c975e6f9de464b8a7e2d4cb8eb224515d9ac7",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_memory_refinement.py",
+          "bytes": 5286,
+          "git_blob_sha": "b518aa797e211fb533e6a2c8b23b9ffd3ee0f006",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_productivity_refinement.py",
+          "bytes": 4537,
+          "git_blob_sha": "bc4f53eab4614beb75733a48c25b65ed8dce4018",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_quick_actions_refinement.py",
+          "bytes": 4823,
+          "git_blob_sha": "d311e19ff9efed9da18418d3f2ee4616e008e5da",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/functional/test_security_refinement.py",
+          "bytes": 7030,
+          "git_blob_sha": "e55eacda07bffbb637d7093e3c474a29c3c3bfc1",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/Aeris-rc5-terms1.iss",
+          "bytes": 2816,
+          "git_blob_sha": "8886ce6890e2028b04b286c7d74d0d921cbc7a5f",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/Aeris.iss",
+          "bytes": 2494,
+          "git_blob_sha": "cf482aaea2e8499a4aad63535cee59550f9b6db3",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/RC5-TERMS-REVIEW.txt",
+          "bytes": 3144,
+          "git_blob_sha": "2d1d0a78f4efbc1b8027ebbeba2dd78c2605facd",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/README.md",
+          "bytes": 2448,
+          "git_blob_sha": "be3a35563e2f2ea8abd998fd57dcbff21f3a2528",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/SCAN.md",
+          "bytes": 2993,
+          "git_blob_sha": "8da0ce5124f61cd21ab1526d00ec816c890bedfe",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/UPGRADE-RECOVERY.md",
+          "bytes": 4494,
+          "git_blob_sha": "28e5b66a5ceb4ab30188d98310a5643b6ae24ba3",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/scan-candidate.ps1",
+          "bytes": 4335,
+          "git_blob_sha": "af764efa9504b077af08b450c7bdd9a86827626f",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/test-rc3-rc4-upgrade.ps1",
+          "bytes": 8849,
+          "git_blob_sha": "05d05a2c10fb583854d473bb18ccc21da187e4b8",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/test-rc4-rc5-upgrade.ps1",
+          "bytes": 8949,
+          "git_blob_sha": "bbca36b8fbda4c09594c0bfb7fbbf652f015c306",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/installer/test-upgrade-recovery.ps1",
+          "bytes": 7457,
+          "git_blob_sha": "3466d2d35335c2c858190471f9deca96f20e9790",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/integrated-review.md",
+          "bytes": 4200,
+          "git_blob_sha": "46233dcef87de3a85c03161f4701fbbbdd05ba8a",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/local-ai/README.md",
+          "bytes": 2407,
+          "git_blob_sha": "eb91ec62935093e15b76856ca77d1d921faeda42",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/local-ai/real_inference.py",
+          "bytes": 1974,
+          "git_blob_sha": "31dbe63cde2b6af1a0d455fe8e5e1f0a9533b6bb",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/local-ai/test_loopback.py",
+          "bytes": 4721,
+          "git_blob_sha": "2aea8ce6cd5c5473cac870f5b26d438121473b0f",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/native-security/README.md",
+          "bytes": 2331,
+          "git_blob_sha": "92655d2bbbfc748d70f9a27dd7975c116ef45eb4",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/native-security/test_native_security.py",
+          "bytes": 6520,
+          "git_blob_sha": "8b14083b040bbd5f190d9cae427beb4cf786d5c3",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/README.md",
+          "bytes": 2264,
+          "git_blob_sha": "dab10725fe7444e2b00aeaf25162058fef3c44b5",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/extract-rc2.py",
+          "bytes": 2399,
+          "git_blob_sha": "be9e1658fefdc65f254cf1843762ac141abdec47",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/extract-rc3.py",
+          "bytes": 2399,
+          "git_blob_sha": "c20b0d55bb6633f5d10e4620f4a4e3b11fa8955a",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/extract-rc4.py",
+          "bytes": 2399,
+          "git_blob_sha": "81cd813e19808e5186c2fd32b4067e2b76db303f",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/extract-rc5.py",
+          "bytes": 2399,
+          "git_blob_sha": "f44def71fa11ec8b9aa5addfd9842d87531e1572",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/measure-rc2.ps1",
+          "bytes": 4179,
+          "git_blob_sha": "0f89c5649ce99e11478e484cc6bbf5e923eb4b60",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/measure-rc3.ps1",
+          "bytes": 4179,
+          "git_blob_sha": "89565fcec67a0897f7230ffced8cc31e5ed0b9bf",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/measure-rc4.ps1",
+          "bytes": 4179,
+          "git_blob_sha": "bf9377e4200cb274b7e29b76310d296f73825adc",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/performance/measure-rc5.ps1",
+          "bytes": 4179,
+          "git_blob_sha": "3241e26b12ff7eee4fbc58275851294e2f6eb058",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/release/compare-microsoft-redist.ps1",
+          "bytes": 2788,
+          "git_blob_sha": "4fc768e8b4490a769ebe2ab959abd25153cd0bd0",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/test_verify.py",
+          "bytes": 4358,
+          "git_blob_sha": "6ffd2469be8a6bec2645e57e76441239b6e71368",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/OpenSSL-3.5.9.txt",
+          "bytes": 10175,
+          "git_blob_sha": "49cc83d2ee29d13453188217f0e4edd70c7f842f",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/README.md",
+          "bytes": 2781,
+          "git_blob_sha": "3ed7b7bc09bb233a4c3203d7f0bee0d5d2a90c38",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/Unicode-16.0.0.txt",
+          "bytes": 2033,
+          "git_blob_sha": "d7e7973c2fd6f2586a8999a69dc21e39af26be0f",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/XZ-5.2.5-COPYING.LGPLv2.1.txt",
+          "bytes": 26530,
+          "git_blob_sha": "4362b49151d7b34ef83b3067a8f9c9f877d72a0e",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/XZ-5.2.5.txt",
+          "bytes": 2775,
+          "git_blob_sha": "20e60d5b2427334e1fec6701e7c5ad0da0bc8a5d",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/Zstandard-1.5.7.txt",
+          "bytes": 1549,
+          "git_blob_sha": "75800288cc243f164b9d130f125e2ffae28f8e39",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/bzip2-1.0.8.txt",
+          "bytes": 1896,
+          "git_blob_sha": "81a37eab7a5be1a34456f38adb74928cc9073e9b",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/libexpat.txt",
+          "bytes": 1144,
+          "git_blob_sha": "c6d184a8aae845ce7bf4d195b214d8244d457f8f",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/libffi-3.4.4.txt",
+          "bytes": 1132,
+          "git_blob_sha": "75d1bce11f9118ccfd96b24a2e49af078da1b469",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/libtommath-tcl-9.0.4.txt",
+          "bytes": 1257,
+          "git_blob_sha": "b23b3c8672b1937923c7f800b5f1d0ddd1c6cc28",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/mpdecimal-4.0.0.txt",
+          "bytes": 1285,
+          "git_blob_sha": "a78c3f6abf749f384a54d1fad0a2800457cfead7",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/zlib-1.3.2.txt",
+          "bytes": 1002,
+          "git_blob_sha": "b7a69d058e616651eae27b3f90c0b7fd36c099b2",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/third-party-notices/zlib-ng-2.2.4.txt",
+          "bytes": 867,
+          "git_blob_sha": "e866d7ac18620a2229727e3a0512ab688176cbd8",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/verify-ci-artifact.py",
+          "bytes": 3981,
+          "git_blob_sha": "4cb6fe7da25998599a0b56c16faf6faecb2fbba4",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/windows-client/README.md",
+          "bytes": 4830,
+          "git_blob_sha": "0c2747431ff59a65fabe37c979958b7845524ea8",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/windows-client/collect-evidence.ps1",
+          "bytes": 5931,
+          "git_blob_sha": "1471ec32e7db0b20b9e6606dab727807f5cc2adb",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/windows-client/result-template.json",
+          "bytes": 1497,
+          "git_blob_sha": "e97c43e9cddcc6fcda332fbec4f65c53a4aaf924",
+          "mode": "100644"
+        },
+        {
+          "path": "validation/windows-fix1.py",
+          "bytes": 6404,
+          "git_blob_sha": "8e93ba2e1fdf26da4cd6f72aca3882a3a8a5023a",
+          "mode": "100644"
+        }
+      ]
+    },
+    {
+      "repository": "Kgasil/lilium",
+      "backup_branch": "backup-graal-security-trust-1.1-2026-11-26",
+      "commit": "bb9370d9be44e1699e3798b18c745061e5ba1748",
+      "tree": "1675d01ab4d15b76fc141fd554d5193be4b4dd45",
+      "comparison": "identical to main before documentation",
+      "file_count": 106,
+      "files": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/pilot-feedback.md",
+          "bytes": 874,
+          "git_blob_sha": "5ccafec7ce8837add6fe69acc43e389ca676a6cf",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/web-lab-feedback.md",
+          "bytes": 1061,
+          "git_blob_sha": "f2840f3c08bd042289885c420b78615ed47052a7",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/dependency-audit.yml",
+          "bytes": 3273,
+          "git_blob_sha": "8a47e1dd36584b4aee472e6d957a2679eb825f71",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/desktop-windows.yml",
+          "bytes": 5573,
+          "git_blob_sha": "84f0a81388e692ff729325c8d218d26c65703b78",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/final-review.yml",
+          "bytes": 1381,
+          "git_blob_sha": "80ecc4ebf8182f395a9365b275f45c05b8ea037c",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/mini-validation.yml",
+          "bytes": 1362,
+          "git_blob_sha": "a3fee694d39f2acbe8aa63e7790c14ef5ca10c1d",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/portable-acceptance.yml",
+          "bytes": 3934,
+          "git_blob_sha": "34ddb202981e7153982c4f83f60fee4baf0fc502",
+          "mode": "100644"
+        },
+        {
+          "path": ".github/workflows/public-lab.yml",
+          "bytes": 1003,
+          "git_blob_sha": "47a0b1fc203808ff496f90ab03849bc84a7f460e",
+          "mode": "100644"
+        },
+        {
+          "path": ".gitignore",
+          "bytes": 157,
+          "git_blob_sha": "2c842b79a27d9ab7c0d0cc60d75ce89060a4ee5b",
+          "mode": "100644"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bytes": 2886,
+          "git_blob_sha": "c3e2d8ea260099bcba7900564430db206af48ecb",
+          "mode": "100644"
+        },
+        {
+          "path": "README.md",
+          "bytes": 29878,
+          "git_blob_sha": "da93b076bbe130beef38d061069d8bcb74050e49",
+          "mode": "100644"
+        },
+        {
+          "path": "SECURITY.md",
+          "bytes": 2452,
+          "git_blob_sha": "dbf96e2cd5b4e1fcfe5a047568c48df25331e061",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/lilium-symbol.svg",
+          "bytes": 384,
+          "git_blob_sha": "b504998e9b5a9381a78534879e9c07b43482b283",
+          "mode": "100644"
+        },
+        {
+          "path": "assets/readme-cover.svg",
+          "bytes": 1493,
+          "git_blob_sha": "cc4d89ed42a15ed1ecff4a39e4334794f614a66a",
+          "mode": "100644"
+        },
+        {
+          "path": "build-lilium.bat",
+          "bytes": 621,
+          "git_blob_sha": "0cc4a85553b7a881f32e12897971d108a736304f",
+          "mode": "100644"
+        },
+        {
+          "path": "core/README.md",
+          "bytes": 19219,
+          "git_blob_sha": "8fb3cab4363d2c164426837146bf5da0d650abb3",
+          "mode": "100644"
+        },
+        {
+          "path": "core/__init__.py",
+          "bytes": 45,
+          "git_blob_sha": "dbcf40c6d1bead8ae9a36d303f4535de00c7a36c",
+          "mode": "100644"
+        },
+        {
+          "path": "core/api.py",
+          "bytes": 10763,
+          "git_blob_sha": "d629607b1e339671ea3bc961807918e6d6684b63",
+          "mode": "100644"
+        },
+        {
+          "path": "core/backup.py",
+          "bytes": 4397,
+          "git_blob_sha": "b206bd92e90fb74ac035a08a5d296d3439242176",
+          "mode": "100644"
+        },
+        {
+          "path": "core/connect.js",
+          "bytes": 4146,
+          "git_blob_sha": "7c9d6358a8dee16f9a33861fcda851195d4baf6b",
+          "mode": "100644"
+        },
+        {
+          "path": "core/copilot.js",
+          "bytes": 4795,
+          "git_blob_sha": "2e6891f5775ba67c5835d97528e80c8377e54f24",
+          "mode": "100644"
+        },
+        {
+          "path": "core/dashboard.js",
+          "bytes": 1662,
+          "git_blob_sha": "405f7331e23ad31d2d5e482ad119a719a325095c",
+          "mode": "100644"
+        },
+        {
+          "path": "core/finance.js",
+          "bytes": 2624,
+          "git_blob_sha": "3cb783aa1a56816d84603384f80485d1578272e6",
+          "mode": "100644"
+        },
+        {
+          "path": "core/flow.js",
+          "bytes": 5671,
+          "git_blob_sha": "cbe6796330cfde837f340df3cf46680274b07f28",
+          "mode": "100644"
+        },
+        {
+          "path": "core/forecast.js",
+          "bytes": 4764,
+          "git_blob_sha": "a85f0504f61549b5a795f840aeee9653366d8d71",
+          "mode": "100644"
+        },
+        {
+          "path": "core/imports.py",
+          "bytes": 4591,
+          "git_blob_sha": "d4cac1f11032fd6d24ec7c421a9b1932a3ed9037",
+          "mode": "100644"
+        },
+        {
+          "path": "core/metrics.py",
+          "bytes": 2866,
+          "git_blob_sha": "8e380e01f3e30a9fdf3775e8c9fbb01ab79038f8",
+          "mode": "100644"
+        },
+        {
+          "path": "core/operations.js",
+          "bytes": 3968,
+          "git_blob_sha": "e89c0302705263a5c498cb3356ad310238f4df7a",
+          "mode": "100644"
+        },
+        {
+          "path": "core/reports.js",
+          "bytes": 7175,
+          "git_blob_sha": "27d579794f7033faf90b0ff425bc9a159de3be7a",
+          "mode": "100644"
+        },
+        {
+          "path": "core/sales.js",
+          "bytes": 3768,
+          "git_blob_sha": "ae6917a058163b57a473b606ee09eed763505109",
+          "mode": "100644"
+        },
+        {
+          "path": "core/session.py",
+          "bytes": 1025,
+          "git_blob_sha": "6a1153591fb2d57aeee6f20502cc75c28cd1640f",
+          "mode": "100644"
+        },
+        {
+          "path": "core/starter.js",
+          "bytes": 3786,
+          "git_blob_sha": "1fd069c16aefe0f3ffccc46ad003bf15e5eb543c",
+          "mode": "100644"
+        },
+        {
+          "path": "core/store.py",
+          "bytes": 2699,
+          "git_blob_sha": "9bbe848e0b321fa790b900de1a5c738c7625753a",
+          "mode": "100644"
+        },
+        {
+          "path": "core/strategy.js",
+          "bytes": 4832,
+          "git_blob_sha": "1e0b3d014d664743b5ff91ce6e28e7c8e3c1fabe",
+          "mode": "100644"
+        },
+        {
+          "path": "core/workspace.html",
+          "bytes": 56813,
+          "git_blob_sha": "e327164c712ef8596c371d0ab332a959272a0a35",
+          "mode": "100644"
+        },
+        {
+          "path": "core/workspace.js",
+          "bytes": 54712,
+          "git_blob_sha": "03dd7e0a1134f7c3a76ef942ea12f1ac36730ef1",
+          "mode": "100644"
+        },
+        {
+          "path": "demo.html",
+          "bytes": 18605,
+          "git_blob_sha": "cf77ceb774c5c2e76e3e8e8d715896510922ae38",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/README.md",
+          "bytes": 12304,
+          "git_blob_sha": "7c610110ed09322680f6a30ad8390a9125dfb7af",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/__init__.py",
+          "bytes": 42,
+          "git_blob_sha": "c15e22adf434e08f33a028b6888e9f3d969af33e",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/build_windows.py",
+          "bytes": 1203,
+          "git_blob_sha": "741d1f200053ddec496f8460da01a13d69f1e005",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/diagnostics.py",
+          "bytes": 2880,
+          "git_blob_sha": "84a6d69ae97a661330ada28aae18df947bdb2e18",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/launcher.py",
+          "bytes": 7364,
+          "git_blob_sha": "b79fab10c88ec2e26bd5ce72d9e18af04cc23424",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/make_icon.py",
+          "bytes": 1521,
+          "git_blob_sha": "be4d7308e0854e08a5cba74a426f1b8cc458a63a",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/release_manager.py",
+          "bytes": 7943,
+          "git_blob_sha": "34ba2d382705b22aafcebd60dfe54fa8fbdc74ad",
+          "mode": "100644"
+        },
+        {
+          "path": "desktop/setup_env.py",
+          "bytes": 2327,
+          "git_blob_sha": "704bd1f70d11476b144896f6c485d0950865bf3d",
+          "mode": "100644"
+        },
+        {
+          "path": "diagnose-lilium.bat",
+          "bytes": 263,
+          "git_blob_sha": "cfc4543ac6fc99a383ffd1c9e8418e59b5379114",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/clean-machine-validation.md",
+          "bytes": 7551,
+          "git_blob_sha": "0e8acc18de2bbf0cf80bc8662d25ea8422e621c2",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/final-review.md",
+          "bytes": 4432,
+          "git_blob_sha": "3c068149a1e0235b1fb89f101ef0729865232906",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/manual-acceptance-matrix.md",
+          "bytes": 10304,
+          "git_blob_sha": "f2dcc99bab970f6ed4c075da5120a1a9fe1ca763",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/milestone-2026-11-25.md",
+          "bytes": 2833,
+          "git_blob_sha": "8cd146a2d218aaccc53c27f9d0888abd8bcb14b5",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/pilot-handbook.md",
+          "bytes": 4034,
+          "git_blob_sha": "6380a23def8452db47aec732b189a3fa6d89ae3c",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/pilot-readiness.md",
+          "bytes": 20785,
+          "git_blob_sha": "130baa6f69a16399f963d1ced6b92417c75cb972",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/product-vision.md",
+          "bytes": 7905,
+          "git_blob_sha": "62654cf3ca82b7bb9c06a09b518d76d8d7cbe7d6",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/starter-kit.md",
+          "bytes": 2054,
+          "git_blob_sha": "5ed5610b8a53c62221b4798688fa8921c54c2157",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/trust-privacy.md",
+          "bytes": 4569,
+          "git_blob_sha": "89e98f07a0a75c60f6009fbb1f862b906dad4635",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/validation/windows-build-45721212184.txt",
+          "bytes": 738,
+          "git_blob_sha": "fcb900ec584054b3043e9767e963b3aed4bec894",
+          "mode": "100644"
+        },
+        {
+          "path": "docs/web-lab-v1.0.md",
+          "bytes": 2489,
+          "git_blob_sha": "53ebd4433cdd68315604d550d90f9eee8ddc451d",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/README.md",
+          "bytes": 7545,
+          "git_blob_sha": "ace428fcff8316a29272c127a115382d783a5a59",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/icon128.png",
+          "bytes": 1477,
+          "git_blob_sha": "1a205af5d49bcb54dc97f5d02b378727391c710e",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/manifest.json",
+          "bytes": 361,
+          "git_blob_sha": "e1abd929ef84c5088d6e65a2f02a549b59e5a109",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/math.js",
+          "bytes": 1262,
+          "git_blob_sha": "a4d3ffe06625d224bdf02668cbfcfafe636b0fe0",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/math.test.js",
+          "bytes": 1079,
+          "git_blob_sha": "1dd8fa5e39dab59b20cdda729a3d5e44925ef134",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/package_mini.py",
+          "bytes": 2657,
+          "git_blob_sha": "8894e00d95af062bd3c7d66e07568d128e490ce5",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/popup.css",
+          "bytes": 1238,
+          "git_blob_sha": "428cad5bef43b237451b14381dc0b52a790b7ab3",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/popup.html",
+          "bytes": 1607,
+          "git_blob_sha": "84155cc4229a03bc042e00a81733860da27db09f",
+          "mode": "100644"
+        },
+        {
+          "path": "extension/popup.js",
+          "bytes": 2433,
+          "git_blob_sha": "13ce392cb00ce749fe05c6b09996b2742154cdc7",
+          "mode": "100644"
+        },
+        {
+          "path": "index.html",
+          "bytes": 56424,
+          "git_blob_sha": "c1faf861b0abb2c266cc1c6510b921d200796aa1",
+          "mode": "100644"
+        },
+        {
+          "path": "mini-privacy.html",
+          "bytes": 8311,
+          "git_blob_sha": "b16466de4f7bff5e250f615c2d6328c44f753646",
+          "mode": "100644"
+        },
+        {
+          "path": "repair-lilium.bat",
+          "bytes": 523,
+          "git_blob_sha": "9d69835075651ae0389b30362d01f21ed7348ee4",
+          "mode": "100644"
+        },
+        {
+          "path": "requirements-build.txt",
+          "bytes": 55,
+          "git_blob_sha": "4b3c3662a52ec1e05c9f4e1647c80019ff505c7d",
+          "mode": "100644"
+        },
+        {
+          "path": "requirements.txt",
+          "bytes": 99,
+          "git_blob_sha": "96e23dc0d61f26ed28769b365c4c69e916997db0",
+          "mode": "100644"
+        },
+        {
+          "path": "start-lilium.bat",
+          "bytes": 321,
+          "git_blob_sha": "982f2d3dd84b96e8c5c0bcf76146d716855d306f",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/acceptance-reference.test.js",
+          "bytes": 4894,
+          "git_blob_sha": "f429db25c41213e6d06733ae4b6cea0625f24a11",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/browser_final_review.py",
+          "bytes": 4561,
+          "git_blob_sha": "a5f20a1788015fec094981e59d6b88675788f1ea",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/browser_mini.py",
+          "bytes": 3885,
+          "git_blob_sha": "f17ac86c0e75206e7a5ed7791b52efac83aad9ff",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/browser_pilot.py",
+          "bytes": 10519,
+          "git_blob_sha": "9fc7c055deb6e4c6217e8f559997ff0d721d61eb",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/browser_public.py",
+          "bytes": 2827,
+          "git_blob_sha": "b0774cfaae80c45dc8b1606fea6313874ba38ccc",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/connect.test.js",
+          "bytes": 3247,
+          "git_blob_sha": "e1d8cd1e8cb8a1764db6e6dfdf6d21875ae9dc83",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/copilot.test.js",
+          "bytes": 3983,
+          "git_blob_sha": "a3d3e806f323047ef1f137ce5aa5768cbc0efe82",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/dashboard.test.js",
+          "bytes": 1796,
+          "git_blob_sha": "8e313cf8c46d911515416502073353b43f084728",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/finance.test.js",
+          "bytes": 2264,
+          "git_blob_sha": "893678200365fdab02718a320fd6145ec84db7ac",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/flow.test.js",
+          "bytes": 3899,
+          "git_blob_sha": "f429bd07c5541731a26baede1dc4edd182b50a40",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/forecast.test.js",
+          "bytes": 3144,
+          "git_blob_sha": "71e62f94e8b26f030aaf4ce3937791fe58c95a50",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/help.test.js",
+          "bytes": 2252,
+          "git_blob_sha": "7f3419737024bd25fd04d33d62499438e2a55fc2",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/operations.test.js",
+          "bytes": 3069,
+          "git_blob_sha": "435a71b00f9d53d95bcb5fd29b446661764fce4f",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/public_lab.test.js",
+          "bytes": 1525,
+          "git_blob_sha": "014eb8402a2ecb79cc24991eda178750b2a40cce",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/public_site.test.js",
+          "bytes": 3238,
+          "git_blob_sha": "f4de20453385daed0076e1d17a3065a1d43c285f",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/reports.test.js",
+          "bytes": 4163,
+          "git_blob_sha": "ef3d16bc851ec92088a22da49918ec49b4a221cb",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/sales.test.js",
+          "bytes": 2840,
+          "git_blob_sha": "e37161db2ff77e447cf795f26996c2c29b58d316",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/smoke_desktop.py",
+          "bytes": 3487,
+          "git_blob_sha": "d5e57f80141d1a2f7806a12f3eaeb04290147545",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/smoke_lifecycle.py",
+          "bytes": 4531,
+          "git_blob_sha": "faeb975e0424f0c20e103267d8cbf178413b0e9a",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/starter.test.js",
+          "bytes": 1895,
+          "git_blob_sha": "e1200c3565d5481ae1a7bfa6eaf970bb936fa8df",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/strategy.test.js",
+          "bytes": 3264,
+          "git_blob_sha": "8c94d8ea1a9837e53c6d485a4e85898aea335eb5",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_acceptance_reference.py",
+          "bytes": 2746,
+          "git_blob_sha": "445055558f7e118680cb04ed8cad67517f5e13d6",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_backup.py",
+          "bytes": 2777,
+          "git_blob_sha": "69cccbacc7deb8872d6820d184d5234809ba8988",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_core.py",
+          "bytes": 10277,
+          "git_blob_sha": "f0614d7bf08dd777406bc93b11f04aed010dc6ac",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_desktop.py",
+          "bytes": 1167,
+          "git_blob_sha": "d03f99d3e5c6c071adbead92df2d68ead8c6467d",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_history.py",
+          "bytes": 4362,
+          "git_blob_sha": "f4e4a0480d8e9835b01e258ab96ad2a21ac26efb",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_imports.py",
+          "bytes": 3783,
+          "git_blob_sha": "059aeab4875885c868e632850f7598d868b0c54b",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_quality_assurance.py",
+          "bytes": 5115,
+          "git_blob_sha": "b8b8ae0986156b16ca53927beca9973d0c8c016d",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_release_manager.py",
+          "bytes": 3757,
+          "git_blob_sha": "102eca9cfedf2174cc6e3ff36a0d1f23078a1743",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_session.py",
+          "bytes": 1907,
+          "git_blob_sha": "4e85657f2d72017915f46e1a5d3d365622e0621e",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/test_setup_diagnostics.py",
+          "bytes": 3826,
+          "git_blob_sha": "706a4d70eb53e8ea3d67230b83f4e5e6ddefe609",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/ux.test.js",
+          "bytes": 2946,
+          "git_blob_sha": "573716eff702818b52c302ff4759ee492c12d779",
+          "mode": "100644"
+        },
+        {
+          "path": "tests/workspace.test.js",
+          "bytes": 1775,
+          "git_blob_sha": "ae8ab32d8bbac466fa65fa5c44e8ddb1de590c95",
+          "mode": "100644"
+        },
+        {
+          "path": "web/lab.js",
+          "bytes": 4365,
+          "git_blob_sha": "d52f80468dc31008c98e1ec74dba825e2a6c6b5f",
+          "mode": "100644"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "product": "Genesis Mini",
+      "version": "0.1.0",
+      "manifest": "extension/manifest.json",
+      "permissions": [],
+      "package": "downloads/Genesis-Mini-v0.1.0-install.zip",
+      "status": "Reported Defender warning unresolved; direct links paused; preserve original; do not install."
+    },
+    {
+      "product": "Argus Mini",
+      "version": "0.1.0",
+      "manifest": "extension/manifest.json",
+      "permissions": [],
+      "package": "downloads/Argus-Mini-v0.1.0-install.zip",
+      "status": "Defender not independently tested."
+    },
+    {
+      "product": "Rubedo Mini",
+      "version": "1.0.0",
+      "manifest": "extension/manifest.json",
+      "permissions": [],
+      "packages": [
+        "downloads/Rubedo-Mini-v1.0.0-install.zip",
+        "downloads/Rubedo-Mini-v0.3.0-install.zip"
+      ],
+      "documented_sha256": "1799dc6ccadd786eb960f38c4f7d67cf241e9630942a9e69daebfe96fcfe6ab2",
+      "status": "Historical package retained; new Defender result pending."
+    },
+    {
+      "product": "Aeris Extension",
+      "version": "1.0.0",
+      "packages": [
+        "downloads/Aeris-Extension-v1.0.0-install.zip",
+        "downloads/Aeris-Extension-v1.0.0-completa.zip"
+      ],
+      "documented_sha256": [
+        "e77e6e8596c14e54f22303e7a5d368356c19eaa79df8c8597752790755d9a0d9",
+        "d0f064c1b73c46465171cc1fb208b530ed66573e054c2ca211b216547bbb3c00"
+      ],
+      "manifest_permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+      ],
+      "optional_host_permissions": [
+        "http://127.0.0.1/*"
+      ],
+      "package_json": "No npm dependencies declared; Node test script; optional local Ollama connection",
+      "status": "Manifest extracted from complete ZIP; installation ZIP parity and Defender scan pending."
+    },
+    {
+      "product": "Lilium Mini",
+      "version": "0.1.1",
+      "manifest": "extension/manifest.json",
+      "permissions": [],
+      "distribution": "Pinned source archive commit 447d7414f20e28f6c0440647f2b7be71fc44e71d; dedicated packaging workflow",
+      "status": "Pinned archive and latest CI package not independently fetched in this phase."
+    },
+    {
+      "product": "Aeris Desktop",
+      "version": "1.0.0rc5 terms1 preview",
+      "public_release": "aeris-desktop-1.0.0rc5-terms1-preview",
+      "asset": "Aeris-1.0.0rc5-Windows-x64-Setup-terms1.exe",
+      "bytes": 12795620,
+      "release_api_sha256": "f5499cc2383e4d3a0acee8a0d84e173fa1a44a098ac0ba478c1febbcfe4e774b",
+      "tracked_source_archives": [
+        "downloads/Aeris-Desktop-v1.0.0rc1-codigo-fonte.zip",
+        "downloads/Aeris-Desktop-v1.0.0rc1-fix1-codigo-fonte.zip"
+      ],
+      "rc1_fix1_build_dependency": "PyInstaller==6.19.0 (extracted from tracked ZIP; does not establish RC5 dependency inventory)",
+      "status": "Existing documented on-demand Defender diagnostic, matching published asset digest, no threats detected; Windows Server 2022, real-time protection inactive, not a new scan or Windows client approval; no signature. Previous RC5 draft must not be published."
+    },
+    {
+      "product": "Lilium Desktop",
+      "version": "0.14.0 corrected preview",
+      "dependencies": [
+        "fastapi==0.165.0",
+        "starlette==1.10.0",
+        "uvicorn==0.48.0",
+        "httpx==0.28.1",
+        "openpyxl==3.1.5",
+        "defusedxml==0.7.1"
+      ],
+      "build_dependencies": [
+        "pyinstaller==6.16.0",
+        "Pillow==13.0.0"
+      ],
+      "status": "CI candidate for manual acceptance only; no public release; Defender pending."
+    }
+  ],
+  "external_artifacts": [
+    {
+      "repository": "lilium",
+      "run": 45722415976,
+      "id": 15071874653,
+      "bytes": 23870062,
+      "sha256": "72ebc3cdcbc83d5f5fc94e475557537eb2de3c646ff34142e691f80e5d4ae1d5",
+      "inner_documented_sha256": "95ef0b0b96824b47c87e3784e8c9985796cefdfb76e1bea445b3e09ab0efe392",
+      "expires": "2026-12-09T23:36:45Z",
+      "expired": false
+    },
+    {
+      "repository": "lilium",
+      "run": 45722415976,
+      "id": 15072284261,
+      "bytes": 1098,
+      "sha256": "38a68bc32f55178719e136c50add7451c2b269fc9cc1fa4c2326ce3e1c3590f6",
+      "expires": "2026-12-09T23:35:35Z",
+      "expired": false
+    },
+    {
+      "repository": "aeris",
+      "run": 45866232131,
+      "id": 15139892917,
+      "bytes": 12303783,
+      "sha256": "74b6b7f76a3ac5dbc6ce3f926b979c020f001434a30937420664d2d30a069131",
+      "expires": "2026-12-26T17:16:25Z",
+      "expired": false
+    },
+    {
+      "repository": "aeris",
+      "run": 45863779585,
+      "id": 15139686297,
+      "bytes": 610469,
+      "sha256": "47b1eb68f1892c72c2960bafcc01a03dcbc5b1ced55ed86dc0585921c731101b",
+      "expires": "2026-12-26T17:00:22Z",
+      "expired": false
+    },
+    {
+      "repository": "aeris",
+      "run": 45863779585,
+      "id": 15138829732,
+      "bytes": 26701152,
+      "sha256": "09aa2076cac6f9bc8a543869027fe2617f0590fd4509a6f18261def0e797ba9a",
+      "expires": "2026-12-26T17:03:32Z",
+      "expired": false
+    }
+  ],
+  "limitations": [
+    "No new antivirus scan, no executable run, no binary rebuild, no feature changes.",
+    "Release/API digests and previously documented SHA-256 values are cataloged, not freshly recalculated.",
+    "External artifact byte copies not archived durably in this phase; no publication of unapproved packages.",
+    "Complete transitive/runtime dependency inventory (SBOM) and LFS/submodule verification pending where applicable."
+  ]
+}
