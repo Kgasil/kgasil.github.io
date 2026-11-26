@@ -12,7 +12,7 @@
 | 02 | Implemented; deployment verification pending | Professional experience and capabilities | Evidence-based experience, education, tools, career narrative, no invented outcomes |
 | 03 | Implemented; browser verification pending | Project catalogue | Categories, filters, clear project status, links and source documentation |
 | 04 | Implemented; browser verification pending | Case studies | Business problem, methodology, architecture, evidence, limitations; synthetic data clearly labelled |
-| 05 | Planned | Interactive lab | Browser-based analytical dashboard, process simulations and practical mini tools; deterministic fixtures and tests |
+| 05 | Implemented; 16 logic assertions passed; browser verification pending | Interactive lab | Browser-based analytical dashboard, process simulations and practical mini tools; deterministic fixtures and tests |
 | 06 | Planned | Digital résumé | Recruiter view, print styling and approved downloadable résumé without private contact details |
 | 07 | Planned | Professional integration | GitHub profile, LinkedIn, K&G Vision links, cohesive branding |
 | 08 | Planned | Release audit and 1.0 | Accessibility, responsive/mobile review, link validation, translation review, performance, deployment and public smoke test |
@@ -54,10 +54,19 @@
 - Static checks: unique case-study IDs, valid internal fragments and seven catalogue case links.
 - Source commits: 90badb1e32f3a4deb5a4b5c562dff296c2c40839 and df77b99d2c50626523cc61bd6ec2f3a9ff841683.
 
+## Phase 05 changes
+
+- Interactive lab at /portfolio/lab.html: maintenance dashboard, divisor-markup pricing, demand scoring, identifier cleansing and workflow routing.
+- Eight deterministic synthetic work orders; interactive area filter, KPIs and downtime chart.
+- Local browser-only calculations; no API requests or persistence of entered data. Explicit educational limitations, including format-only identifier validation and demo-specific priority rules.
+- Bilingual controls and results, links to case studies, responsive styling and homepage integration.
+- 16 logic assertions executed successfully before commit; same selfTest function available in the lab. Static IDs and fragment checks passed. Browser interaction tests still pending.
+- Source commits: 6c6ca0b6568bacd072c367981fbc2e7704f919b4, abb5b0f817c4fa2586353285af4002a05fbcf0c9, f10ff5e92f5a168752d6a03ba05b981432d310b1 and 143b5df860a876bcc4b53dfe85db48626cccea6e.
+
 ## Guardrails
 
 Do not claim verified business impact, production deployment, professional certification or independent security validation without evidence. Keep employer/client data private. Distinguish professional experience from personal demonstrations and AI-assisted learning. Avoid publishing personal contact information without approval. Use the same visual palette and preserve the existing institutional site.
 
 ## Next task
 
-Phase 05: develop an interactive browser-based lab with analytical dashboards, process simulations and practical mini tools, deterministic synthetic data and tests.
+Phase 06: create a recruiter-focused digital résumé, print styling and a downloadable public résumé using verified or user-provided facts and no private contact information.
