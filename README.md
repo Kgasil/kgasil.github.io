@@ -44,7 +44,7 @@ A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ain
 
 O site institucional está em construção. Os 75 PDFs completos e materiais internos do Genesis não fazem parte deste repositório. O acesso ao acervo é solicitado diretamente ao idealizador pelo [LinkedIn](https://www.linkedin.com/in/kaio-gabriel-da-silva). As amostras públicas estão na biblioteca do Genesis. O laboratório técnico permanece em [Project Argus](https://kgasil.github.io/argus/).
 
-## Ecosystem / Ecossistema — Marco 1.0
+## GRAAL — Ecosystem / Ecossistema · Marco 01
 
 | Project | Website | Repository | Current stage / Etapa atual |
 | --- | --- | --- | --- |
