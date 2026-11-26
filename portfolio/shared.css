@@ -50,3 +50,63 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:800px){.section{padding:42px 0}.hero h1{font-size:clamp(38px,9vw,58px)}.section h2{max-width:none}.signature{padding:24px}}
 }
 @media print{.sheet{background:white!important;box-shadow:none!important}}
+
+/* Balanced navy palette — lighter slate-blue secondary surfaces, screen only. */
+@media screen {
+:root{
+  --paper:#30465E;--line:#59728B;--ink:#F4F8FC;--muted:#D5E2EF;
+  --accent:#B8DCFA;--kg-surface:#3C566E;--kg-secondary:#46627D;
+  --kg-control:#253D55;--kg-navy:#122236;
+}
+body{color-scheme:dark;background:var(--paper);color:var(--ink)}
+header,.kg-header{background:#354D66;color:var(--ink);border-bottom-color:var(--line)}
+.kg-brand,.kg-nav a,.kg-section-links a{color:var(--ink)}
+.kg-brand small{color:var(--muted)}
+.kg-nav a[aria-current=page],.kg-languages button[aria-pressed=true],
+.catalog-filters button[aria-pressed=true],button[aria-pressed=true],.primary{
+  background:#C8E1F6;color:#14283E;border-color:#C8E1F6
+}
+.kg-nav a:hover,.kg-section-links a:hover{color:#B8DCFA}
+.kg-languages button:not([aria-pressed=true]),button:not([aria-pressed=true]):not(.primary),.action:not(.primary){
+  background:var(--kg-control);color:var(--ink);border-color:#819CB6
+}
+.kg-footer,footer{background:#2A4057;color:var(--muted)}
+.kg-footer a{color:#E1EFFB}
+.proof{background:#405B75;border-bottom-color:var(--line)}
+.proof-item{border-left-color:#94BDE1}
+.kg-section-links{background:#354D66;border-bottom-color:var(--line)}
+.showcase,#projetos{background:linear-gradient(115deg,#30465E,#354F69)}
+#sobre,#laboratorio{background:#354F69}
+#experiencia{background:#30465E}
+.capabilities{background:#38536C}
+.card,.career-card,.featured-card,.case,.panel,.toc,.sheet{
+  background:var(--kg-surface);border-color:var(--line);box-shadow:0 5px 18px #10223624
+}
+.career-card,.case,.panel{border-left-color:#83ADD2}
+.case,.panel,.capability-grid .card,.catalog-card{border-top-color:#83ADD2}
+.profile-note,.catalog-controls,.limit,.metric,.skill-tags span,.project-status,.status,.command,.formula,.focus-strip div,.feature{
+  background:#2B435B;border-color:#68859F;color:var(--ink)
+}
+.skill-tags span,.project-status,.status{color:#DDEBF8}
+.catalog-search input,input:not([type=checkbox]),select,textarea,.index a{
+  background:var(--kg-control);color:var(--ink);border-color:#819CB6
+}
+input::placeholder,textarea::placeholder{color:#BFD1E2;opacity:1}
+.section .eyebrow,.card .tag,.featured-content .tag,.career-card .tag,.profile-note .tag,.cv-section h2{
+  color:var(--accent)
+}
+.card a,.featured-content a,.case-note summary,.subtitle,.btn:not(.primary){color:var(--accent)}
+.hero .btn:not(.primary),.contact .btn:not(.primary){color:#EDF4FF}
+.catalog-card a.case-link{background:#20364D;color:#EDF4FF;border-color:#89A7C3}
+.catalog-card a.case-link:hover{background:#2B435B}
+.catalog-filters>span,.catalog-count,.catalog-empty,.arrow{color:var(--muted)}
+.track{background:#243A50}.fill{background:#A5CFF1}
+.error{color:#FFD1CA!important}
+.skip:focus{background:#C8E1F6;color:#14283E}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,
+.kg-header a:focus-visible,.kg-header button:focus-visible,.kg-footer a:focus-visible{outline-color:#C8E1F6}
+/* Keep the original navy hero and contact section as the visual anchor. */
+.hero .btn.primary{background:#D5E7F8;border-color:#D5E7F8;color:#122236}
+}
+
+@media screen{.kg-brand svg path{fill:currentColor}.section .eyebrow{color:var(--accent)}.contact .eyebrow{color:#D5E3F1}}
