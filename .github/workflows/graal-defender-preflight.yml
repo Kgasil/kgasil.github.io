@@ -1,0 +1,72 @@
+name: GRAAL 1.1 - Defender environment gate
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/graal-defender-preflight.yml'
+permissions:
+  contents: read
+jobs:
+  preflight:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-2022, windows-2025]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+      - name: Read Defender status without changing protection
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $report = [ordered]@{
+            utc = [DateTime]::UtcNow.ToString('o')
+            runner = "${{ matrix.os }}"
+            status = 'BLOCKED_OR_INCOMPLETE'
+            scan_performed = $false
+            release_approved = $false
+          }
+          try {
+            $os = Get-CimInstance Win32_OperatingSystem
+            $report.os = $os.Caption
+            $report.os_build = $os.BuildNumber
+            $s = Get-MpComputerStatus
+            $p = Get-MpPreference
+            $report.antivirus_enabled = $s.AntivirusEnabled
+            $report.service_enabled = $s.AMServiceEnabled
+            $report.realtime_enabled = $s.RealTimeProtectionEnabled
+            $report.behavior_monitor_enabled = $s.BehaviorMonitorEnabled
+            $report.running_mode = $s.AMRunningMode
+            $report.platform = $s.AMProductVersion
+            $report.engine = $s.AMEngineVersion
+            $report.definitions = $s.AntivirusSignatureVersion
+            $report.definitions_updated = $s.AntivirusSignatureLastUpdated
+            $report.definition_age_hours = if ($s.AntivirusSignatureLastUpdated) { [Math]::Round(((Get-Date) - $s.AntivirusSignatureLastUpdated).TotalHours, 2) } else { $null }
+            $report.archive_scan_disabled = $p.DisableArchiveScanning
+            $report.path_exclusion_count = @($p.ExclusionPath | Where-Object { $_ }).Count
+            $report.extension_exclusion_count = @($p.ExclusionExtension | Where-Object { $_ }).Count
+            $report.process_exclusion_count = @($p.ExclusionProcess | Where-Object { $_ }).Count
+            $reasons = @()
+            if ($s.AntivirusEnabled -ne $true -or $s.AMServiceEnabled -ne $true -or $s.RealTimeProtectionEnabled -ne $true -or $s.AMRunningMode -ne 'Normal') { $reasons += 'Active normal-mode Defender required' }
+            if ($null -eq $report.definition_age_hours -or $report.definition_age_hours -lt 0 -or $report.definition_age_hours -gt 24) { $reasons += 'Definitions missing or outside 24h window' }
+            if ($p.DisableArchiveScanning -ne $false) { $reasons += 'Archive scanning not confirmed active' }
+            if ($report.path_exclusion_count -or $report.extension_exclusion_count -or $report.process_exclusion_count) { $reasons += 'Existing exclusions require review; no scan attempted' }
+            $report.reasons = $reasons
+            if ($reasons.Count -eq 0) { $report.status = 'ENVIRONMENT_GATE_PASSED_SCAN_STILL_REQUIRED' }
+          } catch {
+            $report.error = $_.Exception.GetType().Name
+          } finally {
+            $json = $report | ConvertTo-Json -Depth 5
+            $json | Write-Host
+            $json | Set-Content -LiteralPath (Join-Path $env:RUNNER_TEMP 'graal-defender-preflight.json') -Encoding utf8
+          }
+          if ($report.status -ne 'ENVIRONMENT_GATE_PASSED_SCAN_STILL_REQUIRED') { exit 1 }
+      - name: Preserve preflight evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: graal-defender-preflight-${{ matrix.os }}
+          path: ${{ runner.temp }}/graal-defender-preflight.json
+          retention-days: 30
+          if-no-files-found: warn
