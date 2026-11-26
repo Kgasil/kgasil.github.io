@@ -10,7 +10,7 @@
 | --- | --- | --- | --- |
 | 01 | Implemented; deployment verification pending | Executive visual foundation and homepage | KG monogram, institutional navy, clear professional positioning, three featured projects, responsive layout, bilingual copy |
 | 02 | Implemented; deployment verification pending | Professional experience and capabilities | Evidence-based experience, education, tools, career narrative, no invented outcomes |
-| 03 | Planned | Project catalogue | Categories, filters, clear project status, links and source documentation |
+| 03 | Implemented; browser verification pending | Project catalogue | Categories, filters, clear project status, links and source documentation |
 | 04 | Planned | Case studies | Business problem, methodology, architecture, evidence, limitations; synthetic data clearly labelled |
 | 05 | Planned | Interactive lab | Browser-based analytical dashboard, process simulations and practical mini tools; deterministic fixtures and tests |
 | 06 | Planned | Digital résumé | Recruiter view, print styling and approved downloadable résumé without private contact details |
@@ -36,10 +36,19 @@
 - Static validation: unique HTML IDs and all internal fragment links resolve.
 - Source commit: 6665913c02e1642f453979a6bf1b091e97bb4a7a.
 
+## Phase 03 changes
+
+- Seven independent projects presented in a consistent catalogue, including the AI Coder project.
+- Five overlapping focus categories plus an all-project view, bilingual keyword search, live results count, clear filters and empty state.
+- Project status labels distinguish demonstrations, conceptual specifications and guided learning.
+- Search matches both language versions and ignores accents; catalogue remains readable without JavaScript.
+- Static validation: seven project cards, unique IDs and valid internal fragments.
+- Source commit: 31cc49c1c9eacbf7e9a1e45ab82e43b285f7e23d.
+
 ## Guardrails
 
 Do not claim verified business impact, production deployment, professional certification or independent security validation without evidence. Keep employer/client data private. Distinguish professional experience from personal demonstrations and AI-assisted learning. Avoid publishing personal contact information without approval. Use the same visual palette and preserve the existing institutional site.
 
 ## Next task
 
-Phase 03: build the interactive project catalogue with categories, filters, clear project status and source documentation.
+Phase 04: develop detailed case studies grounded in repository documentation, including business problems, methods, architecture, evidence and limitations.
