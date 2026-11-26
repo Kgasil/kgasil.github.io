@@ -15,13 +15,13 @@ K&G Vision is an independent technology initiative with a clear ambition: turn k
 | Project | Purpose | Status |
 | --- | --- | --- |
 | [Project Genesis](https://github.com/Kgasil/genesis) | Independent study collection: 75 private PDFs, 60 thematic volumes and 10 integrated guides | [Public library](https://kgasil.github.io/genesis/biblioteca.html): 1.0 editorial milestone; 11 reading areas, 22 optional reading folders, 11 mini labs and 11 challenges; no courses or certificates |
-| [Project Vision](https://github.com/Kgasil/vision) | Vendor-neutral AI integration, security, assurance and performance research | 1.0 public research milestone; technical baseline V10.2 |
+| [Project Argus](https://github.com/Kgasil/vision) | Vendor-neutral AI integration, security, assurance and performance research | 1.0 public research milestone; technical baseline V10.2 |
 | [Project Aeris](https://github.com/Kgasil/aeris) | Lightweight, modular desktop and browser productivity tools | Desktop RC1; Extension 1.0.0 available for manual installation |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Business intelligence, reporting and strategic automation | Web Lab 1.0; Desktop v0.14.0 controlled preview; Mini v0.1.1 GitHub-only |
 
 **Learn · Build · Simplify · Transform**
 
-This repository hosts the provisional institutional website. The technical laboratory now lives at [Project Vision](https://github.com/Kgasil/vision). Current demonstrations are educational prototypes, not production products or independent security audits.
+This repository hosts the provisional institutional website. The technical laboratory now lives at [Project Argus](https://github.com/Kgasil/vision). Current demonstrations are educational prototypes, not production products or independent security audits.
 
 ## Português
 
@@ -30,13 +30,13 @@ A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ain
 | Projeto | Propósito | Situação |
 | --- | --- | --- |
 | [Project Genesis](https://github.com/Kgasil/genesis) | Acervo independente: 75 PDFs privados, 60 volumes temáticos e 10 guias integrados | [Biblioteca pública](https://kgasil.github.io/genesis/biblioteca.html): 11 áreas, 22 pastas de leitura opcionais, 11 mini laboratórios e 11 desafios; sem cursos ou certificados |
-| [Project Vision](https://github.com/Kgasil/vision) | Pesquisa em integração, segurança, avaliação e desempenho de IA | Marco 1.0 do laboratório público; base técnica V10.2 |
+| [Project Argus](https://github.com/Kgasil/vision) | Pesquisa em integração, segurança, avaliação e desempenho de IA | Marco 1.0 do laboratório público; base técnica V10.2 |
 | [Project Aeris](https://github.com/Kgasil/aeris) | Ferramentas leves e modulares para produtividade | Desktop RC1; Extensão 1.0.0 disponível para instalação manual |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Inteligência empresarial, relatórios e automação estratégica | Web Lab 1.0; Desktop v0.14.0 em prévia; Mini v0.1.1 pelo GitHub |
 
 **Aprender · Construir · Simplificar · Transformar**
 
-O site institucional está em construção. Os 75 PDFs completos e materiais internos do Genesis não fazem parte deste repositório. O acesso ao acervo é solicitado diretamente ao idealizador pelo [LinkedIn](https://www.linkedin.com/in/kaio-gabriel-da-silva). As amostras públicas estão na biblioteca do Genesis. O laboratório técnico permanece em [Project Vision](https://kgasil.github.io/vision/).
+O site institucional está em construção. Os 75 PDFs completos e materiais internos do Genesis não fazem parte deste repositório. O acesso ao acervo é solicitado diretamente ao idealizador pelo [LinkedIn](https://www.linkedin.com/in/kaio-gabriel-da-silva). As amostras públicas estão na biblioteca do Genesis. O laboratório técnico permanece em [Project Argus](https://kgasil.github.io/vision/).
 
 ## Ecosystem / Ecossistema — Marco 1.0
 
@@ -44,11 +44,11 @@ O site institucional está em construção. Os 75 PDFs completos e materiais int
 | --- | --- | --- | --- |
 | K&G Vision | [Institutional](https://kgasil.github.io/) | [Source](https://github.com/Kgasil/kgasil.github.io) | Independent initiative / Iniciativa independente |
 | Project Genesis | [Wisdom & Application / Sabedoria e Aplicação](https://kgasil.github.io/genesis/) | [Source](https://github.com/Kgasil/genesis) | **1.0 — Editorial & Library / Acervo e biblioteca.** 75 private study PDFs; [public interactive library](https://kgasil.github.io/genesis/biblioteca.html) / 75 PDFs privados; biblioteca pública interativa, sem cursos ou certificados. |
-| Project Vision | [Security & Development / Segurança e Desenvolvimento](https://kgasil.github.io/vision/) | [Source](https://github.com/Kgasil/vision) | **1.0 — Public Research Lab / Laboratório público.** Technical baseline V10.2; local demonstrations / Base técnica V10.2; demonstrações locais, não serviços de produção. |
+| Project Argus | [Security & Development / Segurança e Desenvolvimento](https://kgasil.github.io/vision/) | [Source](https://github.com/Kgasil/vision) | **1.0 — Public Research Lab / Laboratório público.** Technical baseline V10.2; local demonstrations / Base técnica V10.2; demonstrações locais, não serviços de produção. |
 | Project Aeris | [Discreet & Efficient / Discreto e Eficiente](https://kgasil.github.io/aeris/) | [Source](https://github.com/Kgasil/aeris) | **1.0 — Extension 1.0.0.** [Manual installation / Instalação manual](https://github.com/Kgasil/aeris/tree/main/extension); Desktop 1.0.0rc1 remains a preview / permanece em prévia. |
 | Project Lilium | [Strategy & Growth / Estratégia e Crescimento](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | **1.0 — Web Lab.** Public demo / demonstração pública; Desktop v0.14.0 controlled preview / prévia controlada; [Mini v0.1.1](https://github.com/Kgasil/lilium/tree/main/extension) experimental. |
 
-**Version note / Nota de versão:** 1.0 identifies the first completed public-facing project milestone of the ecosystem, not a uniform software release tag. Genesis is an editorial milestone; Vision retains technical baseline V10.2; Aeris 1.0.0 applies to Extension; Lilium 1.0 applies to Web Lab. / 1.0 identifica o primeiro marco público do ecossistema, não uma tag de software uniforme. Genesis é um marco editorial; Vision mantém a base V10.2; Aeris 1.0.0 refere-se à extensão; Lilium 1.0 refere-se ao Web Lab. Desktop previews are not stable releases / Prévias Desktop não são versões estáveis.
+**Version note / Nota de versão:** 1.0 identifies the first completed public-facing project milestone of the ecosystem, not a uniform software release tag. Genesis is an editorial milestone; Argus retains technical baseline V10.2; Aeris 1.0.0 applies to Extension; Lilium 1.0 applies to Web Lab. / 1.0 identifica o primeiro marco público do ecossistema, não uma tag de software uniforme. Genesis é um marco editorial; Argus mantém a base V10.2; Aeris 1.0.0 refere-se à extensão; Lilium 1.0 refere-se ao Web Lab. Desktop previews are not stable releases / Prévias Desktop não são versões estáveis.
 
 **Learn · Build · Simplify · Transform / Aprender · Construir · Simplificar · Transformar**
 
@@ -60,7 +60,7 @@ O site institucional está em construção. Os 75 PDFs completos e materiais int
 
 Open `index.html` in a browser to preview locally. No build or backend is required.
 
-The previous technical website is preserved in Git history and in the dedicated Project Vision repository. The original pre-migration HTML is at [this revision](https://github.com/Kgasil/kgasil.github.io/blob/eccfefbea8abebd5e9ae537ee2e7a9beca6c4829/index.html).
+The previous technical website is preserved in Git history and in the dedicated Project Argus repository. The original pre-migration HTML is at [this revision](https://github.com/Kgasil/kgasil.github.io/blob/eccfefbea8abebd5e9ae537ee2e7a9beca6c4829/index.html).
 
 Contact: [GitHub](https://github.com/Kgasil) · [LinkedIn](https://www.linkedin.com/in/kaio-gabriel-da-silva)
 
@@ -72,7 +72,7 @@ Contact: [GitHub](https://github.com/Kgasil) · [LinkedIn](https://www.linkedin.
 
 Official visual lockup: **K&G** above **Vision**; individual project symbols are retained. / Assinatura visual oficial: **K&G** acima de **Vision**, mantendo os símbolos individuais dos projetos.
 
-**Genesis (purple) · Vision (blue) · Aeris (green) · Lilium (rose)**
+**Genesis (purple) · Argus (blue) · Aeris (green) · Lilium (rose)**
 
 [Lilium Interactive Lab / Laboratório interativo](https://kgasil.github.io/lilium/#lab) · [Insights CSV demo](https://kgasil.github.io/lilium/demo.html) — browser-based synthetic exercises; no connected AI or commercial offering.
 
