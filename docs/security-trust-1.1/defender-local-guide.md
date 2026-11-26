@@ -34,3 +34,12 @@ Data/hora e fuso; versão/build do Windows; estado de proteção antes e depois;
 - https://learn.microsoft.com/pt-br/windows/security/application-security/application-isolation/windows-sandbox/
 - https://support.microsoft.com/pt-br/windows/experience/scan-an-item-with-windows-security
 - https://support.microsoft.com/pt-br/windows/security/threat-malware-protection/virus-and-threat-protection-in-the-windows-security-app
+
+## Coletor automatizado de evidência (revisão adicional)
+Script [scan-original.ps1](../../validation/defender/scan-original.ps1) valida a configuração antes/depois, restringe a oito ZIPs originais catalogados por nome e SHA-256, solicita uma análise personalizada padrão ao Defender, consulta detecções recentes e verifica o hash após a solicitação. Não executa os produtos nem altera configurações. Exemplo em PowerShell, a partir da raiz do repositório local confiável, em Windows descartável elegível, com as variáveis preenchidas para o arquivo original e um novo destino JSON:
+
+```powershell
+.\validation\defender\scan-original.ps1 -PackagePath $original -EvidencePath $newEvidenceJson
+```
+Não modificar a política de execução para rodar o script. Se bloqueado, use o procedimento manual. Não usar máquina principal para investigar Genesis. O script não baixa ou restaura arquivos, não envia dados e não declara scan concluído só porque Start-MpScan retornou. Revisar escopo e eventos no Histórico de proteção e analisar separadamente o conteúdo extraído verificado. O JSON omite caminhos privados; IDs de detecção não substituem o nome exato da ameaça. O ZIP público gerado para Lilium Mini não está na lista de hashes fixos; precisa de validação própria. Aeris Desktop permanece separado. Workflow de sintaxe e política verifica somente código, não realiza análise antimalware. Execução do script em Windows elegível ainda pendente.
+Referências: https://learn.microsoft.com/en-us/powershell/module/defender/start-mpscan ; https://learn.microsoft.com/en-us/defender-endpoint/command-line-arguments-microsoft-defender-antivirus .
