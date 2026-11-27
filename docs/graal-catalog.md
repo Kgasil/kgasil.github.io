@@ -122,6 +122,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Relatório / Report](performance-accessibility-cycle-02-step-05.md). Original web artifact 15232103800 SHA-256 and CRC independently verified; 48 samples analyzed per page, 138 browser views, zero audit errors; six historical desktop screenshots reviewed. New [repeat diagnostics 46073219557](https://github.com/Kgasil/kgasil.github.io/actions/runs/46073219557) adds three additional navigations per setting and 320px observations, browser conclusion pending at initial query. / Protocolo de desempenho e acessibilidade documentado, sem medição física nova, certificação ou aprovação de distribuição. All holds retained.
 
+## Ciclo 02 — Etapa 06 / Cycle 02 — Step 06: Operational integration
+
+[Relatório / Report](operational-integration-cycle-02-step-06.md) · [Demo CI 46073646096](https://github.com/Kgasil/kgasil.github.io/actions/runs/46073646096). `graal.demo.trace.v1` connects five source-level synthetic stages with four explicit ordered approvals, commit/file hashes and recomputation; no live app connection, real data or release. / Demonstração sintética, sem conexão entre aplicativos instalados. [Web 46073219557](https://github.com/Kgasil/kgasil.github.io/actions/runs/46073219557): 144 timings, 48 320px observations, zero overflow, five Genesis Firefox language failures. Audit waits for scroll stability without weakening assertions; [revalidation](https://github.com/Kgasil/kgasil.github.io/actions/runs/46073590229) pending at initial query. Distribution restrictions unchanged.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
