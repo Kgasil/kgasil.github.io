@@ -63,6 +63,18 @@ O workflow de qualidade de produtos já existe: [GRAAL product quality](https://
 
 **Aeris:** SHA-256 do EXE reportado pelo GitHub: `4001bcc90f84ce67e6e78ea8343132fc9ca9c6567fd610b979c21b6edc1b7ead`. Não recalculado nesta etapa; hash não confirma ausência de malware. / Not recomputed in this stage; digest is not malware clearance. PR de experiência isolada, não aprovar merge/publicação pela existência de CI. / Isolated experience PR; CI alone does not authorize merge or publication.
 
+## Security & Trust — atualização / update 2026-11-27 (Etapa / Stage 03)
+
+[Registro bilíngue de evidências e gates / Bilingual evidence and gate register](security-trust-stage-03.md) · [Inventário automático de segurança / Automated security inventory](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-security-inventory.yml).
+
+- Genesis/Argus: incidentes OPEN; sem parecer Microsoft comprovado. / Incidents OPEN; no confirmed Microsoft verdict.
+- Aeris: recuperação ClamAV com scan SKIPPED, portanto NOT_TESTED; Defender diagnóstico registrado para a prévia exata, sem certificação. / ClamAV scan SKIPPED, therefore NOT_TESTED; diagnostic Defender record for the exact preview, not certification.
+- [Product quality 45919270999](https://github.com/Kgasil/kgasil.github.io/actions/runs/45919270999): cinco regressões e metadados do EXE aprovados no escopo histórico, não liberação de instalação. / Five regressions and EXE metadata passed within historical scope, not installation approval.
+- Novo controle de alterações de hashes e permissões implementado; aprovação da primeira execução deve ser confirmada separadamente. / New hash and capability drift control implemented; confirm first run separately.
+- Licenças, SBOM, dependências transitivas, privacidade em execução e aceitação nativa continuam pendentes. / Licensing, SBOM, transitive dependencies, runtime privacy and native acceptance remain pending.
+
+Nenhum estado de distribuição foi relaxado. / No distribution state was relaxed.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
