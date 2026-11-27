@@ -70,7 +70,7 @@ O workflow de qualidade de produtos já existe: [GRAAL product quality](https://
 - Genesis/Argus: incidentes OPEN; sem parecer Microsoft comprovado. / Incidents OPEN; no confirmed Microsoft verdict.
 - Aeris: recuperação ClamAV com scan SKIPPED, portanto NOT_TESTED; Defender diagnóstico registrado para a prévia exata, sem certificação. / ClamAV scan SKIPPED, therefore NOT_TESTED; diagnostic Defender record for the exact preview, not certification.
 - [Product quality 45919270999](https://github.com/Kgasil/kgasil.github.io/actions/runs/45919270999): cinco regressões e metadados do EXE aprovados no escopo histórico, não liberação de instalação. / Five regressions and EXE metadata passed within historical scope, not installation approval.
-- Novo controle de alterações de hashes e permissões implementado; aprovação da primeira execução deve ser confirmada separadamente. / New hash and capability drift control implemented; confirm first run separately.
+- [Inventário 46066415841](https://github.com/Kgasil/kgasil.github.io/actions/runs/46066415841): SUCCESS; cinco ZIPs fixados e cinco baselines de manifestos verificadas, sem execução ou scan. / Five pinned ZIPs and five manifest baselines verified, no execution or scan. Sem aprovação de release / No release approval.
 - Licenças, SBOM, dependências transitivas, privacidade em execução e aceitação nativa continuam pendentes. / Licensing, SBOM, transitive dependencies, runtime privacy and native acceptance remain pending.
 
 Nenhum estado de distribuição foi relaxado. / No distribution state was relaxed.
