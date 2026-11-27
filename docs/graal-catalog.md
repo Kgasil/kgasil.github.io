@@ -98,6 +98,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Interoperabilidade 46068972194](https://github.com/Kgasil/kgasil.github.io/actions/runs/46068972194): SUCCESS. [Auditoria web 46068972302](https://github.com/Kgasil/kgasil.github.io/actions/runs/46068972302): falha de idioma Rubedo, correção CSP-compatible registrada em [política web](../validation/web/README.md); revalidação pendente. / Rubedo language failure, CSP-compatible fix recorded; revalidation pending. Nenhum bloqueio de segurança relaxado / No security holds relaxed.
 
+## Homologação institucional / Institutional acceptance — Etapa / Stage 08
+
+[Relatório final / Final report](institutional-acceptance-stage-08.md): oito etapas executadas no escopo documentado, homologação integral não concedida. / Eight stages executed in documented scope, full product acceptance not granted. [Web audit 46069975532](https://github.com/Kgasil/kgasil.github.io/actions/runs/46069975532) SUCCESS, 23 páginas, 536 referências, 138 visualizações e 0 erros. [Security inventory 46070267440](https://github.com/Kgasil/kgasil.github.io/actions/runs/46070267440) SUCCESS, Rubedo 1.0.1 baseline reviewed, histórico preservado; nenhum scan novo ou aprovação de release. / Historical package retained; no new scan or release approval. Avaliação ponderada de evidência: cinco projetos 5.95/10 em média, portal 6.75/10, meta 9/10 não comprovada. / Evidence maturity mean 5.95/10, portal 6.75/10; 9/10 not established. Genesis/Argus suspended, Aeris preview and draft PR blocked by AV evidence, Lilium controlled acceptance. Preserve all distribution gates.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
