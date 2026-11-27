@@ -75,6 +75,12 @@ O workflow de qualidade de produtos já existe: [GRAAL product quality](https://
 
 Nenhum estado de distribuição foi relaxado. / No distribution state was relaxed.
 
+## Identidade e experiência / Identity and experience — Etapa / Stage 04
+
+[Registro de correções e evidências / Change and evidence register](identity-experience-stage-04.md) · [Auditoria ampliada / Extended audit](https://github.com/Kgasil/kgasil.github.io/actions/runs/46067008188).
+
+Seis páginas iniciais e central de distribuição atualizadas com foco de teclado e continuidade de idioma; logos, paleta, funções e restrições preservados. / Six homepages and distribution center updated for keyboard focus and language continuity; logos, palette, functions and holds preserved. Contraste nominal do menu >=6.24:1 nas cores verificadas; não equivale a conformidade integral. / Nominal menu contrast >=6.24:1 for checked colors; not full conformance. Homologação ampliada de navegador pendente na consulta inicial. / Extended browser acceptance pending at initial query.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
