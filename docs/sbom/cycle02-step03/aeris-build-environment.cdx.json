@@ -1,0 +1,159 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "aeris-build-environment",
+      "version": "d6e03bc428fa3506fe5ec06d243e14438722432e",
+      "bom-ref": "root:aeris-build-environment",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Kgasil/aeris/tree/d6e03bc428fa3506fe5ec06d243e14438722432e"
+        },
+        {
+          "type": "other",
+          "url": "https://github.com/Kgasil/aeris/actions/runs/46070675695/artifacts/15232014420"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "graal:scope",
+        "value": "resolved build environment, not bundled libraries"
+      },
+      {
+        "name": "graal:completeness",
+        "value": "incomplete"
+      },
+      {
+        "name": "graal:dependency_graph",
+        "value": "NOT_ESTABLISHED"
+      },
+      {
+        "name": "graal:license_clearance",
+        "value": "NOT_TESTED"
+      },
+      {
+        "name": "graal:release_approved",
+        "value": "false"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "altgraph",
+      "version": "0.17.5",
+      "purl": "pkg:pypi/altgraph@0.17.5",
+      "bom-ref": "pkg:pypi/altgraph@0.17.5",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "packaging",
+      "version": "26.4",
+      "purl": "pkg:pypi/packaging@26.4",
+      "bom-ref": "pkg:pypi/packaging@26.4",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pefile",
+      "version": "2024.8.26",
+      "purl": "pkg:pypi/pefile@2024.8.26",
+      "bom-ref": "pkg:pypi/pefile@2024.8.26",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pip",
+      "version": "26.2.2",
+      "purl": "pkg:pypi/pip@26.2.2",
+      "bom-ref": "pkg:pypi/pip@26.2.2",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "purl": "pkg:pypi/pyinstaller@6.22.3",
+      "bom-ref": "pkg:pypi/pyinstaller@6.22.3",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.10",
+      "purl": "pkg:pypi/pyinstaller-hooks-contrib@2026.10",
+      "bom-ref": "pkg:pypi/pyinstaller-hooks-contrib@2026.10",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "purl": "pkg:pypi/pywin32-ctypes@0.2.3",
+      "bom-ref": "pkg:pypi/pywin32-ctypes@0.2.3",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "setuptools",
+      "version": "84.2.1",
+      "purl": "pkg:pypi/setuptools@84.2.1",
+      "bom-ref": "pkg:pypi/setuptools@84.2.1",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "incomplete",
+      "assemblies": [
+        "root:aeris-build-environment"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "genesis-source",
+      "version": "61cc385dc22a95ef02a51c220de1608bb23e513a",
+      "bom-ref": "root:genesis-source",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Kgasil/genesis/tree/61cc385dc22a95ef02a51c220de1608bb23e513a"
+        },
+        {
+          "type": "other",
+          "url": "https://github.com/Kgasil/kgasil.github.io/actions/runs/46070606868/artifacts/15232856916"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "graal:scope",
+        "value": "source declarations only"
+      },
+      {
+        "name": "graal:completeness",
+        "value": "incomplete"
+      },
+      {
+        "name": "graal:dependency_graph",
+        "value": "NOT_ESTABLISHED"
+      },
+      {
+        "name": "graal:license_clearance",
+        "value": "NOT_TESTED"
+      },
+      {
+        "name": "graal:release_approved",
+        "value": "false"
+      }
+    ]
+  },
+  "components": [],
+  "compositions": [
+    {
+      "aggregate": "incomplete",
+      "assemblies": [
+        "root:genesis-source"
+      ]
+    }
+  ]
+}

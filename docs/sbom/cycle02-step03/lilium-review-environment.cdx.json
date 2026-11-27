@@ -1,0 +1,432 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "lilium-review-environment",
+      "version": "b4b0f6986b32bfb5e02be1bcca903a3a5ce9fe0a",
+      "bom-ref": "root:lilium-review-environment",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Kgasil/lilium/tree/b4b0f6986b32bfb5e02be1bcca903a3a5ce9fe0a"
+        },
+        {
+          "type": "other",
+          "url": "https://github.com/Kgasil/lilium/actions/runs/46067881301/artifacts/15230903872"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "graal:scope",
+        "value": "isolated resolved review environment; workflow head"
+      },
+      {
+        "name": "graal:completeness",
+        "value": "incomplete"
+      },
+      {
+        "name": "graal:dependency_graph",
+        "value": "NOT_ESTABLISHED"
+      },
+      {
+        "name": "graal:license_clearance",
+        "value": "NOT_TESTED"
+      },
+      {
+        "name": "graal:release_approved",
+        "value": "false"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "altgraph",
+      "version": "0.17.5",
+      "purl": "pkg:pypi/altgraph@0.17.5",
+      "bom-ref": "pkg:pypi/altgraph@0.17.5",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "annotated-doc",
+      "version": "0.0.7",
+      "purl": "pkg:pypi/annotated-doc@0.0.7",
+      "bom-ref": "pkg:pypi/annotated-doc@0.0.7",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "purl": "pkg:pypi/annotated-types@0.8.0",
+      "bom-ref": "pkg:pypi/annotated-types@0.8.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "anyio",
+      "version": "4.16.0",
+      "purl": "pkg:pypi/anyio@4.16.0",
+      "bom-ref": "pkg:pypi/anyio@4.16.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "certifi",
+      "version": "2026.11.20",
+      "purl": "pkg:pypi/certifi@2026.11.20",
+      "bom-ref": "pkg:pypi/certifi@2026.11.20",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "click",
+      "version": "8.5.1",
+      "purl": "pkg:pypi/click@8.5.1",
+      "bom-ref": "pkg:pypi/click@8.5.1",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "purl": "pkg:pypi/defusedxml@0.7.1",
+      "bom-ref": "pkg:pypi/defusedxml@0.7.1",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "et-xmlfile",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/et-xmlfile@2.0.0",
+      "bom-ref": "pkg:pypi/et-xmlfile@2.0.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fastapi",
+      "version": "0.165.0",
+      "purl": "pkg:pypi/fastapi@0.165.0",
+      "bom-ref": "pkg:pypi/fastapi@0.165.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "h11",
+      "version": "0.16.0",
+      "purl": "pkg:pypi/h11@0.16.0",
+      "bom-ref": "pkg:pypi/h11@0.16.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "bom-ref": "pkg:pypi/httpcore@1.0.9",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "httpx",
+      "version": "0.28.1",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "bom-ref": "pkg:pypi/httpx@0.28.1",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "idna",
+      "version": "3.20",
+      "purl": "pkg:pypi/idna@3.20",
+      "bom-ref": "pkg:pypi/idna@3.20",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "purl": "pkg:pypi/openpyxl@3.1.5",
+      "bom-ref": "pkg:pypi/openpyxl@3.1.5",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "opentelemetry-api",
+      "version": "1.45.2",
+      "purl": "pkg:pypi/opentelemetry-api@1.45.2",
+      "bom-ref": "pkg:pypi/opentelemetry-api@1.45.2",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "packaging",
+      "version": "26.4",
+      "purl": "pkg:pypi/packaging@26.4",
+      "bom-ref": "pkg:pypi/packaging@26.4",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pefile",
+      "version": "2023.2.7",
+      "purl": "pkg:pypi/pefile@2023.2.7",
+      "bom-ref": "pkg:pypi/pefile@2023.2.7",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pillow",
+      "version": "13.0.0",
+      "purl": "pkg:pypi/pillow@13.0.0",
+      "bom-ref": "pkg:pypi/pillow@13.0.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pip",
+      "version": "26.3",
+      "purl": "pkg:pypi/pip@26.3",
+      "bom-ref": "pkg:pypi/pip@26.3",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pydantic",
+      "version": "2.14.4",
+      "purl": "pkg:pypi/pydantic@2.14.4",
+      "bom-ref": "pkg:pypi/pydantic@2.14.4",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pydantic-core",
+      "version": "2.50.5",
+      "purl": "pkg:pypi/pydantic-core@2.50.5",
+      "bom-ref": "pkg:pypi/pydantic-core@2.50.5",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pyinstaller",
+      "version": "6.16.0",
+      "purl": "pkg:pypi/pyinstaller@6.16.0",
+      "bom-ref": "pkg:pypi/pyinstaller@6.16.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.10",
+      "purl": "pkg:pypi/pyinstaller-hooks-contrib@2026.10",
+      "bom-ref": "pkg:pypi/pyinstaller-hooks-contrib@2026.10",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "purl": "pkg:pypi/pywin32-ctypes@0.2.3",
+      "bom-ref": "pkg:pypi/pywin32-ctypes@0.2.3",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "setuptools",
+      "version": "84.2.1",
+      "purl": "pkg:pypi/setuptools@84.2.1",
+      "bom-ref": "pkg:pypi/setuptools@84.2.1",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "starlette",
+      "version": "1.10.0",
+      "purl": "pkg:pypi/starlette@1.10.0",
+      "bom-ref": "pkg:pypi/starlette@1.10.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "typing-inspection",
+      "version": "0.4.5",
+      "purl": "pkg:pypi/typing-inspection@0.4.5",
+      "bom-ref": "pkg:pypi/typing-inspection@0.4.5",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "purl": "pkg:pypi/typing-extensions@4.16.0",
+      "bom-ref": "pkg:pypi/typing-extensions@4.16.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "environment-member"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "uvicorn",
+      "version": "0.48.0",
+      "purl": "pkg:pypi/uvicorn@0.48.0",
+      "bom-ref": "pkg:pypi/uvicorn@0.48.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "incomplete",
+      "assemblies": [
+        "root:lilium-review-environment"
+      ]
+    }
+  ]
+}

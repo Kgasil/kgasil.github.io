@@ -1,0 +1,159 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "lilium-source",
+      "version": "d92babb96cd0ad1b514709fdede3ee9ceae95e64",
+      "bom-ref": "root:lilium-source",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Kgasil/lilium/tree/d92babb96cd0ad1b514709fdede3ee9ceae95e64"
+        },
+        {
+          "type": "other",
+          "url": "https://github.com/Kgasil/kgasil.github.io/actions/runs/46070606868/artifacts/15232856916"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "graal:scope",
+        "value": "source declarations only"
+      },
+      {
+        "name": "graal:completeness",
+        "value": "incomplete"
+      },
+      {
+        "name": "graal:dependency_graph",
+        "value": "NOT_ESTABLISHED"
+      },
+      {
+        "name": "graal:license_clearance",
+        "value": "NOT_TESTED"
+      },
+      {
+        "name": "graal:release_approved",
+        "value": "false"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "fastapi",
+      "version": "0.165.0",
+      "purl": "pkg:pypi/fastapi@0.165.0",
+      "bom-ref": "pkg:pypi/fastapi@0.165.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "starlette",
+      "version": "1.10.0",
+      "purl": "pkg:pypi/starlette@1.10.0",
+      "bom-ref": "pkg:pypi/starlette@1.10.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "uvicorn",
+      "version": "0.48.0",
+      "purl": "pkg:pypi/uvicorn@0.48.0",
+      "bom-ref": "pkg:pypi/uvicorn@0.48.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "httpx",
+      "version": "0.28.1",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "bom-ref": "pkg:pypi/httpx@0.28.1",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "openpyxl",
+      "version": "3.1.5",
+      "purl": "pkg:pypi/openpyxl@3.1.5",
+      "bom-ref": "pkg:pypi/openpyxl@3.1.5",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "purl": "pkg:pypi/defusedxml@0.7.1",
+      "bom-ref": "pkg:pypi/defusedxml@0.7.1",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pyinstaller",
+      "version": "6.16.0",
+      "purl": "pkg:pypi/pyinstaller@6.16.0",
+      "bom-ref": "pkg:pypi/pyinstaller@6.16.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pillow",
+      "version": "13.0.0",
+      "purl": "pkg:pypi/pillow@13.0.0",
+      "bom-ref": "pkg:pypi/pillow@13.0.0",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "incomplete",
+      "assemblies": [
+        "root:lilium-source"
+      ]
+    }
+  ]
+}

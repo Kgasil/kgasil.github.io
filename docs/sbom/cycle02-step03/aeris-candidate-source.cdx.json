@@ -1,0 +1,68 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "aeris-candidate-source",
+      "version": "0b939e912295d078164528a1f4ab7958dd1c6bb8",
+      "bom-ref": "root:aeris-candidate-source",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Kgasil/aeris/tree/0b939e912295d078164528a1f4ab7958dd1c6bb8"
+        },
+        {
+          "type": "other",
+          "url": "https://github.com/Kgasil/kgasil.github.io/actions/runs/46070606868/artifacts/15232856916"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "graal:scope",
+        "value": "source declarations only"
+      },
+      {
+        "name": "graal:completeness",
+        "value": "incomplete"
+      },
+      {
+        "name": "graal:dependency_graph",
+        "value": "NOT_ESTABLISHED"
+      },
+      {
+        "name": "graal:license_clearance",
+        "value": "NOT_TESTED"
+      },
+      {
+        "name": "graal:release_approved",
+        "value": "false"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "purl": "pkg:pypi/pyinstaller@6.22.3",
+      "bom-ref": "pkg:pypi/pyinstaller@6.22.3",
+      "properties": [
+        {
+          "name": "graal:role",
+          "value": "direct-declaration"
+        }
+      ]
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "incomplete",
+      "assemblies": [
+        "root:aeris-candidate-source"
+      ]
+    }
+  ]
+}
