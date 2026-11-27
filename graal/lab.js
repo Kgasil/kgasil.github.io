@@ -21,7 +21,7 @@ async function verify(e){
  assert(p.pilots.every((x,i)=>x.id==="P0"+(i+1)&&canonical(x.source)===canonical(t.steps[[4,3,2][i]].source)));
  assert(t.steps[2].payload.review.attention==="none"&&t.steps[2].payload.reviewed_record_sha256===t.steps[1].sha256&&t.steps[3].payload.done===false);
  // Local arithmetic and fixture checks; no model or native project execution.
- const q=t.steps[0].payload.queue_inputs;assert(q[1]>q[0]&&Math.round(60*q[0]/(q[1]*(q[1]-q[0]))===Number(t.steps[1].payload.metrics[0].value)&&Math.round(60/(q[1]-q[0]))===Number(t.steps[1].payload.metrics[1].value));
+ const q=t.steps[0].payload.queue_inputs;assert(q[1]>q[0]&&Math.round(60*q[0]/(q[1]*(q[1]-q[0])))===Number(t.steps[1].payload.metrics[0].value)&&Math.round(60/(q[1]-q[0]))===Number(t.steps[1].payload.metrics[1].value));
 }
 function el(tag,txt,cls){const n=document.createElement(tag);if(txt!==undefined)n.textContent=txt;if(cls)n.className=cls;return n;}
 function setStatus(key){status=key;$("status").textContent=dict[lang][key];}
