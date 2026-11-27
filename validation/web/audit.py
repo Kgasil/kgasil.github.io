@@ -14,6 +14,7 @@ ORIGIN = "https://" + HOST
 EXCLUDED = ("backups/", "extension/", "core/")
 VIEWPORTS = ((390, 844), (768, 1024), (1440, 900))
 errors, pages, snapshots = [], {}, {}
+diagnostics = []
 stats = {"links": 0, "checksums": 0, "browser_views": 0, "experience_views": 0}
 
 class Page(HTMLParser):
@@ -201,6 +202,21 @@ def check_browser(root, output):
                                 last: links.length ? links.at(-1).getBoundingClientRect().right : null};
                             }""")
                             stats["browser_views"] += 1
+                            # Local CI timing is diagnostic only; it is not real-user performance.
+                            path = urlsplit(url).path
+                            if path in ("/index.html", "/distribuicao.html", "/genesis/business.html", *("/"+p+"/index.html" for p in PROJECTS)):
+                                timing = page.evaluate("""() => {
+                                  const n = performance.getEntriesByType('navigation')[0];
+                                  const nav = document.querySelector('nav.kg-graal-bar');
+                                  return {dom_interactive_ms:n?.domInteractive,dom_content_loaded_ms:n?.domContentLoadedEventEnd,
+                                    response_end_ms:n?.responseEnd,document_transfer_bytes:n?.transferSize,
+                                    nav_links:nav?.querySelectorAll('a').length,
+                                    images_without_alt:document.querySelectorAll('img:not([alt])').length,
+                                    headings_h1:document.querySelectorAll('h1').length,
+                                    unnamed_buttons:[...document.querySelectorAll('button')].filter(b=>!(b.getAttribute('aria-label')||b.getAttribute('aria-labelledby')||b.textContent.trim()||b.querySelector('img[alt]'))).length};
+                                }""")
+                                diagnostics.append({"engine":engine,"viewport":width,"page":path,**timing})
+
                             if not result["title"]:
                                 issues.append("missing title")
                             if result["width"] > result["viewport"] + 3:
@@ -242,6 +258,14 @@ def main():
     scope = "Local links, menus, nominal versions, tracked checksums, browser smoke tests and targeted keyboard/language/menu contrast checks; not full accessibility, malware certification or third-party link validation."
     report = {"commits": snapshots, "pages": len(pages), **stats, "errors": errors, "scope": scope}
     (output / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    if args.browser:
+        (output / "experience-baseline.json").write_text(json.dumps({"scope":"Local CI navigation timing and limited DOM accessibility indicators; not real-user metrics or WCAG compliance","samples":diagnostics},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        print(f"Experience baseline samples: {len(diagnostics)}")
+        for metric in ("dom_interactive_ms","dom_content_loaded_ms","document_transfer_bytes","images_without_alt","unnamed_buttons"):
+            values=[r[metric] for r in diagnostics if isinstance(r.get(metric),(int,float))]
+            if values:
+                print(f"Diagnostic {metric}: min={min(values):.2f}, max={max(values):.2f}, samples={len(values)}")
+
     summary = ["# GRAAL website audit", "", f"- Public pages: {len(pages)}",
                f"- Local links checked: {stats['links']}", f"- Tracked checksums: {stats['checksums']}",
                f"- Browser views: {stats['browser_views']}", f"- Targeted experience views: {stats['experience_views']}", f"- Errors: {len(errors)}", "",
