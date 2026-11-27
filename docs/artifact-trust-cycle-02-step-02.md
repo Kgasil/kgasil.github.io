@@ -17,7 +17,7 @@ Downloaded [evidence-only ZIP 15232014420](https://github.com/Kgasil/aeris/actio
 | Portable ZIP | 13942538 | 44fabffd6a3086e25a98ac21d6583a4ead89c79e7ba5366666b08cbc950b7b31 |
 | Bundled Aeris.exe | not separately recorded here | c57112bd453fba412d6d5dff08902c7ca8172587a4bdbb493aa14d12cdc32365 |
 
-Package inventory, SHA256SUMS and ClamAV candidate hash fields agree. ClamAV post-scan inventory integrity PASS; not evidence of a completed scan. Hosted install, terms refusal, installed self-test, 49 installed files, reinstall and uninstall preservation PASS with synthetic marker. Installer NotSigned; 17 notices inventoried, license review pending. Three packaged smoke runs 3004, 2819, 2845 ms; not real-user startup/AI latency.
+Package inventory, SHA256SUMS and ClamAV candidate hash fields agree. Offline ZIP CRC test passed; 33 unique entries. The 49-file distributed inventory also agrees with the separate Aeris.exe SHA-256 record. ClamAV post-scan inventory integrity PASS; not evidence of a completed scan. Hosted install, terms refusal, installed self-test, 49 installed files, reinstall and uninstall preservation PASS with synthetic marker. Installer NotSigned; 17 notices inventoried, license review pending. Three packaged smoke runs 3004, 2819, 2845 ms; not real-user startup/AI latency.
 
 ## Antivirus / Antivírus
 Defender: enabled, engine 1.1.26100.4, signature updated from 1.463.440.0 to 1.463.499.0; age 26572 s (within 24h). Exact target-specific exclusion logs report all three targets not excluded (exit 1). Scan logs: Setup and Portable explicitly SKIPPED despite exit 0; bundle explicit no-threat result; 0 matched detections in queried event scope. Overall INCONCLUSIVE. Cause of skips not established; no inference of false positive or clearance.
