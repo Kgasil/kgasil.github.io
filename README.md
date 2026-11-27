@@ -20,9 +20,30 @@
 
 **Papel no ecossistema / Ecosystem role:** Hoje, os projetos são desenvolvidos individualmente. A visão de longo prazo é a de frentes especializadas com autonomia e missões complementares, coordenadas pela K&G Vision. / Today, the projects are developed individually. The long-term vision is specialized initiatives with autonomy and complementary missions, coordinated by K&G Vision.
 
+
+## GRAAL — metodologia empresarial / business methodology
+
+**Aprender · Construir · Proteger · Simplificar · Evoluir** / **Learn · Build · Protect · Simplify · Evolve**
+
+A K&G Vision propõe uma abordagem de imersão operacional: compreender o negócio, construir confiança e identificar oportunidades de melhoria antes de propor soluções. / K&G Vision proposes an operational immersion approach: understand the business, build trust and identify improvement opportunities before proposing solutions.
+
+| Pilar / Pillar | Aplicação / Application | Projeto / Project |
+| --- | --- | --- |
+| Aprender / Learn | Conhecer o negócio e seus desafios / Understand the business and its challenges | [Genesis](https://kgasil.github.io/genesis/) |
+| Construir / Build | Pesquisa, engenharia e soluções adequadas / Research, engineering and context-appropriate solutions | [Rubedo](https://kgasil.github.io/rubedo/) |
+| Proteger / Protect | Segurança, privacidade e governança / Security, privacy and governance | [Argus](https://kgasil.github.io/argus/) |
+| Simplificar / Simplify | Processos eficientes e automação / Efficient processes and automation | [Aeris](https://kgasil.github.io/aeris/) |
+| Evoluir / Evolve | Indicadores, resultados e melhoria contínua / Metrics, results and continuous improvement | [Lilium](https://kgasil.github.io/lilium/) |
+
+**Possibilidades de colaboração / Collaboration opportunities:** operações e processos, dados e BI, automação e integrações, inteligência artificial, segurança e governança / operations and processes, data and BI, automation and integrations, AI, security and governance.
+
+A iniciativa permanece independente, ainda não constituída como empresa. A prestação de serviços, os acessos e o escopo dependem de formalização, enquadramento adequado e autorização. Os projetos públicos são demonstrações e pesquisa, não auditorias certificadas nem produtos de produção. Referências empresariais somente com autorização. / The initiative remains independent, not yet incorporated. Services, access and scope require formal agreement, legal eligibility and authorization. Public projects are demonstrations and research, not certified audits or production products. Business references require permission.
+
+[Metodologia / Methodology](https://kgasil.github.io/#graal) · [Soluções / Solutions](https://kgasil.github.io/#solucoes) · [Parcerias / Partnerships](https://kgasil.github.io/#contato)
+
 ## English
 
-K&G Vision is an independent technology initiative with a clear ambition: turn knowledge into practical technology, engineer AI for trust, simplify everyday work and empower business growth. Our long-term research direction spans vendor-neutral AI integration, cybersecurity, AI assurance and performance. The initiative is in development, is not an incorporated company and does not currently offer commercial services.
+K&G Vision is an independent technology initiative with a clear ambition: turn knowledge into practical technology, engineer AI for trust, simplify everyday work and empower business growth. Our long-term research direction spans vendor-neutral AI integration, cybersecurity, AI assurance and performance. The initiative is in development and is not an incorporated company; potential collaborations are subject to formal agreement and legal eligibility.
 
 | Project | Purpose | Status |
 | --- | --- | --- |
@@ -38,7 +59,7 @@ This repository hosts the provisional institutional website. The technical labor
 
 ## Português
 
-A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ainda não constituída como empresa. Nosso propósito é conectar conhecimento científico, engenharia responsável e tecnologia útil. Nosso direcionamento de longo prazo inclui integração de IA, cibersegurança, avaliação de confiabilidade de IA e desempenho, sem dependência de um fornecedor. São objetivos de pesquisa, não serviços comerciais atualmente oferecidos.
+A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ainda não constituída como empresa. Nosso propósito é conectar conhecimento científico, engenharia responsável e tecnologia útil. Nosso direcionamento de longo prazo inclui integração de IA, cibersegurança, avaliação de confiabilidade de IA e desempenho, sem dependência de um fornecedor. São objetivos de pesquisa e áreas propostas de colaboração, sujeitas à formalização e ao enquadramento adequado.
 
 | Projeto | Propósito | Situação |
 | --- | --- | --- |
@@ -69,7 +90,7 @@ O site institucional está em construção. Os 75 PDFs completos e materiais int
 
 ## Website
 
-- `index.html`: responsive institutional preview, PT-BR / EN.
+- `index.html`: responsive institutional website with GRAAL, proposed business solutions, project ecosystem and partnership contact, PT-BR / EN.
 - `assets/kg-symbol.svg`: institutional shield with five project colors and a white center.
 - `assets/brand-banner.svg`: institutional banner.
 
