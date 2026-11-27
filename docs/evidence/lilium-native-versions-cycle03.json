@@ -1,0 +1,61 @@
+{
+  "schema": "graal.native-version-evidence.v1",
+  "date": "2026-11-27",
+  "project": "lilium",
+  "candidate": "0.14.0",
+  "build_commit": "871c2e5c91654a8bf518e6f3d1b78c6f0ee8e13d",
+  "portable_sha256": "b5e0d1d1c1dd9795bc519093bfd03d4d4992d202dc81c1c9ef206befd339d20f",
+  "artifact": "https://github.com/Kgasil/lilium/actions/runs/46067881283/artifacts/15231318535",
+  "method": "Static UTF-16LE version strings from exact ZIP members; SHA-256 per file; not signed version metadata or execution",
+  "files": [
+    {
+      "path": "_internal/python312.dll",
+      "version": "3.12.10",
+      "sha256": "9a0e3435aaa680d868150f87ab3e388ad2eebc22f87e036155c7b4eda8cd2120"
+    },
+    {
+      "path": "_internal/libcrypto-3.dll",
+      "version": "3.0.16",
+      "sha256": "ccfffddcd3defb8d899026298af9af43bc186130f8483d77e97c93233d5f27d7"
+    },
+    {
+      "path": "_internal/libssl-3.dll",
+      "version": "3.0.16",
+      "sha256": "007142039f04d04e0ed607bda53de095e5bc6a8a10d26ecedde94ea7d2d7eefe"
+    },
+    {
+      "path": "_internal/libffi-8.dll",
+      "version": null,
+      "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a"
+    },
+    {
+      "path": "_internal/sqlite3.dll",
+      "version": "3.49.1.0",
+      "sha256": "8daa45684bf6688fca28d956b2e8942f2fa98f656675ce68e6d61dd869848a7a"
+    },
+    {
+      "path": "_internal/VCRUNTIME140.dll",
+      "version": "14.42.34438.0",
+      "sha256": "052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4"
+    },
+    {
+      "path": "_internal/VCRUNTIME140_1.dll",
+      "version": "14.42.34438.0",
+      "sha256": "6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8"
+    },
+    {
+      "path": "_internal/ucrtbase.dll",
+      "version": "10.0.26100.1742",
+      "sha256": "2e5fb14b7bf8540278f3614a12f0226e56a7cc9e64b81cbd976c6fcf2f71cbfb"
+    }
+  ],
+  "references": [
+    "https://www.python.org/downloads/release/python-31216/",
+    "https://openssl-library.org/post/2026-09-16-eol30/",
+    "https://sqlite.org/releaselog/3_49_2.html"
+  ],
+  "review_issue": "https://github.com/Kgasil/lilium/issues/10",
+  "advisory_applicability": "REVIEW_REQUIRED",
+  "license_clearance": "NOT_TESTED",
+  "release_approved": false
+}
