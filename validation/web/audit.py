@@ -15,6 +15,7 @@ EXCLUDED = ("backups/", "extension/", "core/")
 VIEWPORTS = ((390, 844), (768, 1024), (1440, 900))
 errors, pages, snapshots = [], {}, {}
 diagnostics = []
+repeat_diagnostics = []
 stats = {"links": 0, "checksums": 0, "browser_views": 0, "experience_views": 0}
 
 class Page(HTMLParser):
@@ -154,6 +155,40 @@ def check_experience(page, base, path):
     stats["experience_views"] += 1
     return issues
 
+def repeat_experience(page, base, path, engine, width):
+    """Three additional isolated navigations in the existing routed context; diagnostic only."""
+    rounds = []
+    for number in range(1, 4):
+        response = page.goto(base + path, wait_until="load", timeout=20000)
+        if not response or not response.ok:
+            raise RuntimeError("repeat navigation failed")
+        sample = page.evaluate("""() => {
+          const n=performance.getEntriesByType('navigation')[0];
+          const nav=document.querySelector('nav.kg-graal-bar');
+          return {dom_interactive_ms:n.domInteractive,dom_content_loaded_ms:n.domContentLoadedEventEnd,
+            load_end_ms:n.loadEventEnd,document_transfer_bytes:n.transferSize,
+            resource_count:performance.getEntriesByType('resource').length,
+            nav_links:nav?.querySelectorAll('a').length,
+            horizontal_overflow_px:Math.max(0,document.documentElement.scrollWidth-document.documentElement.clientWidth)};
+        }""")
+        rounds.append({"round":number,**sample})
+    old=page.viewport_size
+    try:
+        page.set_viewport_size({"width":320,"height":800})
+        narrow=page.evaluate("""() => ({
+          overflow_px:Math.max(0,document.documentElement.scrollWidth-document.documentElement.clientWidth),
+          active_main:!!document.querySelector('main'),h1_count:document.querySelectorAll('h1').length,
+          links:[...document.querySelectorAll('nav.kg-graal-bar a')].length
+        })""")
+        page.keyboard.press("Tab")
+        narrow["first_tab"]=page.evaluate("""() => {
+          const a=document.activeElement;
+          return {tag:a?.tagName||null,skip:!!a?.matches('a.skip'),focus_visible:!!a?.matches(':focus-visible')};
+        }""")
+    finally:
+        page.set_viewport_size(old)
+    return {"engine":engine,"viewport":width,"page":path,"rounds":rounds,"narrow_320":narrow}
+
 def check_browser(root, output):
     from playwright.sync_api import sync_playwright
     class QuietHandler(SimpleHTTPRequestHandler):
@@ -229,6 +264,7 @@ def check_browser(root, output):
                             path = urlsplit(url).path
                             if path in ("/index.html", "/distribuicao.html", "/genesis/business.html", *("/"+p+"/index.html" for p in PROJECTS)):
                                 issues.extend(check_experience(page, base, path))
+                                repeat_diagnostics.append(repeat_experience(page, base, path, engine, width))
                             issues.extend("JS: " + e for e in js_errors)
                             if issues or (engine == "chromium" and width == 1440 and urlsplit(url).path.count("/") <= 2 and url.endswith("/index.html")):
                                 page.screenshot(path=str(shots / (key + ".png")), timeout=10000)
@@ -261,6 +297,20 @@ def main():
     if args.browser:
         (output / "experience-baseline.json").write_text(json.dumps({"scope":"Local CI navigation timing and limited DOM accessibility indicators; not real-user metrics or WCAG compliance","samples":diagnostics},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print(f"Experience baseline samples: {len(diagnostics)}")
+        (output / "experience-repeat.json").write_text(json.dumps({"scope":"Three additional local routed navigations per setting; not cold-cache, real-user metrics, RAM or WCAG compliance","samples":repeat_diagnostics},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        repeat_rows=[r for sample in repeat_diagnostics for r in sample["rounds"]]
+        print(f"Repeat navigation samples: {len(repeat_rows)}")
+        print(f"320px observations: {len(repeat_diagnostics)}")
+        for metric in ("dom_interactive_ms","dom_content_loaded_ms","load_end_ms","document_transfer_bytes","resource_count"):
+            vals=[r[metric] for r in repeat_rows if isinstance(r.get(metric),(int,float))]
+            if vals:
+                import statistics
+                print(f"Repeat {metric}: median={statistics.median(vals):.2f}, max={max(vals):.2f}, samples={len(vals)}")
+        narrow=[s for s in repeat_diagnostics if s["narrow_320"]["overflow_px"]>3]
+        print(f"320px overflow observations: {len(narrow)}")
+        for sample in narrow:
+            print(f"320px diagnostic: {sample['engine']} {sample['page']} prior viewport={sample['viewport']} overflow={sample['narrow_320']['overflow_px']}px")
+
         for metric in ("dom_interactive_ms","dom_content_loaded_ms","document_transfer_bytes","images_without_alt","unnamed_buttons"):
             values=[r[metric] for r in diagnostics if isinstance(r.get(metric),(int,float))]
             if values:
