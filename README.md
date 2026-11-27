@@ -1,4 +1,4 @@
-<p align="center"><a href="https://kgasil.github.io/"><img src="assets/brand-banner.svg?v=20261126-2" alt="K&amp;G Vision — Intelligence Without Boundaries. Engineered for Trust." width="100%"></a></p>
+<p align="center"><a href="https://kgasil.github.io/"><img src="assets/brand-banner.svg?v=20261127-graal" alt="K&amp;G Vision — Intelligence Without Boundaries. Engineered for Trust." width="100%"></a></p>
 
 # K&G Vision
 
@@ -32,7 +32,7 @@ K&G Vision is an independent technology initiative with a clear ambition: turn k
 | [Project Aeris](https://github.com/Kgasil/aeris) | Lightweight, modular desktop and browser productivity tools | Desktop 1.1.0 RC1 public experimental preview; Extension 1.0.0 available for free manual installation |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Business intelligence, reporting and strategic automation | Web Lab 1.0; Desktop v0.14.0 controlled preview; Mini v0.1.1 GitHub-only |
 
-**Learn · Discover · Build · Simplify · Evolve**
+**Learn · Build · Protect · Simplify · Evolve**
 
 This repository hosts the provisional institutional website. The technical laboratory now lives at [Project Argus](https://github.com/Kgasil/argus). Current demonstrations are educational prototypes, not production products or independent security audits.
 
@@ -48,7 +48,7 @@ A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ain
 | [Project Aeris](https://github.com/Kgasil/aeris) | Ferramentas leves e modulares para produtividade | Desktop 1.1.0 RC1 em prévia pública experimental; Extensão 1.0.0 disponível para instalação manual gratuita |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Inteligência empresarial, relatórios e automação estratégica | Web Lab 1.0; Desktop v0.14.0 em prévia; Mini v0.1.1 pelo GitHub |
 
-**Aprender · Descobrir · Construir · Simplificar · Evoluir**
+**Aprender · Construir · Proteger · Simplificar · Evoluir**
 
 O site institucional está em construção. Os 75 PDFs completos e materiais internos do Genesis não fazem parte deste repositório. O acesso ao acervo é solicitado diretamente ao idealizador pelo [LinkedIn](https://www.linkedin.com/in/kaio-gabriel-da-silva). As amostras públicas estão na biblioteca do Genesis. O laboratório técnico permanece em [Project Argus](https://kgasil.github.io/argus/).
 
@@ -65,7 +65,7 @@ O site institucional está em construção. Os 75 PDFs completos e materiais int
 
 **Version note / Nota de versão:** 1.0 identifies the first completed public-facing project milestone of the ecosystem, not a uniform software release tag. Genesis is an editorial milestone; Argus retains technical baseline V10.2; Aeris 1.0.0 applies to Extension; Lilium 1.0 applies to Web Lab. / 1.0 identifica o primeiro marco público do ecossistema, não uma tag de software uniforme. Genesis é um marco editorial; Argus mantém a base V10.2; Aeris 1.0.0 refere-se à extensão; Lilium 1.0 refere-se ao Web Lab. Desktop previews are not stable releases / Prévias Desktop não são versões estáveis.
 
-**Learn · Discover · Build · Simplify · Evolve / Aprender · Descobrir · Construir · Simplificar · Evoluir**
+**Learn · Build · Protect · Simplify · Evolve / Aprender · Construir · Proteger · Simplificar · Evoluir**
 
 ## Website
 
@@ -81,7 +81,7 @@ Contact: [GitHub](https://github.com/Kgasil) · [LinkedIn](https://www.linkedin.
 
 ## Identidade K&G Vision / K&G Vision identity
 
-[![K&G Vision — stacked wordmark, five-project GRAAL identity](https://raw.githubusercontent.com/Kgasil/kgasil.github.io/main/assets/brand-banner.svg?v=20261126-2)](https://kgasil.github.io/)
+[![K&G Vision — stacked wordmark, five-project GRAAL identity](https://raw.githubusercontent.com/Kgasil/kgasil.github.io/main/assets/brand-banner.svg?v=20261127-graal)](https://kgasil.github.io/)
 
 [Versão vertical / Vertical lockup](https://github.com/Kgasil/kgasil.github.io/blob/main/assets/brand-stacked.svg) · [Escudo / Shield](https://github.com/Kgasil/kgasil.github.io/blob/main/assets/kg-symbol.svg)
 
@@ -101,7 +101,7 @@ O escudo preserva as quatro cores laterais e o núcleo branco; Rubedo ocupa apen
 
 [![K&G Vision — GRAAL](https://raw.githubusercontent.com/Kgasil/kgasil.github.io/main/assets/kg-symbol.svg?v=20261126-2)](https://kgasil.github.io/) **GRAAL · Marco 01** — identidade integrada / integrated identity.
 
-**GRAAL — Descobrir / Discover:** [Rubedo Research Workspace](https://kgasil.github.io/rubedo/research/) · [Precisão / Precision (R06)](https://kgasil.github.io/rubedo/research/#precisao) · [Monte Carlo (R07)](https://kgasil.github.io/rubedo/research/#monte-carlo). Novos modelos experimentais; validação atual pendente / Experimental additions; current validation pending.
+**GRAAL — Construir / Build (Rubedo):** [Rubedo Research Workspace](https://kgasil.github.io/rubedo/research/) · [Precisão / Precision (R06)](https://kgasil.github.io/rubedo/research/#precisao) · [Monte Carlo (R07)](https://kgasil.github.io/rubedo/research/#monte-carlo). Novos modelos experimentais; validação atual pendente / Experimental additions; current validation pending.
 
 **Rubedo — edição 1.0 / 1.0 edition:** [Research Workspace 1.0](https://kgasil.github.io/rubedo/research/) · [Mini Lab 1.0.0](https://kgasil.github.io/rubedo/mini/) · [Mini Extension 1.0.0 — instalação manual / manual installation](https://kgasil.github.io/rubedo/#instalar). Edição experimental / Experimental edition.
 
