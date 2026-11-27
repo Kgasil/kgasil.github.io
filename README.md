@@ -109,3 +109,8 @@ O escudo preserva as quatro cores laterais e o núcleo branco; Rubedo ocupa apen
 ## GRAAL — auditoria contínua dos sites / continuous website audit
 
 [Auditoria automatizada / Automated audit](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-web-audit.yml) · [Escopo e evidências / Scope and evidence](validation/web/README.md). Verificação diária de navegação, links, versões, integridade dos pacotes rastreados e responsividade em navegadores; não substitui análise antimalware. / Daily navigation, link, version, tracked package integrity and browser layout checks; not a substitute for malware analysis.
+
+
+## Central de distribuição / Distribution center
+
+[Versões, canais oficiais e segurança / Versions, official channels and security](https://kgasil.github.io/distribuicao.html) · [Critérios de liberação / Release criteria](validation/distribution/README.md).

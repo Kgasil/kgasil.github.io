@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'distribuicao.html'
+      - 'validation/distribution/**'
       - 'portfolio/**'
       - 'validation/web/**'
       - '.github/workflows/graal-web-audit.yml'
