@@ -4,12 +4,13 @@ on:
   schedule:
     - cron: '20 10 * * *'
   push:
-    branches: [main]
+    branches: [main, development/graal-cycle03-commercial]
     paths:
       - 'index.html'
       - 'distribuicao.html'
       - 'validation/distribution/**'
       - 'portfolio/**'
+      - 'graal/**'
       - 'validation/web/**'
       - '.github/workflows/graal-web-audit.yml'
 permissions:
