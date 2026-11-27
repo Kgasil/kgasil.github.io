@@ -106,6 +106,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Plano e evidências / Plan and evidence](technical-excellence-cycle-02.md). [Inventário de fontes / Source inventory 46070606868](https://github.com/Kgasil/kgasil.github.io/actions/runs/46070606868): SUCCESS, 5 testes e seis snapshots; não equivale a SBOM resolvido nem revisão de licenças. / Five tests and six snapshots; not resolved SBOM or license clearance. Aeris dependency evidence gate strengthened on draft branch; current CI pending at query. / Gate de dependências reforçado na branch draft; CI pendente na consulta. [Diagnóstico web / Web diagnostics](https://github.com/Kgasil/kgasil.github.io/actions/runs/46070565443) pending browser conclusion at initial query. No release approval; all restrictions retained.
 
+## Ciclo 02 — Etapa 02 / Cycle 02 — Step 02: Artifact trust
+
+[Relatório de evidências / Evidence report](artifact-trust-cycle-02-step-02.md). [Aeris 46070675695](https://github.com/Kgasil/aeris/actions/runs/46070675695): regression and OSV correction PASS; AV gate FAIL. Evidence ZIP 15232014420 independently hash-verified, installer and portable digests recorded in report (binaries absent). Defender 2 SKIPPED, bundle explicit no threats; ClamAV 28194 verified but stale, 0 scans. Genesis/Argus incidents OPEN, distribution suspended. / Incidentes abertos; instalação suspensa. No release approval; no rebuild requested. [Web baseline 46070565443](https://github.com/Kgasil/kgasil.github.io/actions/runs/46070565443) SUCCESS with 48 diagnostic samples, 138 views, 0 errors. / Diagnóstico local, não certificação.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
