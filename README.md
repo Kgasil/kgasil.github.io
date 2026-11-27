@@ -104,3 +104,8 @@ O escudo preserva as quatro cores laterais e o núcleo branco; Rubedo ocupa apen
 **GRAAL — Descobrir / Discover:** [Rubedo Research Workspace](https://kgasil.github.io/rubedo/research/) · [Precisão / Precision (R06)](https://kgasil.github.io/rubedo/research/#precisao) · [Monte Carlo (R07)](https://kgasil.github.io/rubedo/research/#monte-carlo). Novos modelos experimentais; validação atual pendente / Experimental additions; current validation pending.
 
 **Rubedo — edição 1.0 / 1.0 edition:** [Research Workspace 1.0](https://kgasil.github.io/rubedo/research/) · [Mini Lab 1.0.0](https://kgasil.github.io/rubedo/mini/) · [Mini Extension 1.0.0 — instalação manual / manual installation](https://kgasil.github.io/rubedo/#instalar). Edição experimental / Experimental edition.
+
+
+## GRAAL — auditoria contínua dos sites / continuous website audit
+
+[Auditoria automatizada / Automated audit](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-web-audit.yml) · [Escopo e evidências / Scope and evidence](validation/web/README.md). Verificação diária de navegação, links, versões, integridade dos pacotes rastreados e responsividade em navegadores; não substitui análise antimalware. / Daily navigation, link, version, tracked package integrity and browser layout checks; not a substitute for malware analysis.

@@ -1,0 +1,56 @@
+name: GRAAL public website audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 10 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'portfolio/**'
+      - 'validation/web/**'
+      - '.github/workflows/graal-web-audit.yml'
+permissions:
+  contents: read
+concurrency:
+  group: graal-public-web-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch public project snapshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          for project in genesis rubedo argus aeris lilium; do
+            git clone --depth 1 --branch main "https://github.com/Kgasil/$project.git" "$project"
+          done
+      - name: Install browser testing tools
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium firefox
+      - name: Run public website audit
+        run: python validation/web/audit.py --webroot . --output "$RUNNER_TEMP/graal-web-audit" --browser
+      - name: Publish summary
+        if: always()
+        shell: bash
+        run: |
+          if test -f "$RUNNER_TEMP/graal-web-audit/summary.md"; then
+            cat "$RUNNER_TEMP/graal-web-audit/summary.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Retain audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graal-website-audit
+          path: ${{ runner.temp }}/graal-web-audit/
+          retention-days: 14
+          if-no-files-found: warn
