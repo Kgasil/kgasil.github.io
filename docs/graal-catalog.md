@@ -92,6 +92,12 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Arquitetura e contratos / Architecture and contracts](interoperability-stage-06.md) · [Workflow](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-interoperability.yml). Projeção JSON do catálogo e contrato de métricas sintéticas v1, adaptadores de referência Rubedo/Lilium, sem conexão operacional entre produtos. / Catalog JSON projection and synthetic metric contract v1, Rubedo/Lilium reference adapters, no production connection between products. Estados de distribuição preservados. / Distribution states preserved. [Run 46067847465](https://github.com/Kgasil/kgasil.github.io/actions/runs/46067847465): SUCCESS, 12/12 testes, 16 componentes, dois registros sintéticos validados, três JSONs gerados; release_approved=false. / 12/12 tests, 16 components, two synthetic records validated, three JSON files generated; no release approval.
 
+## Maturidade empresarial / Business maturity — Etapa / Stage 07
+
+[Governança empresarial / Business governance](business-governance-stage-07.md): responsabilidades funcionais propostas, indicadores, critérios de contratação, gestão de riscos, propriedade intelectual, classificação da informação e planejamento de formalização. / Proposed functional responsibilities, metrics, engagement gates, risk, IP, information classification and formalization planning. Preços, comissões, dados pessoais, contratos e decisões internas permanecem fora do GitHub público. / Pricing, commissions, personal data, contracts and internal decisions remain outside public GitHub.
+
+[Interoperabilidade 46068972194](https://github.com/Kgasil/kgasil.github.io/actions/runs/46068972194): SUCCESS. [Auditoria web 46068972302](https://github.com/Kgasil/kgasil.github.io/actions/runs/46068972302): falha de idioma Rubedo, correção CSP-compatible registrada em [política web](../validation/web/README.md); revalidação pendente. / Rubedo language failure, CSP-compatible fix recorded; revalidation pending. Nenhum bloqueio de segurança relaxado / No security holds relaxed.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
