@@ -131,9 +131,24 @@ def check_experience(page, base, path):
     require(skip.evaluate("(e) => {const r=e.getBoundingClientRect();return r.top>=0&&r.left>=0&&r.bottom<=innerHeight}"), "skip link not visible when focused")
     page.keyboard.press("Enter")
     require(page.evaluate("document.activeElement === document.querySelector('main')"), "skip link did not move keyboard focus to main")
+    # Smooth anchor scrolling can still be in progress after focus moves.
+    # Wait for actual position stability, then perform the original single click.
+    # This does not retry clicks or waive any language assertion.
+    page.evaluate("""() => new Promise((resolve,reject) => {
+      let old=[scrollX,scrollY], stable=0, start=performance.now();
+      function tick(){
+        const next=[scrollX,scrollY];
+        stable=(next[0]===old[0]&&next[1]===old[1])?stable+1:0;old=next;
+        if(stable>=8)return resolve();
+        if(performance.now()-start>3000)return reject(Error('scroll did not settle'));
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    })""")
     for lang, label in (("en", "English"), ("pt", "Português (Brasil)")):
         btn = page.locator("#"+lang)
         require(btn.get_attribute("aria-label") == label, "language accessible label missing: "+lang)
+        btn.scroll_into_view_if_needed()
         btn.click()
         require(page.locator("html").get_attribute("lang") == ("en" if lang=="en" else "pt-BR"), "document language mismatch: "+lang)
         require(btn.get_attribute("aria-pressed") == "true", "language pressed state mismatch")
