@@ -1,0 +1,44 @@
+name: GRAAL SBOM schema validation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/sbom/**'
+      - 'validation/operational/validate_sbom.py'
+      - '.github/workflows/graal-sbom-validation.yml'
+permissions:
+  contents: read
+jobs:
+  schema:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate with pinned upstream schema
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-sbom"
+          mkdir -p "$out"
+          git init -q "$out/specification"
+          git -C "$out/specification" fetch --depth 1 https://github.com/CycloneDX/specification.git c320fc0f0b46873864927d9d5684eea7ba439728
+          git -C "$out/specification" checkout --detach FETCH_HEAD
+          test "$(git -C "$out/specification" rev-parse HEAD)" = "c320fc0f0b46873864927d9d5684eea7ba439728"
+          python -m venv "$out/venv"
+          "$out/venv/bin/python" -m pip install --disable-pip-version-check 'jsonschema==4.25.1'
+          "$out/venv/bin/python" -m pip freeze > "$out/validator-environment.txt"
+          "$out/venv/bin/python" validation/operational/validate_sbom.py "$out/specification/schema" docs/sbom/cycle02-step03 "$out/schema-report.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graal-sbom-schema-evidence
+          path: |
+            ${{ runner.temp }}/graal-sbom/schema-report.json
+            ${{ runner.temp }}/graal-sbom/validator-environment.txt
+          retention-days: 14
+          if-no-files-found: error
