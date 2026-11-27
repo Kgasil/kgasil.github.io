@@ -1,0 +1,50 @@
+name: GRAAL integrated web lab
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, development/graal-cycle03-web-integration]
+    paths:
+      - 'graal/**'
+      - 'validation/integration/**'
+      - 'docs/graal-catalog.md'
+      - '.github/workflows/graal-web-lab.yml'
+permissions:
+  contents: read
+jobs:
+  lab:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Recompute evidence from pinned source revisions
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-web"
+          mkdir -p "$out"
+          for entry in genesis:fa517115bf6932ae7d2020b7d3c12f3e47505626 rubedo:465f23ff32220cddc0bae155054783619943553c argus:a7a68a59b30dd7cb52eac8b531aa76158fb1377e aeris:d6e03bc428fa3506fe5ec06d243e14438722432e lilium:d92babb96cd0ad1b514709fdede3ee9ceae95e64; do
+            p="${entry%%:*}"; sha="${entry#*:}"
+            git init -q "$out/$p"
+            git -C "$out/$p" fetch --depth 1 "https://github.com/Kgasil/$p.git" "$sha"
+            git -C "$out/$p" checkout --detach FETCH_HEAD
+            test "$(git -C "$out/$p" rev-parse HEAD)" = "$sha"
+          done
+          python3 validation/integration/test_demo.py "$out"
+          python3 validation/integration/test_pilots.py "$out"
+          python3 validation/integration/verify_web_evidence.py "$out"
+          node --check graal/lab.js
+      - name: Install browser test tools
+        run: |
+          python3 -m pip install playwright==1.56.0
+          python3 -m playwright install --with-deps chromium firefox
+      - name: Browser acceptance
+        run: python3 validation/integration/test_web_lab.py "$RUNNER_TEMP/graal-web-evidence"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: graal-web-lab-evidence
+          path: ${{ runner.temp }}/graal-web-evidence/
+          retention-days: 14
+          if-no-files-found: warn

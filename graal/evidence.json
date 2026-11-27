@@ -1,0 +1,323 @@
+{
+  "trace": {
+    "schema": "graal.demo.trace.v1",
+    "fixture": "queue-and-finance-demo-v1",
+    "data_kind": "synthetic",
+    "release_approved": false,
+    "grants": [
+      "genesis:rubedo",
+      "rubedo:argus",
+      "argus:aeris",
+      "aeris:lilium"
+    ],
+    "catalog_sha256": "466435c1649456d932316e4b2bc8c244f63f1c0ac11861d9e61203f02f57b48a",
+    "steps": [
+      {
+        "stage": "genesis",
+        "fixture": "queue-and-finance-demo-v1",
+        "data_kind": "synthetic",
+        "source": {
+          "project": "genesis",
+          "commit": "fa517115bf6932ae7d2020b7d3c12f3e47505626",
+          "path": "extension/core.js",
+          "sha256": "770ac3f9f61be71fd096357a6bad3a78acd7e7d4afa73ce9dae463a823b8ee3b"
+        },
+        "previous_sha256": null,
+        "approved_transfer": null,
+        "payload": {
+          "reading_words": 11,
+          "reading_minutes": 1,
+          "queue_inputs": [
+            6,
+            10
+          ],
+          "objective": "queue_wait_review"
+        },
+        "sha256": "449041c861d2b8f82ff412ac8ee36b819c5920345e818faac36c0ef3bf1e3869"
+      },
+      {
+        "stage": "rubedo",
+        "fixture": "queue-and-finance-demo-v1",
+        "data_kind": "synthetic",
+        "source": {
+          "project": "rubedo",
+          "commit": "465f23ff32220cddc0bae155054783619943553c",
+          "path": "examples/reference-results.json",
+          "sha256": "c107721fcc01e896c43c2fd8249d138fadfae8d25110da98c5834a7964c0134d"
+        },
+        "previous_sha256": "449041c861d2b8f82ff412ac8ee36b819c5920345e818faac36c0ef3bf1e3869",
+        "approved_transfer": "genesis:rubedo",
+        "payload": {
+          "schema": "graal.metric.v1",
+          "source": "rubedo",
+          "source_schema": "rubedo.reference.results.v1",
+          "data_kind": "synthetic",
+          "metrics": [
+            {
+              "id": "queue.wait",
+              "unit": "min",
+              "value": "9"
+            },
+            {
+              "id": "queue.total",
+              "unit": "min",
+              "value": "15"
+            }
+          ]
+        },
+        "sha256": "78155866bbe6f8679487ba45e4fb7328a45a50d6bd64fd9fa1e9bbd692b3a2e4"
+      },
+      {
+        "stage": "argus",
+        "fixture": "queue-and-finance-demo-v1",
+        "data_kind": "synthetic",
+        "source": {
+          "project": "argus",
+          "commit": "a7a68a59b30dd7cb52eac8b531aa76158fb1377e",
+          "path": "extension/core.js",
+          "sha256": "079481ad2a1af69b8f35ac82620adb5387fb6864b503ed8573adf2ce29796b1e"
+        },
+        "previous_sha256": "78155866bbe6f8679487ba45e4fb7328a45a50d6bd64fd9fa1e9bbd692b3a2e4",
+        "approved_transfer": "rubedo:argus",
+        "payload": {
+          "review": {
+            "flags": [],
+            "sensitive": 0,
+            "attention": "none"
+          },
+          "reviewed_record_sha256": "78155866bbe6f8679487ba45e4fb7328a45a50d6bd64fd9fa1e9bbd692b3a2e4"
+        },
+        "sha256": "d9a19815012908fe76f1ab404e8b2611dd89c9ffa08ce7ee04bb2599414e5d69"
+      },
+      {
+        "stage": "aeris",
+        "fixture": "queue-and-finance-demo-v1",
+        "data_kind": "synthetic",
+        "source": {
+          "project": "aeris",
+          "commit": "d6e03bc428fa3506fe5ec06d243e14438722432e",
+          "path": "desktop/aeris/checklist.py",
+          "sha256": "ae0c4ad178fe8d21b219aab013528da797bc308ad6bf2a81bd1b98f7db45189b"
+        },
+        "previous_sha256": "d9a19815012908fe76f1ab404e8b2611dd89c9ffa08ce7ee04bb2599414e5d69",
+        "approved_transfer": "argus:aeris",
+        "payload": {
+          "task_id": 1,
+          "task_code": "review_queue_wait",
+          "done": false,
+          "pending": 1,
+          "wait_min": "9"
+        },
+        "sha256": "b9800b07bd59dabc32b65a2fe208b8b14022b106427a2310206c2d9c21efe188"
+      },
+      {
+        "stage": "lilium",
+        "fixture": "queue-and-finance-demo-v1",
+        "data_kind": "synthetic",
+        "source": {
+          "project": "lilium",
+          "commit": "d92babb96cd0ad1b514709fdede3ee9ceae95e64",
+          "path": "core/metrics.py",
+          "sha256": "ee990d544bbc2f4d7fd6154d876aad0487340f5c3700ad33d1bc71ccf34b4730"
+        },
+        "previous_sha256": "b9800b07bd59dabc32b65a2fe208b8b14022b106427a2310206c2d9c21efe188",
+        "approved_transfer": "aeris:lilium",
+        "payload": {
+          "metrics": {
+            "schema": "graal.metric.v1",
+            "source": "lilium",
+            "source_schema": "1.0",
+            "data_kind": "synthetic",
+            "metrics": [
+              {
+                "id": "revenue",
+                "unit": "BRL_cent",
+                "value": 30000
+              },
+              {
+                "id": "cost",
+                "unit": "BRL_cent",
+                "value": 18000
+              },
+              {
+                "id": "result",
+                "unit": "BRL_cent",
+                "value": 12000
+              }
+            ]
+          },
+          "fixture_relation": "independent_finance_example_not_queue_forecast",
+          "pending_review": 1
+        },
+        "sha256": "ebad1113d8e6bd9beff139e34b49ae1167be3883a7a925c3d5cd575c774456fa"
+      }
+    ]
+  },
+  "pilots": {
+    "schema": "graal.business.pilots.v1",
+    "data_kind": "synthetic",
+    "release_approved": false,
+    "customer_engagement": false,
+    "approvals": [
+      "bi:synthetic",
+      "process:synthetic",
+      "ai-governance:synthetic"
+    ],
+    "demo_terminal_sha256": "ebad1113d8e6bd9beff139e34b49ae1167be3883a7a925c3d5cd575c774456fa",
+    "catalog_sha256": "466435c1649456d932316e4b2bc8c244f63f1c0ac11861d9e61203f02f57b48a",
+    "pilots": [
+      {
+        "id": "P01",
+        "source": {
+          "project": "lilium",
+          "commit": "d92babb96cd0ad1b514709fdede3ee9ceae95e64",
+          "path": "core/metrics.py",
+          "sha256": "ee990d544bbc2f4d7fd6154d876aad0487340f5c3700ad33d1bc71ccf34b4730"
+        },
+        "metrics": {
+          "schema": "graal.metric.v1",
+          "source": "lilium",
+          "source_schema": "1.0",
+          "data_kind": "synthetic",
+          "metrics": [
+            {
+              "id": "revenue",
+              "unit": "BRL_cent",
+              "value": 350000
+            },
+            {
+              "id": "cost",
+              "unit": "BRL_cent",
+              "value": 220000
+            },
+            {
+              "id": "result",
+              "unit": "BRL_cent",
+              "value": 130000
+            }
+          ]
+        },
+        "margin_pct": "37.14",
+        "months": [
+          {
+            "month": "2026-01",
+            "revenue_cents": 150000,
+            "cost_cents": 95000,
+            "result_cents": 55000,
+            "margin_pct": "36.67"
+          },
+          {
+            "month": "2026-02",
+            "revenue_cents": 200000,
+            "cost_cents": 125000,
+            "result_cents": 75000,
+            "margin_pct": "37.50"
+          }
+        ],
+        "rows": 4,
+        "fixture_sha256": "61207e50013bd66c46a6332e015ee146a21526fe08579cb590cc84df480b9558"
+      },
+      {
+        "id": "P02",
+        "source": {
+          "project": "aeris",
+          "commit": "d6e03bc428fa3506fe5ec06d243e14438722432e",
+          "path": "desktop/aeris/checklist.py",
+          "sha256": "ae0c4ad178fe8d21b219aab013528da797bc308ad6bf2a81bd1b98f7db45189b"
+        },
+        "events": 5,
+        "unique_tasks": 3,
+        "duplicates_suppressed": 2,
+        "completed": 0,
+        "cleanup_remaining": 0,
+        "fixture_sha256": "388dccdccdd15b77a74d9835e3f4bcd746282b66779ce0285448fa5fcc12782d",
+        "scope": "single_batch_in_memory_not_persistent_idempotency"
+      },
+      {
+        "id": "P03",
+        "source": {
+          "project": "argus",
+          "commit": "a7a68a59b30dd7cb52eac8b531aa76158fb1377e",
+          "path": "extension/core.js",
+          "sha256": "079481ad2a1af69b8f35ac82620adb5387fb6864b503ed8573adf2ce29796b1e"
+        },
+        "cases": [
+          {
+            "case": "G01",
+            "expected_review": false,
+            "observed_review": false,
+            "flags": [],
+            "sensitive_matches": 0,
+            "decision": "NO_PATTERN_MATCH_NOT_APPROVED"
+          },
+          {
+            "case": "G02",
+            "expected_review": false,
+            "observed_review": false,
+            "flags": [],
+            "sensitive_matches": 0,
+            "decision": "NO_PATTERN_MATCH_NOT_APPROVED"
+          },
+          {
+            "case": "G03",
+            "expected_review": false,
+            "observed_review": false,
+            "flags": [],
+            "sensitive_matches": 0,
+            "decision": "NO_PATTERN_MATCH_NOT_APPROVED"
+          },
+          {
+            "case": "G04",
+            "expected_review": false,
+            "observed_review": false,
+            "flags": [],
+            "sensitive_matches": 0,
+            "decision": "NO_PATTERN_MATCH_NOT_APPROVED"
+          },
+          {
+            "case": "G05",
+            "expected_review": true,
+            "observed_review": true,
+            "flags": [],
+            "sensitive_matches": 1,
+            "decision": "HUMAN_REVIEW"
+          },
+          {
+            "case": "G06",
+            "expected_review": true,
+            "observed_review": true,
+            "flags": [],
+            "sensitive_matches": 1,
+            "decision": "HUMAN_REVIEW"
+          },
+          {
+            "case": "G07",
+            "expected_review": true,
+            "observed_review": true,
+            "flags": [
+              "override"
+            ],
+            "sensitive_matches": 0,
+            "decision": "HUMAN_REVIEW"
+          },
+          {
+            "case": "G08",
+            "expected_review": true,
+            "observed_review": true,
+            "flags": [
+              "execution"
+            ],
+            "sensitive_matches": 0,
+            "decision": "HUMAN_REVIEW"
+          }
+        ],
+        "review_required": 4,
+        "fixture_matches": 8,
+        "autonomous_approvals": 0,
+        "fixture_sha256": "96d6839c77f38410feac4e7d4bc6cb76e5085c1908cf9f9d890a7ff44f1d0e7f",
+        "scope": "deterministic_patterns_not_model_evaluation"
+      }
+    ],
+    "sha256": "1ae26c4f749c43925e35fe77a4a948b013db50b0712fc7a5e82b61fc9532da7c"
+  }
+}
