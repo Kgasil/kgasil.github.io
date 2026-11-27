@@ -36,3 +36,7 @@ python3 validation/integration/graal.py validate example.json
 ## Limites / Limits
 
 A validação de contrato não comprova segurança de dados reais, homologação nativa, interoperabilidade de interface, validade científica ou qualidade 9/10. / Contract validation does not prove real-data security, native acceptance, UI interoperability, scientific validity or 9/10 quality. A próxima evolução deve adicionar adaptadores explícitos por caso de uso, consentimento e testes de ponta a ponta antes de conectar produtos. / Next evolution requires explicit use-case adapters, consent and end-to-end testing before connecting products.
+
+## Evidência executada / Executed evidence
+
+[Run 46067847465](https://github.com/Kgasil/kgasil.github.io/actions/runs/46067847465), [job 140737394654](https://github.com/Kgasil/kgasil.github.io/actions/runs/46067847465/job/140737394654): SUCCESS, 12 tests passed, 16 components, two contract validations, three JSON artifacts uploaded. Rubedo snapshot `f2193e4bed955bd1290f822c5538435c0b59cdb2`; Lilium snapshot `d92babb96cd0ad1b514709fdede3ee9ceae95e64`. Rubedo queue: 9 min waiting, 15 min total; Lilium fixed synthetic CSV: 30000 revenue cents, 18000 cost cents, 12000 result cents. Sem aprovação de release / No release approval.
