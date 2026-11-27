@@ -1,0 +1,44 @@
+name: GRAAL synthetic operational demo
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'validation/integration/**'
+      - 'docs/graal-catalog.md'
+      - '.github/workflows/graal-operational-demo.yml'
+permissions:
+  contents: read
+jobs:
+  synthetic-demo:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Fetch public source only
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-demo"
+          mkdir -p "$out"
+          for p in genesis rubedo argus lilium; do
+            git clone --depth 1 --branch main "https://github.com/Kgasil/$p.git" "$out/$p"
+          done
+          git init -q "$out/aeris"
+          git -C "$out/aeris" fetch --depth 1 https://github.com/Kgasil/aeris.git d6e03bc428fa3506fe5ec06d243e14438722432e
+          git -C "$out/aeris" checkout --detach FETCH_HEAD
+      - name: Verify fixed synthetic demonstration and trace
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-demo"
+          python3 validation/integration/test_demo.py "$out"
+          python3 validation/integration/demo.py "$out" docs/graal-catalog.md "$out/trace.json" --approve genesis:rubedo --approve rubedo:argus --approve argus:aeris --approve aeris:lilium
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graal-synthetic-trace
+          path: ${{ runner.temp }}/graal-demo/trace.json
+          retention-days: 14
+          if-no-files-found: error
