@@ -138,6 +138,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Relatório / Report](practical-acceptance-cycle-03-step-05.md). [Lilium 46076360257](https://github.com/Kgasil/lilium/actions/runs/46076360257) SUCCESS: 129 Python tests, runtime, readiness, hosted recovery/browser and staged package PASS; 58 notice hashes verified; two missing explicit collected package notices require review. Recorded ZIP SHA-256 36b2fce4c58a73eae01de57f3113a39c3bc1a31e7e8bf325cad0fc7f52c46ffc; binary not retained, AV/license NOT_TESTED. / Testes web com dados fictícios elegíveis; instalação de novos candidatos não autorizada. Existing states unchanged.
 
+## Ciclo 03 — Etapa 06 / Cycle 03 — Step 06: Usable web integration
+
+[Laboratório integrado / Integrated lab](https://kgasil.github.io/graal/) · [Relatório / Report](web-integration-cycle-03-step-06.md). [CI 46081125322](https://github.com/Kgasil/kgasil.github.io/actions/runs/46081125322) SUCCESS: 12 demo + 13 pilot tests, exact reproduction from five pinned source revisions, Chromium/Firefox end-to-end permissions, export digest, revocation, responsive widths, keyboard, language, tampered evidence rejection. / Demonstração sintética gratuita, sem integração de aplicativos instalados ou aprovação de binários. No customer data, production deployment or full WCAG claim. All distribution holds unchanged.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
