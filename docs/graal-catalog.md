@@ -134,6 +134,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Relatório final / Final report](technical-excellence-cycle-02-step-08.md): eight stages executed, full acceptance NOT granted. Comparable evidence maturity five-project mean 5.95 -> 6.20/10, portal 6.75 -> 7.00. Performance partial credit based on local web diagnostics, all other weights unchanged; 9/10 unproven. [Pilots 46074112242](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112242), [demo 46074112293](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112293), [contracts 46074112219](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112219), [Pages 46074112306](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112306) SUCCESS. Nine partial SBOM JSONs re-read; no license clearance or schema certification. GEN-04 updated to 40 planned volumes per current Genesis plan; no PDFs published. All holds unchanged.
 
+## Ciclo 03 — Etapa 05 / Cycle 03 — Step 05: Practical candidate acceptance
+
+[Relatório / Report](practical-acceptance-cycle-03-step-05.md). [Lilium 46076360257](https://github.com/Kgasil/lilium/actions/runs/46076360257) SUCCESS: 129 Python tests, runtime, readiness, hosted recovery/browser and staged package PASS; 58 notice hashes verified; two missing explicit collected package notices require review. Recorded ZIP SHA-256 36b2fce4c58a73eae01de57f3113a39c3bc1a31e7e8bf325cad0fc7f52c46ffc; binary not retained, AV/license NOT_TESTED. / Testes web com dados fictícios elegíveis; instalação de novos candidatos não autorizada. Existing states unchanged.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.

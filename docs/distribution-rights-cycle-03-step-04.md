@@ -32,3 +32,7 @@ Re-downloaded [evidence 15232014420](https://github.com/Kgasil/aeris/actions/run
 | First party | No root license assigned; rights remain with respective holders, free-use policy preserved. No trademark or ownership transfer. |
 
 Nine existing partial SBOMs formal schema validation [46074940668](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074940668) retained; no new BOM claims of completeness. New runtime and environment records extend evidence at exact build commit; full dependency graph and binary license mapping pending. Genesis/Argus incidents OPEN and Aeris/Lilium draft PRs unchanged. [Pages 46076046611](https://github.com/Kgasil/kgasil.github.io/actions/runs/46076046611) SUCCESS. No new scan, no change to protection, no distribution approval. Next: verify remediated candidate workflow, review complete notice inventory and actual rights, perform authorized native acceptance only when gates permit.
+
+## Step 05 verified follow-up / Revalidação Etapa 05
+
+[46076360257](https://github.com/Kgasil/lilium/actions/runs/46076360257) SUCCESS: 129 Python tests, readiness, recovery, browser and package PASS, 58 notices verified, two missing explicit collected notices. See [exact evidence and remaining gates](practical-acceptance-cycle-03-step-05.md). No release approval.
