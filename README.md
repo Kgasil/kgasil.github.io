@@ -146,3 +146,8 @@ O escudo preserva as quatro cores laterais e o núcleo branco; Rubedo ocupa apen
 
 O catálogo é a referência institucional para o estado atual; registros históricos e avisos específicos deste repositório permanecem aplicáveis. Em caso de divergência, prevalece o estado mais restritivo. / The catalog is the institutional reference for current status; this repository's historical records and specific notices remain applicable. If records disagree, the most restrictive state prevails.
 <!-- graal-governance-v1:end -->
+
+## Colaboração empresarial / Business collaboration
+
+[Catálogo de serviços e modelo de colaboração GRAAL / GRAAL service catalog and collaboration model](docs/commercial-model-stage-05.md). Proposta de atuação em dados, BI, processos, automação, IA, segurança e governança; contratação condicionada a formalização e escopo. Projetos públicos permanecem gratuitos. / Proposed services in data, BI, processes, automation, AI, security and governance; engagements subject to formalization and scope. Public projects remain free.
+
