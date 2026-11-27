@@ -114,3 +114,6 @@ O escudo preserva as quatro cores laterais e o núcleo branco; Rubedo ocupa apen
 ## Central de distribuição / Distribution center
 
 [Versões, canais oficiais e segurança / Versions, official channels and security](https://kgasil.github.io/distribuicao.html) · [Critérios de liberação / Release criteria](validation/distribution/README.md).
+
+
+**[Política de assinatura de código / Code signing policy](validation/signing/README.md)** · [Evidências / Evidence](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-signing.yml). Desenvolvimento e procedência web; não equivale a assinatura pública dos instaladores.

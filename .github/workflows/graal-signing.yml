@@ -1,0 +1,57 @@
+name: GRAAL signing and provenance
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'validation/signing/**'
+      - '.github/workflows/graal-signing.yml'
+      - 'index.html'
+      - 'distribuicao.html'
+      - 'portfolio/**'
+permissions:
+  contents: read
+jobs:
+  development-signature:
+    runs-on: windows-2025
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Generate ephemeral test certificate and sign harmless fixture
+        shell: powershell
+        run: .\validation\signing\demo.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graal-test-signature-NOT-PRODUCTION
+          path: ${{ runner.temp }}/graal-signing-demo/
+          if-no-files-found: error
+          retention-days: 14
+  web-provenance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Generate source snapshot manifest
+        run: python3 validation/signing/web_provenance.py
+      - name: Attest manifest provenance
+        uses: actions/attest@v4
+        with:
+          subject-path: ${{ runner.temp }}/graal-web-provenance.json
+      - name: Independently verify published attestation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh attestation verify "$RUNNER_TEMP/graal-web-provenance.json" --repo "$GITHUB_REPOSITORY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graal-web-provenance
+          path: ${{ runner.temp }}/graal-web-provenance.json
+          if-no-files-found: error
+          retention-days: 14
