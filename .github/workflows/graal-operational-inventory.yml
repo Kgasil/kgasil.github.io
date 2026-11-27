@@ -1,0 +1,39 @@
+name: GRAAL operational source inventory
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 12 * * 4'
+  push:
+    branches: [main]
+    paths:
+      - 'validation/operational/**'
+      - '.github/workflows/graal-operational-inventory.yml'
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test inventory parser
+        run: python3 validation/operational/test_source_inventory.py
+      - name: Read exact public source snapshots without installation
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-operational"
+          mkdir -p "$out"
+          for p in genesis rubedo argus aeris lilium; do
+            git clone --depth 1 --branch main "https://github.com/Kgasil/$p.git" "$out/$p"
+          done
+          git clone --depth 1 --branch desktop-experience https://github.com/Kgasil/aeris.git "$out/aeris-candidate"
+          python3 validation/operational/source_inventory.py "$out" "$out/source-inventory.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graal-source-declarations
+          path: ${{ runner.temp }}/graal-operational/source-inventory.json
+          retention-days: 14
+          if-no-files-found: error
