@@ -88,6 +88,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Homologação da Etapa 04 / Stage 04 audit 46067141357](https://github.com/Kgasil/kgasil.github.io/actions/runs/46067141357): SUCCESS, logs registram 23 páginas, 532 referências, 7 checksums, 138 browser views, 48 verificações específicas de experiência e 0 erros. / Logs record the stated counts and zero errors. Não é certificação integral de acessibilidade, nem aprovação de produtos. / Not full accessibility certification or product approval.
 
+## Integração tecnológica / Technology integration — Etapa / Stage 06
+
+[Arquitetura e contratos / Architecture and contracts](interoperability-stage-06.md) · [Workflow](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-interoperability.yml). Projeção JSON do catálogo e contrato de métricas sintéticas v1, adaptadores de referência Rubedo/Lilium, sem conexão operacional entre produtos. / Catalog JSON projection and synthetic metric contract v1, Rubedo/Lilium reference adapters, no production connection between products. Estados de distribuição preservados; primeira execução requer confirmação. / Distribution states preserved; first run requires confirmation.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
