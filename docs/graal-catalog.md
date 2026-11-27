@@ -27,6 +27,7 @@ Estados / States: **WEB** = demonstração pública / public demo; **MANUAL** = 
 | GEN-01 | Biblioteca editorial / Editorial library | 1.0 | WEB | [Biblioteca](https://kgasil.github.io/genesis/biblioteca.html) | PDFs completos privados; não é curso/certificação / Full PDFs private; not a course/certification |
 | GEN-02 | Mini Lab web | 0.1.0 | WEB | [Lab](https://kgasil.github.io/genesis/mini/) | Didático / Educational |
 | GEN-03 | Mini Extension | 0.1.0 | SUSPENDED | [Incident #1](https://github.com/Kgasil/genesis/issues/1) | Parecer Microsoft pendente / Microsoft verdict pending |
+| GEN-04 | Biblioteca Negócios e Gestão / Business & Management library | Não versionada separadamente / Not separately versioned | WEB | [Business library](https://kgasil.github.io/genesis/business.html) | Leituras introdutórias; 35 PDFs planejados, não publicados / Introductory readings; 35 planned PDFs, not published |
 | RUB-01 | Research Workspace | 1.0 | WEB | [Workspace](https://kgasil.github.io/rubedo/research/) | Experimental; sem validação científica independente / No independent scientific validation |
 | RUB-02 | Mini Lab | 1.0.0 | WEB | [Lab](https://kgasil.github.io/rubedo/mini/) | Modelos experimentais / Experimental models |
 | RUB-03 | Mini Extension | 1.0.0 | MANUAL | [Requisitos / Requirements](https://kgasil.github.io/rubedo/#instalar) | Sem certificação ou aprovação de loja / No certification or store approval |
