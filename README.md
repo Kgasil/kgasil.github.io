@@ -32,7 +32,7 @@ K&G Vision is an independent technology initiative with a clear ambition: turn k
 | [Project Aeris](https://github.com/Kgasil/aeris) | Lightweight, modular desktop and browser productivity tools | Desktop 1.1.0 RC1 public experimental preview; Extension 1.0.0 available for free manual installation |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Business intelligence, reporting and strategic automation | Web Lab 1.0; Desktop v0.14.0 controlled preview; Mini v0.1.1 GitHub-only |
 
-**Learn · Discover · Build · Simplify · Transform**
+**Learn · Discover · Build · Simplify · Evolve**
 
 This repository hosts the provisional institutional website. The technical laboratory now lives at [Project Argus](https://github.com/Kgasil/argus). Current demonstrations are educational prototypes, not production products or independent security audits.
 
@@ -48,7 +48,7 @@ A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ain
 | [Project Aeris](https://github.com/Kgasil/aeris) | Ferramentas leves e modulares para produtividade | Desktop 1.1.0 RC1 em prévia pública experimental; Extensão 1.0.0 disponível para instalação manual gratuita |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Inteligência empresarial, relatórios e automação estratégica | Web Lab 1.0; Desktop v0.14.0 em prévia; Mini v0.1.1 pelo GitHub |
 
-**Aprender · Descobrir · Construir · Simplificar · Transformar**
+**Aprender · Descobrir · Construir · Simplificar · Evoluir**
 
 O site institucional está em construção. Os 75 PDFs completos e materiais internos do Genesis não fazem parte deste repositório. O acesso ao acervo é solicitado diretamente ao idealizador pelo [LinkedIn](https://www.linkedin.com/in/kaio-gabriel-da-silva). As amostras públicas estão na biblioteca do Genesis. O laboratório técnico permanece em [Project Argus](https://kgasil.github.io/argus/).
 
@@ -61,11 +61,11 @@ O site institucional está em construção. Os 75 PDFs completos e materiais int
 | Project Rubedo | [Science & Innovation / Ciência e Inovação](https://kgasil.github.io/rubedo/) | [Source](https://github.com/Kgasil/rubedo) | **Marco 01 — Public Lab 1.0.** [Research Workspace 1.0](https://kgasil.github.io/rubedo/research/) · [Mini Lab 1.0.0](https://kgasil.github.io/rubedo/mini/) · [Instalação manual / Manual installation](https://kgasil.github.io/rubedo/#instalar); experimental, no store distribution. |
 | Project Argus | [Security & Development / Segurança e Desenvolvimento](https://kgasil.github.io/argus/) | [Source](https://github.com/Kgasil/argus) | **1.0 — Public Research Lab / Laboratório público.** Technical baseline V10.2; local demonstrations / Base técnica V10.2; demonstrações locais, não serviços de produção. [Argus Mini — amostra complementar / complementary sample](https://kgasil.github.io/argus/mini/), v0.1.0; original milestone unchanged / marco original preservado. · [Instalar extensão / Install extension](https://kgasil.github.io/argus/#instalar-extensao) |
 | Project Aeris | [Efficiency & Simplicity / Eficiência e Simplicidade](https://kgasil.github.io/aeris/) | [Source](https://github.com/Kgasil/aeris) | **1.0 — Extension 1.0.0; Desktop 1.1.0 RC1.** Public experimental preview, not stable / Prévia pública experimental, não estável. [Desktop e extensão — instalação, avisos e evidências / installation, warnings and evidence](https://kgasil.github.io/aeris/#aeris-ai-setup) |
-| Project Lilium | [Strategy & Growth / Estratégia e Crescimento](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | **1.0 — Web Lab.** Public demo / demonstração pública; Desktop v0.14.0 controlled preview / prévia controlada; [Mini v0.1.1](https://github.com/Kgasil/lilium/tree/main/extension) experimental. |
+| Project Lilium | [Strategy & Evolution / Estratégia e Evolução](https://kgasil.github.io/lilium/) | [Source](https://github.com/Kgasil/lilium) | **1.0 — Web Lab.** Public demo / demonstração pública; Desktop v0.14.0 controlled preview / prévia controlada; [Mini v0.1.1](https://github.com/Kgasil/lilium/tree/main/extension) experimental. |
 
 **Version note / Nota de versão:** 1.0 identifies the first completed public-facing project milestone of the ecosystem, not a uniform software release tag. Genesis is an editorial milestone; Argus retains technical baseline V10.2; Aeris 1.0.0 applies to Extension; Lilium 1.0 applies to Web Lab. / 1.0 identifica o primeiro marco público do ecossistema, não uma tag de software uniforme. Genesis é um marco editorial; Argus mantém a base V10.2; Aeris 1.0.0 refere-se à extensão; Lilium 1.0 refere-se ao Web Lab. Desktop previews are not stable releases / Prévias Desktop não são versões estáveis.
 
-**Learn · Discover · Build · Simplify · Transform / Aprender · Descobrir · Construir · Simplificar · Transformar**
+**Learn · Discover · Build · Simplify · Evolve / Aprender · Descobrir · Construir · Simplificar · Evoluir**
 
 ## Website
 
