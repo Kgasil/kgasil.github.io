@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   audit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -33,11 +33,15 @@ jobs:
           for project in genesis rubedo argus aeris lilium; do
             git clone --depth 1 --branch main "https://github.com/Kgasil/$project.git" "$project"
           done
+      - name: Static audit (independent of browser setup)
+        run: python validation/web/audit.py --webroot . --output "$RUNNER_TEMP/graal-web-audit"
       - name: Install browser testing tools
+        if: success() || failure()
         run: |
           python -m pip install playwright==1.56.0
           python -m playwright install --with-deps chromium firefox
       - name: Run public website audit
+        if: success() || failure()
         run: python validation/web/audit.py --webroot . --output "$RUNNER_TEMP/graal-web-audit" --browser
       - name: Publish summary
         if: always()
