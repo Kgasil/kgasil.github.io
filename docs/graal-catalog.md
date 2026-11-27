@@ -90,7 +90,7 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 ## Integração tecnológica / Technology integration — Etapa / Stage 06
 
-[Arquitetura e contratos / Architecture and contracts](interoperability-stage-06.md) · [Workflow](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-interoperability.yml). Projeção JSON do catálogo e contrato de métricas sintéticas v1, adaptadores de referência Rubedo/Lilium, sem conexão operacional entre produtos. / Catalog JSON projection and synthetic metric contract v1, Rubedo/Lilium reference adapters, no production connection between products. Estados de distribuição preservados; primeira execução requer confirmação. / Distribution states preserved; first run requires confirmation.
+[Arquitetura e contratos / Architecture and contracts](interoperability-stage-06.md) · [Workflow](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-interoperability.yml). Projeção JSON do catálogo e contrato de métricas sintéticas v1, adaptadores de referência Rubedo/Lilium, sem conexão operacional entre produtos. / Catalog JSON projection and synthetic metric contract v1, Rubedo/Lilium reference adapters, no production connection between products. Estados de distribuição preservados. / Distribution states preserved. [Run 46067847465](https://github.com/Kgasil/kgasil.github.io/actions/runs/46067847465): SUCCESS, 12/12 testes, 16 componentes, dois registros sintéticos validados, três JSONs gerados; release_approved=false. / 12/12 tests, 16 components, two synthetic records validated, three JSON files generated; no release approval.
 
 ## Maturidade / Maturity
 
