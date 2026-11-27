@@ -28,9 +28,9 @@ Estados / States: **WEB** = demonstração pública / public demo; **MANUAL** = 
 | GEN-02 | Mini Lab web | 0.1.0 | WEB | [Lab](https://kgasil.github.io/genesis/mini/) | Didático / Educational |
 | GEN-03 | Mini Extension | 0.1.0 | SUSPENDED | [Incident #1](https://github.com/Kgasil/genesis/issues/1) | Parecer Microsoft pendente / Microsoft verdict pending |
 | GEN-04 | Biblioteca Negócios e Gestão / Business & Management library | Não versionada separadamente / Not separately versioned | WEB | [Business library](https://kgasil.github.io/genesis/business.html) | Leituras introdutórias; 35 PDFs planejados, não publicados / Introductory readings; 35 planned PDFs, not published |
-| RUB-01 | Research Workspace | 1.0 | WEB | [Workspace](https://kgasil.github.io/rubedo/research/) | Experimental; sem validação científica independente / No independent scientific validation |
-| RUB-02 | Mini Lab | 1.0.0 | WEB | [Lab](https://kgasil.github.io/rubedo/mini/) | Modelos experimentais / Experimental models |
-| RUB-03 | Mini Extension | 1.0.0 | MANUAL | [Requisitos / Requirements](https://kgasil.github.io/rubedo/#instalar) | Sem certificação ou aprovação de loja / No certification or store approval |
+| RUB-01 | Research Workspace | 1.0.1 | WEB | [Workspace](https://kgasil.github.io/rubedo/research/) | Experimental; 257 comparações sintéticas independentes, sem certificação / 257 independent synthetic comparisons, no certification |
+| RUB-02 | Mini Lab | 1.0.1 | WEB | [Lab](https://kgasil.github.io/rubedo/mini/) | Modelos experimentais / Experimental models |
+| RUB-03 | Mini Extension | 1.0.1 | MANUAL | [Requisitos / Requirements](https://kgasil.github.io/rubedo/#instalar) | Sem certificação ou aprovação de loja / No certification or store approval |
 | ARG-01 | Public Research Lab | 1.0; base V10.2 | WEB | [Lab](https://kgasil.github.io/argus/) | Pesquisa, não controle empresarial validado / Research, not a validated enterprise control |
 | ARG-02 | Mini Lab | 0.1.0 | WEB | [Lab](https://kgasil.github.io/argus/mini/) | Regras determinísticas; interface PT / Deterministic rules; PT interface |
 | ARG-03 | Mini Extension | 0.1.0 | SUSPENDED | [Incident #1](https://github.com/Kgasil/argus/issues/1) | Parecer Microsoft pendente / Microsoft verdict pending |
@@ -53,7 +53,7 @@ Registros consultados em 2026-11-27, não novos testes executados nesta etapa. /
 | Portal | [Provenance 46054254301](https://github.com/Kgasil/kgasil.github.io/actions/runs/46054254301) | SUCCESS | Authenticode comercial ou antimalware / Commercial Authenticode or malware clearance |
 | Genesis | [Pages 46007426403](https://github.com/Kgasil/genesis/actions/runs/46007426403) | SUCCESS (deploy) | Liberação da extensão / Extension clearance |
 | Argus | [Pages 46007435288](https://github.com/Kgasil/argus/actions/runs/46007435288) | SUCCESS (deploy) | Liberação da extensão / Extension clearance |
-| Rubedo | [Validation 46007461543](https://github.com/Kgasil/rubedo/actions/runs/46007461543) | SUCCESS | Validade científica/industrial / Scientific or industrial validity |
+| Rubedo | [Validation 46067486777](https://github.com/Kgasil/rubedo/actions/runs/46067486777) | SUCCESS | Validade científica/industrial / Scientific or industrial validity |
 | Lilium | [Public lab 46007454470](https://github.com/Kgasil/lilium/actions/runs/46007454470) | SUCCESS | Aceitação do Desktop / Desktop acceptance |
 | Aeris | [Source/interface 46065548129](https://github.com/Kgasil/aeris/actions/runs/46065548129) | SUCCESS na consulta desta etapa / At this stage's query | Homologação nativa / Native acceptance |
 | Aeris | [Desktop 46065548263](https://github.com/Kgasil/aeris/actions/runs/46065548263) · [PR #2](https://github.com/Kgasil/aeris/pull/2) | PENDING na consulta / At query | Aprovação de release / Release approval |
@@ -123,3 +123,6 @@ A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is e
 - [Qualidade de produtos / Product quality](https://github.com/Kgasil/kgasil.github.io/blob/main/validation/products/README.md)
 
 **Aprender · Construir · Proteger · Simplificar · Evoluir / Learn · Build · Protect · Simplify · Evolve.**
+
+## Rubedo 1.0.1 — 27/11/2026
+Publicação aprovada pelo idealizador após validação CI e aprovação manual relatada de Chrome/Edge Windows, Defender e acessibilidade. / Maintainer-approved publication after CI and reported manual acceptance; no independent antivirus or accessibility certification. [Matriz / Matrix](https://github.com/Kgasil/rubedo/blob/main/docs/homologation-1.0.1.md) · [PR #1](https://github.com/Kgasil/rubedo/pull/1). Canais WEB/MANUAL preservados; sem publicação em loja. / WEB/MANUAL channels unchanged; no store listing.
