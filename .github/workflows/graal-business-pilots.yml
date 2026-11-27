@@ -1,0 +1,46 @@
+name: GRAAL synthetic business pilots
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'validation/integration/**'
+      - 'docs/graal-catalog.md'
+      - '.github/workflows/graal-business-pilots.yml'
+permissions:
+  contents: read
+jobs:
+  pilots:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Fetch reviewed source commits
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-pilots"
+          mkdir -p "$out"
+          for entry in genesis:fa517115bf6932ae7d2020b7d3c12f3e47505626 rubedo:465f23ff32220cddc0bae155054783619943553c argus:a7a68a59b30dd7cb52eac8b531aa76158fb1377e aeris:d6e03bc428fa3506fe5ec06d243e14438722432e lilium:d92babb96cd0ad1b514709fdede3ee9ceae95e64; do
+            p="${entry%%:*}"
+            sha="${entry#*:}"
+            git init -q "$out/$p"
+            git -C "$out/$p" fetch --depth 1 "https://github.com/Kgasil/$p.git" "$sha"
+            git -C "$out/$p" checkout --detach FETCH_HEAD
+            test "$(git -C "$out/$p" rev-parse HEAD)" = "$sha"
+          done
+      - name: Execute pilots and acceptance tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-pilots"
+          python3 validation/integration/test_pilots.py "$out"
+          python3 validation/integration/pilots.py "$out" docs/graal-catalog.md "$out/pilots.json" --approve bi:synthetic --approve process:synthetic --approve ai-governance:synthetic
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graal-synthetic-business-pilots
+          path: ${{ runner.temp }}/graal-pilots/pilots.json
+          retention-days: 14
+          if-no-files-found: error
