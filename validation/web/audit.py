@@ -14,7 +14,7 @@ ORIGIN = "https://" + HOST
 EXCLUDED = ("backups/", "extension/", "core/")
 VIEWPORTS = ((390, 844), (768, 1024), (1440, 900))
 errors, pages, snapshots = [], {}, {}
-stats = {"links": 0, "checksums": 0, "browser_views": 0}
+stats = {"links": 0, "checksums": 0, "browser_views": 0, "experience_views": 0}
 
 class Page(HTMLParser):
     def __init__(self, text):
@@ -117,6 +117,42 @@ def check_static(root, repos):
                 if fragment not in Page(file.read_text(encoding="utf-8")).ids:
                     errors.append(f"{url}: missing anchor {raw}")
 
+def check_experience(page, base, path):
+    """Targeted keyboard, language, menu contrast and logo smoke checks."""
+    issues = []
+    def require(ok, label):
+        if not ok:
+            issues.append(label)
+    pt_title = page.title()
+    skip = page.locator("a.skip[href='#main'], a.skip[href='#home']").first
+    skip.focus()
+    require(skip.evaluate("(e) => {const r=e.getBoundingClientRect();return r.top>=0&&r.left>=0&&r.bottom<=innerHeight}"), "skip link not visible when focused")
+    page.keyboard.press("Enter")
+    require(page.evaluate("document.activeElement === document.querySelector('main')"), "skip link did not move keyboard focus to main")
+    for lang, label in (("en", "English"), ("pt", "Português (Brasil)")):
+        btn = page.locator("#"+lang)
+        require(btn.get_attribute("aria-label") == label, "language accessible label missing: "+lang)
+        btn.click()
+        require(page.locator("html").get_attribute("lang") == ("en" if lang=="en" else "pt-BR"), "document language mismatch: "+lang)
+        require(btn.get_attribute("aria-pressed") == "true", "language pressed state mismatch")
+        other = page.locator("#"+("pt" if lang=="en" else "en"))
+        require(other.get_attribute("aria-pressed") == "false", "language inactive state mismatch")
+        require((page.title()!=pt_title) if lang=="en" else (page.title()==pt_title), "localized title mismatch: "+lang)
+        require(page.locator("nav.kg-graal-bar a").evaluate_all("(links, lang) => links.every(a => new URL(a.href).searchParams.get('lang') === (lang==='en'?'en':null))", lang), "ecosystem link language mismatch: "+lang)
+    result = page.locator("nav.kg-graal-bar").evaluate("""nav => {
+      function rgb(s){return (s.match(/[\\d.]+/g)||[]).slice(0,3).map(Number)}
+      function lum(c){const x=c.map(v=>{v/=255;return v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4});return x[0]*0.2126+x[1]*0.7152+x[2]*0.0722}
+      return {ratios:[...nav.querySelectorAll('a')].map(a=>{const s=getComputedStyle(a);const bg=s.backgroundColor==='rgba(0, 0, 0, 0)'||s.backgroundColor==='transparent'?getComputedStyle(nav).backgroundColor:s.backgroundColor;const x=lum(rgb(s.color)),y=lum(rgb(bg));return (Math.max(x,y)+0.05)/(Math.min(x,y)+0.05)}),logo:!!nav.querySelector('img.kg-graal-shield')};
+    }""")
+    require(len(result["ratios"]) == 6 and all(v >= 4.5 for v in result["ratios"]), "ecosystem menu normal text contrast below 4.5:1")
+    require(result["logo"], "institutional shield reference absent")
+    page.goto(base + path + "?lang=en", wait_until="domcontentloaded", timeout=20000)
+    require(page.locator("html").get_attribute("lang")=="en", "direct English URL did not initialize English")
+    require(page.locator("#en").get_attribute("aria-pressed")=="true", "direct English URL inactive")
+    page.locator("#pt").click()
+    stats["experience_views"] += 1
+    return issues
+
 def check_browser(root, output):
     from playwright.sync_api import sync_playwright
     class QuietHandler(SimpleHTTPRequestHandler):
@@ -174,6 +210,9 @@ def check_browser(root, output):
                             rgb = re.findall(r"[\d.]+", result["background"])
                             if len(rgb) >= 3 and sum(float(x) for x in rgb[:3]) / 3 > 160:
                                 issues.append("unexpected bright body background")
+                            path = urlsplit(url).path
+                            if path in ("/index.html", "/distribuicao.html", *("/"+p+"/index.html" for p in PROJECTS)):
+                                issues.extend(check_experience(page, base, path))
                             issues.extend("JS: " + e for e in js_errors)
                             if issues or (engine == "chromium" and width == 1440 and urlsplit(url).path.count("/") <= 2 and url.endswith("/index.html")):
                                 page.screenshot(path=str(shots / (key + ".png")), timeout=10000)
@@ -200,12 +239,12 @@ def main():
     check_static(root, repos)
     if args.browser:
         check_browser(root, output)
-    scope = "Local links, menus, nominal versions, tracked checksums and browser smoke tests; not malware certification, full accessibility or third-party link validation."
+    scope = "Local links, menus, nominal versions, tracked checksums, browser smoke tests and targeted keyboard/language/menu contrast checks; not full accessibility, malware certification or third-party link validation."
     report = {"commits": snapshots, "pages": len(pages), **stats, "errors": errors, "scope": scope}
     (output / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2))
     summary = ["# GRAAL website audit", "", f"- Public pages: {len(pages)}",
                f"- Local links checked: {stats['links']}", f"- Tracked checksums: {stats['checksums']}",
-               f"- Browser views: {stats['browser_views']}", f"- Errors: {len(errors)}", "",
+               f"- Browser views: {stats['browser_views']}", f"- Targeted experience views: {stats['experience_views']}", f"- Errors: {len(errors)}", "",
                *[f"- {e}" for e in errors], "", scope]
     (output / "summary.md").write_text("\n".join(summary) + "\n")
     print("\n".join(summary))
