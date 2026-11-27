@@ -211,7 +211,7 @@ def check_browser(root, output):
                             if len(rgb) >= 3 and sum(float(x) for x in rgb[:3]) / 3 > 160:
                                 issues.append("unexpected bright body background")
                             path = urlsplit(url).path
-                            if path in ("/index.html", "/distribuicao.html", *("/"+p+"/index.html" for p in PROJECTS)):
+                            if path in ("/index.html", "/distribuicao.html", "/genesis/business.html", *("/"+p+"/index.html" for p in PROJECTS)):
                                 issues.extend(check_experience(page, base, path))
                             issues.extend("JS: " + e for e in js_errors)
                             if issues or (engine == "chromium" and width == 1440 and urlsplit(url).path.count("/") <= 2 and url.endswith("/index.html")):
