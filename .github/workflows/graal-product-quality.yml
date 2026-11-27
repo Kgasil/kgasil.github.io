@@ -1,0 +1,115 @@
+name: GRAAL product quality
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 10 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - 'validation/products/**'
+      - '.github/workflows/graal-product-quality.yml'
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [genesis, rubedo, argus, aeris, lilium]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Clone public source and record revision
+        env:
+          PROJECT: ${{ matrix.project }}
+        run: |
+          git clone --depth 1 --branch main "https://github.com/Kgasil/$PROJECT.git" project
+          git -C project rev-parse HEAD
+      - name: Existing source and package regressions
+        env:
+          PROJECT: ${{ matrix.project }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd project
+          case "$PROJECT" in
+            genesis|argus)
+              python tests/verify_mini_package.py
+              node --check extension/core.js
+              node --check extension/ui.js
+              node tests/mini.test.js ;;
+            rubedo)
+              python tests/check_package.py
+              python tests/verify_mini_package.py
+              node scripts/reference_results.js --check
+              for suite in mini research advanced scenario monte precision statistics; do node "tests/$suite.test.js"; done ;;
+            aeris)
+              python validation/verify-extension-original.py "$RUNNER_TEMP/aeris-extension-original"
+              find "$RUNNER_TEMP/aeris-extension-original/extension" -name '*.js' -print0 | xargs -0 -n1 node --check
+              (cd "$RUNNER_TEMP/aeris-extension-original" && node --test tests/core.test.mjs)
+              node --check assets/web-lab.js ;;
+            lilium)
+              python tests/verify_mini_original.py
+              node --check extension/math.js
+              node --check extension/popup.js
+              node extension/math.test.js ;;
+          esac
+      - name: Install browser testing tools
+        run: |
+          python -m pip install playwright==1.57.0
+          python -m playwright install --with-deps chromium
+      - name: Functional browser regression
+        env:
+          PROJECT: ${{ matrix.project }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd project
+          case "$PROJECT" in
+            genesis|argus|aeris) python ../validation/products/web_smoke.py "$PROJECT" ;;
+            rubedo) python tests/browser_smoke.py ;;
+            lilium) python tests/browser_mini.py ;;
+          esac
+      - name: Scope
+        if: always()
+        run: echo "Source/package integrity and functional browser checks; not native installation, malware clearance or release approval." >> "$GITHUB_STEP_SUMMARY"
+  aeris-installer-metadata:
+    runs-on: windows-2025
+    timeout-minutes: 10
+    steps:
+      - name: Verify published installer bytes and signature metadata without execution
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $root = Join-Path $env:RUNNER_TEMP 'aeris-release-review'
+          New-Item -ItemType Directory -Path $root | Out-Null
+          $file = Join-Path $root 'Aeris-1.1.0rc1-Windows-x64-Setup.exe'
+          $expected = '4001bcc90f84ce67e6e78ea8343132fc9ca9c6567fd610b979c21b6edc1b7ead'
+          try {
+            Invoke-WebRequest -Uri 'https://github.com/Kgasil/aeris/releases/download/aeris-desktop-1.1.0rc1-ai-setup-preview/Aeris-1.1.0rc1-Windows-x64-Setup.exe' -OutFile $file
+            $actual = (Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()
+            if ($actual -ne $expected -or (Get-Item -LiteralPath $file).Length -ne 12901308) { throw 'Unexpected release bytes; do not execute.' }
+            $signature = Get-AuthenticodeSignature -LiteralPath $file
+            $evidence = [ordered]@{sha256=$actual; bytes=(Get-Item -LiteralPath $file).Length; authenticode=$signature.Status.ToString(); executed=$false; malware_scan='NOT_TESTED'; release_approved=$false}
+            $evidence | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $env:RUNNER_TEMP 'aeris-release-metadata.json')
+            $evidence | ConvertTo-Json
+            if ($signature.Status -ne 'NotSigned' -and $signature.Status -ne 'Valid') { throw 'Unexpected signature status; review required.' }
+          } finally {
+            Remove-Item -LiteralPath $root -Recurse -Force -ErrorAction SilentlyContinue
+          }
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: aeris-release-metadata
+          path: ${{ runner.temp }}/aeris-release-metadata.json
+          if-no-files-found: warn
+          retention-days: 14
