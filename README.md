@@ -154,3 +154,5 @@ O catálogo é a referência institucional para o estado atual; registros histó
 [Governança empresarial / Business governance](docs/business-governance-stage-07.md) — princípios públicos, responsabilidades propostas e critérios de formalização / public principles, proposed responsibilities and formalization gates.
 
 [Relatório de homologação institucional / Institutional acceptance report](docs/institutional-acceptance-stage-08.md) — fechamento do primeiro ciclo, evidências, limites e plano 30/60/90 dias; não constitui certificação nem aprovação integral de distribuição / first-cycle closure, evidence, limits and 30/60/90-day plan; not certification or full distribution approval.
+
+[Relatório final do segundo ciclo / Cycle 02 final report](docs/technical-excellence-cycle-02-step-08.md) — evidências comparáveis, limites e prioridades; sem certificação ou aprovação integral de distribuição / comparable evidence, limitations and priorities; no certification or full release approval.

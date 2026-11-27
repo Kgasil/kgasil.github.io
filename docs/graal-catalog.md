@@ -27,7 +27,7 @@ Estados / States: **WEB** = demonstração pública / public demo; **MANUAL** = 
 | GEN-01 | Biblioteca editorial / Editorial library | 1.0 | WEB | [Biblioteca](https://kgasil.github.io/genesis/biblioteca.html) | PDFs completos privados; não é curso/certificação / Full PDFs private; not a course/certification |
 | GEN-02 | Mini Lab web | 0.1.0 | WEB | [Lab](https://kgasil.github.io/genesis/mini/) | Didático / Educational |
 | GEN-03 | Mini Extension | 0.1.0 | SUSPENDED | [Incident #1](https://github.com/Kgasil/genesis/issues/1) | Parecer Microsoft pendente / Microsoft verdict pending |
-| GEN-04 | Biblioteca Negócios e Gestão / Business & Management library | Não versionada separadamente / Not separately versioned | WEB | [Business library](https://kgasil.github.io/genesis/business.html) | Leituras introdutórias; 35 PDFs planejados, não publicados / Introductory readings; 35 planned PDFs, not published |
+| GEN-04 | Biblioteca Negócios e Gestão / Business & Management library | Não versionada separadamente / Not separately versioned | WEB | [Business library](https://kgasil.github.io/genesis/business.html) | Leituras introdutórias; 40 volumes complementares planejados, 2.000h nominais; PDFs integrais privados / Introductory readings; 40 planned complementary volumes, 2,000 nominal hours; full PDFs private |
 | RUB-01 | Research Workspace | 1.0.1 | WEB | [Workspace](https://kgasil.github.io/rubedo/research/) | Experimental; 257 comparações sintéticas independentes, sem certificação / 257 independent synthetic comparisons, no certification |
 | RUB-02 | Mini Lab | 1.0.1 | WEB | [Lab](https://kgasil.github.io/rubedo/mini/) | Modelos experimentais / Experimental models |
 | RUB-03 | Mini Extension | 1.0.1 | MANUAL | [Requisitos / Requirements](https://kgasil.github.io/rubedo/#instalar) | Sem certificação ou aprovação de loja / No certification or store approval |
@@ -129,6 +129,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 ## Ciclo 02 — Etapa 07 / Cycle 02 — Step 07: Business pilots
 
 [Relatório e apresentação / Report and presentation](business-pilots-cycle-02-step-07.md) · [CI 46074010357](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074010357) SUCCESS, 13/13 tests; [artifact 15234262121](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074010357/artifacts/15234262121) ZIP SHA-256/CRC and canonical report digest independently verified. Three fixed synthetic pilots: BI (BRL 3500/2200/1300, 37.14% margin), process (5 occurrences/3 pending tasks/2 duplicates/0 remaining), AI governance (8/8 known classifications, 4 reviews, 0 autonomous approvals). Not customer results, production integrations, model evaluation or release approval. / Dados fictícios, sem alegações de contrato, cliente, ganhos reais ou implantação. [Web revalidation 46073590229](https://github.com/Kgasil/kgasil.github.io/actions/runs/46073590229) SUCCESS; 144 samples, 48 observations at 320px, 0 errors. All holds retained.
+
+## Ciclo 02 — Etapa 08 / Cycle 02 — Step 08: Final acceptance
+
+[Relatório final / Final report](technical-excellence-cycle-02-step-08.md): eight stages executed, full acceptance NOT granted. Comparable evidence maturity five-project mean 5.95 -> 6.20/10, portal 6.75 -> 7.00. Performance partial credit based on local web diagnostics, all other weights unchanged; 9/10 unproven. [Pilots 46074112242](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112242), [demo 46074112293](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112293), [contracts 46074112219](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112219), [Pages 46074112306](https://github.com/Kgasil/kgasil.github.io/actions/runs/46074112306) SUCCESS. Nine partial SBOM JSONs re-read; no license clearance or schema certification. GEN-04 updated to 40 planned volumes per current Genesis plan; no PDFs published. All holds unchanged.
 
 ## Maturidade / Maturity
 
