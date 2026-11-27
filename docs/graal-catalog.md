@@ -81,6 +81,12 @@ Nenhum estado de distribuição foi relaxado. / No distribution state was relaxe
 
 Seis páginas iniciais e central de distribuição atualizadas com foco de teclado e continuidade de idioma; logos, paleta, funções e restrições preservados. / Six homepages and distribution center updated for keyboard focus and language continuity; logos, palette, functions and holds preserved. Contraste nominal do menu >=6.24:1 nas cores verificadas; não equivale a conformidade integral. / Nominal menu contrast >=6.24:1 for checked colors; not full conformance. Homologação ampliada de navegador pendente na consulta inicial. / Extended browser acceptance pending at initial query.
 
+## Estruturação comercial / Commercial structure — Etapa / Stage 05
+
+[Modelo comercial e catálogo de serviços / Commercial model and service catalog](commercial-model-stage-05.md). Seis famílias propostas: dados/BI, processos, automação, IA aplicada, segurança/governança e planejamento empresarial. / Six proposed families: data/BI, processes, automation, applied AI, security/governance and business planning. Projetos gratuitos preservados; contratação sujeita a escopo, capacidade e formalização. / Free projects preserved; engagements subject to scope, capacity and formalization.
+
+[Homologação da Etapa 04 / Stage 04 audit 46067141357](https://github.com/Kgasil/kgasil.github.io/actions/runs/46067141357): SUCCESS, logs registram 23 páginas, 532 referências, 7 checksums, 138 browser views, 48 verificações específicas de experiência e 0 erros. / Logs record the stated counts and zero errors. Não é certificação integral de acessibilidade, nem aprovação de produtos. / Not full accessibility certification or product approval.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
