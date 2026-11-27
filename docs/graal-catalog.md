@@ -118,6 +118,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Relatório / Report](native-recovery-cycle-02-step-04.md) · [Ficha / Record](native-acceptance-record-cycle02.md). Aeris evidence ZIP and four Lilium outer/inner ZIP SHA-256 + CRC verified again; Aeris binaries absent, candidate AV gate remains blocked. Lilium hosted recovery PASS, six maintainer-reported groups recorded in [issue #9](https://github.com/Kgasil/lilium/issues/9), case-level gaps and licensing remain; controlled candidate 0.14.0 / Mini 0.1.3 not promoted. Rubedo 1.0.1 reported acceptance retained with documentation clarification; Genesis/Argus still suspended. / Bloqueios preservados; nenhuma recompilação solicitada nem publicação de binários. No new quality score.
 
+## Ciclo 02 — Etapa 05 / Cycle 02 — Step 05: Performance and accessibility
+
+[Relatório / Report](performance-accessibility-cycle-02-step-05.md). Original web artifact 15232103800 SHA-256 and CRC independently verified; 48 samples analyzed per page, 138 browser views, zero audit errors; six historical desktop screenshots reviewed. New [repeat diagnostics 46073219557](https://github.com/Kgasil/kgasil.github.io/actions/runs/46073219557) adds three additional navigations per setting and 320px observations, browser conclusion pending at initial query. / Protocolo de desempenho e acessibilidade documentado, sem medição física nova, certificação ou aprovação de distribuição. All holds retained.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
