@@ -36,3 +36,6 @@ Nine existing partial SBOMs formal schema validation [46074940668](https://githu
 ## Step 05 verified follow-up / Revalidação Etapa 05
 
 [46076360257](https://github.com/Kgasil/lilium/actions/runs/46076360257) SUCCESS: 129 Python tests, readiness, recovery, browser and package PASS, 58 notices verified, two missing explicit collected notices. See [exact evidence and remaining gates](practical-acceptance-cycle-03-step-05.md). No release approval.
+
+## Step 08 — Remaining package notices
+Exact versions [openpyxl 3.1.5](https://pypi.org/project/openpyxl/3.1.5/) and [et_xmlfile 2.0.0](https://pypi.org/project/et-xmlfile/2.0.0/) declare MIT on PyPI. Exact source archives not retrieved in this review. The 58 notice records do not establish inclusion of their texts; keep REVIEW_REQUIRED, no redistribution approval. No rebuild requested.

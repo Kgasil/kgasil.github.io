@@ -146,6 +146,10 @@ Seis páginas iniciais e central de distribuição atualizadas com foco de tecla
 
 [Apresentação comercial / Business presentation](https://kgasil.github.io/graal/#services) · [Roteiro e evidências / Guide and evidence](commercial-readiness-cycle-03-step-07.md). [Lab 46082070759](https://github.com/Kgasil/kgasil.github.io/actions/runs/46082070759) SUCCESS, 25 integration/pilot tests and two browsers. [General audit 46082088264](https://github.com/Kgasil/kgasil.github.io/actions/runs/46082088264) SUCCESS: 24 pages, 552 links, 144 browser views, 48 targeted views, zero errors. / Escopos propostos, aceite sintético e simulação de qualificação local, sem coleta de dados, contrato, cliente ou aprovação de binários. All existing holds unchanged.
 
+## Ciclo 03 — Etapa 08 / Cycle 03 — Step 08: Evidence-based closure
+
+[Relatório final / Final report](final-acceptance-cycle-03-step-08.md): all seven workflows at 064950f SUCCESS; 24 pages, 553 links, 144 browser views, zero errors. Five evidence ZIPs independently hashed/CRC PASS. Lilium remediated CI PASS, exact binary not retained, licensing and AV pending. Five-project maturity remains 6.20/10, portal 7.00/10; 9/10 NOT proven. Commercial web presentation deployed per Pages, external fetch unavailable. / Todos os bloqueios preservados; sem nova aprovação de binários.
+
 ## Maturidade / Maturity
 
 A meta é qualidade comprovada >=9/10, não uma nota de marketing. / Target is evidenced quality >=9/10, not a marketing score. A cobertura documental observada na Etapa 01 é histórica: portal/Rubedo/Lilium 8/10; Genesis/Argus/Aeris 6/10. Não é avaliação atualizada de qualidade nem liberação. / Stage 01 documentary coverage is historical, not a current quality rating or release approval.
