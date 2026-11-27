@@ -73,7 +73,19 @@ def check_static(root, repos):
             if not relative.startswith("portfolio/"):
                 if tuple(doc.nav) != NAMES:
                     errors.append(f"{url}: unexpected ecosystem labels {doc.nav}")
-                if "justify-content:center!important" not in source:
+                # A restrictive CSP may require linked, repository-local CSS.
+                # Retain the same exact centering requirement and browser geometry gate.
+                styles = [source]
+                for tag, raw in doc.links:
+                    if tag != "link":
+                        continue
+                    u = urlsplit(raw)
+                    if u.scheme or u.netloc or not u.path.endswith(".css"):
+                        continue
+                    candidate = ((directory / relative).parent / u.path).resolve()
+                    if candidate.is_relative_to(directory.resolve()) and candidate.is_file():
+                        styles.append(candidate.read_text(encoding="utf-8"))
+                if not any("justify-content:center!important" in css for css in styles):
                     errors.append(f"{url}: centered ecosystem CSS missing")
             if re.search(r"\bProject Genesis\s+4000\b", source, re.I):
                 errors.append(f"{url}: outdated Genesis name")

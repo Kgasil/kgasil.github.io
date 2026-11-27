@@ -25,7 +25,7 @@ async function verify(e){
 }
 function el(tag,txt,cls){const n=document.createElement(tag);if(txt!==undefined)n.textContent=txt;if(cls)n.className=cls;return n;}
 function setStatus(key){status=key;$("status").textContent=dict[lang][key];}
-function syncLanguage(){document.documentElement.lang=lang==="pt"?"pt-BR":"en";document.title=lang==="pt"?"GRAAL — Laboratório integrado | K&G Vision":"GRAAL — Integrated lab | K&G Vision";$("pt").setAttribute("aria-pressed",String(lang==="pt"));$("en").setAttribute("aria-pressed",String(lang==="en"));$("nav").setAttribute("aria-label",lang==="pt"?"Ecossistema K&G Vision":"K&G Vision ecosystem");document.querySelectorAll("[data-pt][data-en]").forEach(n=>{n.textContent=n.dataset[lang];});render();}
+function syncLanguage(){document.documentElement.lang=lang==="pt"?"pt-BR":"en";document.title=lang==="pt"?"GRAAL — Laboratório integrado | K&G Vision":"GRAAL — Integrated lab | K&G Vision";$("pt").setAttribute("aria-pressed",String(lang==="pt"));$("en").setAttribute("aria-pressed",String(lang==="en"));$("nav").setAttribute("aria-label",lang==="pt"?"Ecossistema K&G Vision":"K&G Vision ecosystem");document.querySelectorAll("[data-pt][data-en]").forEach(n=>{n.textContent=n.dataset[lang];});document.querySelectorAll("nav.kg-graal-bar a, footer a").forEach(a=>{const u=new URL(a.href);if(u.origin===location.origin){if(lang==="en")u.searchParams.set("lang","en");else u.searchParams.delete("lang");a.href=u.href;}});render();renderQualification();}
 function render(){
  const d=dict[lang],focus=document.activeElement?.id;
  $("progress").textContent=count+"/5";$("stages").replaceChildren();
@@ -43,7 +43,11 @@ function runPilot(i){
 }
 $("permit").addEventListener("change",()=>{$("advance").disabled=$("gate").disabled||!$("permit").checked;});
 $("advance").addEventListener("click",()=>{if(!evidence||busy||count>=5||!$("permit").checked)return;approvals.push(count===0?"start:synthetic":edges[count-1]);count++;$("permit").checked=false;setStatus(count===5?"complete":"next");render();if(count===5){$("pilot-grant-0").focus();}else $("permit").focus();});
-$("reset").addEventListener("click",()=>reset(evidence?"clear":"invalid"));
+function renderQualification(){const count=[0,1,2,3].filter(i=>$("qual-"+i).checked).length;$("qual-status").textContent=lang==="pt"?count+"/4 condições simuladas. "+(count===4?"Cenário apto à descoberta; sem autorização real.":"Continue a qualificação; não iniciar piloto real."):count+"/4 simulated conditions. "+(count===4?"Scenario ready for discovery; no real authorization.":"Continue qualification; do not start a real pilot.");}
+function clearQualification(){for(let i=0;i<4;i++)$("qual-"+i).checked=false;renderQualification();}
+for(let i=0;i<4;i++)$("qual-"+i).addEventListener("change",renderQualification);
+$("qual-reset").addEventListener("click",clearQualification);
+$("reset").addEventListener("click",()=>{reset(evidence?"clear":"invalid");clearQualification();});
 $("pt").addEventListener("click",()=>{lang="pt";syncLanguage();});$("en").addEventListener("click",()=>{lang="en";syncLanguage();});
 $("export").addEventListener("click",async()=>{
  if(!evidence||count!==5||!done.some(Boolean)||busy)return;

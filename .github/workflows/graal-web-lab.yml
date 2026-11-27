@@ -2,7 +2,7 @@ name: GRAAL integrated web lab
 on:
   workflow_dispatch:
   push:
-    branches: [main, development/graal-cycle03-web-integration]
+    branches: [main, development/graal-cycle03-web-integration, development/graal-cycle03-commercial]
     paths:
       - 'graal/**'
       - 'validation/integration/**'

@@ -34,6 +34,21 @@ with sync_playwright() as p:
         page.locator("#en").click()
         expect(page.locator("html")).to_have_attribute("lang","en")
         expect(page.locator("h1")).to_have_text("GRAAL integrated lab")
+        assert page.locator("nav.kg-graal-bar a").count()==6
+        assert page.locator("nav img.kg-graal-shield").count()==1
+        assert page.locator("nav a").evaluate_all("(links)=>links.every(a=>new URL(a.href).searchParams.get('lang')==='en')")
+        assert page.locator("nav").evaluate("n=>getComputedStyle(n).justifyContent==='center'")
+        expect(page.locator("#services-title")).to_have_text("04 · Solutions and business presentation")
+        expect(page.locator("#qual-status")).to_contain_text("0/4 simulated conditions")
+        for i in range(4): page.locator(f"#qual-{i}").check()
+        expect(page.locator("#qual-status")).to_contain_text("no real authorization")
+        page.locator("#pt").click()
+        expect(page.locator("#qual-status")).to_contain_text("4/4 condições simuladas")
+        assert page.locator("nav a").evaluate_all("(links)=>links.every(a=>!new URL(a.href).searchParams.has('lang'))")
+        page.locator("#en").click()
+        page.locator("#qual-reset").click()
+        expect(page.locator("#qual-status")).to_contain_text("0/4 simulated conditions")
+        page.locator("#services").screenshot(path=str(out/f"{name}-commercial.png"))
         for n in range(5):
             expect(page.locator("#advance")).to_be_disabled()
             page.locator("#permit").check()
@@ -53,6 +68,7 @@ with sync_playwright() as p:
         record=json.loads(Path(d.value.path()).read_bytes());assert len(record["pilots"])==2
         page.locator("#reset").click()
         expect(page.locator("#progress")).to_have_text("0/5")
+        expect(page.locator("#qual-status")).to_contain_text("0/4 simulated conditions")
         expect(page.locator("#export")).to_be_disabled()
         assert page.evaluate("localStorage.length===0 && sessionStorage.length===0 && document.cookie===''")
         assert not external and not errors,(external,errors)
@@ -65,5 +81,5 @@ with sync_playwright() as p:
         expect(page.locator("#permit")).to_be_disabled()
         expect(page.locator("#export")).to_be_disabled()
         b.close()
-        print(name,"PASS: language, keyboard, 3 widths, consent, all pilots, export hash, revocation, reload, tampering, no external requests/storage")
+        print(name,"PASS: language, keyboard, 3 widths, consent, all pilots, export hash, revocation, reload, tampering, no external requests/storage; commercial scopes, language links and qualification")
 server.shutdown()
