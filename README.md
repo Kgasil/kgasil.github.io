@@ -152,3 +152,5 @@ O catálogo é a referência institucional para o estado atual; registros histó
 [Catálogo de serviços e modelo de colaboração GRAAL / GRAAL service catalog and collaboration model](docs/commercial-model-stage-05.md). Proposta de atuação em dados, BI, processos, automação, IA, segurança e governança; contratação condicionada a formalização e escopo. Projetos públicos permanecem gratuitos. / Proposed services in data, BI, processes, automation, AI, security and governance; engagements subject to formalization and scope. Public projects remain free.
 
 [Governança empresarial / Business governance](docs/business-governance-stage-07.md) — princípios públicos, responsabilidades propostas e critérios de formalização / public principles, proposed responsibilities and formalization gates.
+
+[Relatório de homologação institucional / Institutional acceptance report](docs/institutional-acceptance-stage-08.md) — fechamento do primeiro ciclo, evidências, limites e plano 30/60/90 dias; não constitui certificação nem aprovação integral de distribuição / first-cycle closure, evidence, limits and 30/60/90-day plan; not certification or full distribution approval.
