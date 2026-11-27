@@ -138,3 +138,11 @@ O escudo preserva as quatro cores laterais e o núcleo branco; Rubedo ocupa apen
 
 
 **[Política de assinatura de código / Code signing policy](validation/signing/README.md)** · [Evidências / Evidence](https://github.com/Kgasil/kgasil.github.io/actions/workflows/graal-signing.yml). Desenvolvimento e procedência web; não equivale a assinatura pública dos instaladores.
+
+<!-- graal-governance-v1:start -->
+## Governança GRAAL / GRAAL governance
+
+[**Catálogo central de componentes, versões, segurança e maturidade / Central catalog of components, versions, security and maturity**](https://github.com/Kgasil/kgasil.github.io/blob/main/docs/graal-catalog.md) · [Central de distribuição / Distribution center](https://kgasil.github.io/distribuicao.html)
+
+O catálogo é a referência institucional para o estado atual; registros históricos e avisos específicos deste repositório permanecem aplicáveis. Em caso de divergência, prevalece o estado mais restritivo. / The catalog is the institutional reference for current status; this repository's historical records and specific notices remain applicable. If records disagree, the most restrictive state prevails.
+<!-- graal-governance-v1:end -->
