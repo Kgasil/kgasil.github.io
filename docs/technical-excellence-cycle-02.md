@@ -17,3 +17,7 @@ Extended existing Chromium/Firefox audit with 48 expected targeted local CI navi
 3. Native clean-machine acceptance: exact commit/hash, protection enabled, synthetic inputs, install/upgrade/uninstall/rollback, privacy/consent, assistive technologies and timings. Record failed/skipped/not tested separately.
 4. Repeat web diagnostic measurements, review actual accessibility defects, define budgets only after baseline; repeat functional/quality tests. Score 9/10 remains unproven; no new score before sufficient evidence.
 Preserve logos, free access, five projects, all security restrictions. No new binary release, contract, certification or paid service.
+
+## Step 02 follow-up / Revalidação da Etapa 02
+
+[Artifact trust report / Relatório de confiança](artifact-trust-cycle-02-step-02.md). Web diagnostic SUCCESS; Aeris four new OSV tests PASS on both OS, source review SUCCESS, candidate AV gate FAIL. Exact evidence ZIP verified; no binary release approved. / Diagnóstico web e correção OSV aprovados; bloqueio antimalware mantido.
