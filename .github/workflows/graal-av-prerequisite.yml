@@ -1,0 +1,39 @@
+name: GRAAL antivirus prerequisite probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/graal-av-prerequisite.yml'
+permissions:
+  contents: read
+jobs:
+  metadata-only:
+    runs-on: windows-2022
+    timeout-minutes: 5
+    steps:
+      - name: Read official ClamAV DNS metadata only
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $dir=Join-Path $env:RUNNER_TEMP 'av-prerequisite'
+          New-Item -ItemType Directory -Force $dir | Out-Null
+          $r=[ordered]@{utc=[DateTime]::UtcNow.ToString('o');source='current.cvd.clamav.net';previous_daily_version=28194;status='INCONCLUSIVE';scope='DNS metadata only, not database verification or scan';release_approved=$false}
+          try {
+            $records=@(Resolve-DnsName -Name current.cvd.clamav.net -Type TXT -DnsOnly -ErrorAction Stop | Where-Object { $_.Type -eq 'TXT' -and $_.Name.TrimEnd('.') -ieq 'current.cvd.clamav.net' })
+            if ($records.Count -ne 1) { throw 'Missing or ambiguous TXT' }
+            $raw=$records[0].Strings -join ''
+            $f=$raw.Split(':')
+            if ($f.Count -lt 4 -or $f[0] -notmatch '^[0-9.]+$' -or $f[2] -notmatch '^[0-9]+$') { throw 'Unrecognized TXT' }
+            $r['raw_txt']=$raw
+            $r['official_daily_version']=[long]$f[2]
+            $r.status=if ($r.official_daily_version -gt 28194) {'NEW_VERSION_ADVERTISED'} else {'NO_NEW_VERSION'}
+          } catch { $r['error']=$_.Exception.Message }
+          $r | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $dir 'clamav-dns.json') -Encoding utf8
+          $r | ConvertTo-Json -Depth 4
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: graal-av-prerequisite-evidence
+          path: ${{ runner.temp }}/av-prerequisite/clamav-dns.json
+          retention-days: 14
+          if-no-files-found: error
