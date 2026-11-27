@@ -1,0 +1,49 @@
+name: GRAAL interoperability
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 11 * * 3'
+  push:
+    branches: [main]
+    paths:
+      - 'validation/integration/**'
+      - 'docs/graal-catalog.md'
+      - '.github/workflows/graal-interoperability.yml'
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Read public source snapshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/graal-contracts"
+          for p in rubedo lilium; do
+            git clone --depth 1 --branch main "https://github.com/Kgasil/$p.git" "$RUNNER_TEMP/graal-contracts/$p"
+            git -C "$RUNNER_TEMP/graal-contracts/$p" rev-parse HEAD
+          done
+      - name: Verify synthetic data contracts and generate canonical catalog projection
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="$RUNNER_TEMP/graal-contracts"
+          python3 validation/integration/test_graal.py "$out"
+          python3 validation/integration/graal.py registry docs/graal-catalog.md "$out/catalog.json"
+          python3 validation/integration/graal.py validate "$out/rubedo-metrics.json"
+          python3 validation/integration/graal.py validate "$out/lilium-metrics.json"
+          python3 -c 'import json,sys; x=json.load(open(sys.argv[1])); print("Catalog components:",len(x["components"])); print("Release approved:",x["release_approved"])' "$out/catalog.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: graal-contract-examples
+          path: |
+            ${{ runner.temp }}/graal-contracts/catalog.json
+            ${{ runner.temp }}/graal-contracts/rubedo-metrics.json
+            ${{ runner.temp }}/graal-contracts/lilium-metrics.json
+          retention-days: 14
+          if-no-files-found: error
