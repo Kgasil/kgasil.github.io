@@ -9,3 +9,16 @@ Free demonstration: five local confirmations, three separate pilot grants and ex
 | Process / Processos | Mapping and duplicate-aware task routing | 5 occurrences, 3 unique, 2 duplicate, 0 real actions, cleanup | Persistent CRM or transaction guarantees |
 | AI governance / Governança de IA | Pattern review and human routing | 8 known cases, 4 reviews, 0 autonomous approvals | Live model evaluation, security certification |
 Reproduce using existing pinned CI sources and web lab. Four local readiness items: objective, baseline and acceptance, responsible party and written authorization, privacy/rights/rollback. Even 4/4 only means hypothetical discovery readiness; actual written agreement remains mandatory. No binary releases, purchases or changes to logos or project autonomy. Browser and institutional CI required before claiming acceptance.
+
+## Practical demonstration guide / Roteiro prático
+| Moment | Portuguese / Português | English |
+| --- | --- | --- |
+| 0–2 min | Apresentar a iniciativa e os cinco pilares; explicar que os dados são fictícios. | Introduce the initiative and five pillars; explain that data is fictional. |
+| 2–7 min | Demonstrar as autorizações e selecionar os pilotos relevantes. | Show permissions and select relevant pilots. |
+| 7–10 min | Conferir indicadores, casos e limites; exportar JSON sintético. | Review metrics, cases and limits; export synthetic JSON. |
+| 10–15 min | Discutir problema, linha de base e condições de uma possível descoberta. | Discuss problem, baseline and conditions for possible discovery. |
+
+Before proposing a real service: document problem, current process, expected metric, source ownership, availability of an authorized test environment, decision maker, acceptance and rollback. Record missing conditions as pending, not assumed. A proposed scope must specify inputs, outputs, exclusions, responsibilities, acceptance, change control, data retention/deletion and payment terms only after agreement. No credentials or real customer records in the public lab. No solicitation sent, no meeting scheduled.
+
+## Evidence / Evidências
+[Implementation 5de8b5c](https://github.com/Kgasil/kgasil.github.io/commit/5de8b5c8a9a79f72e21a4f09fb29a6f3fb624198), [audit trigger 17707aa](https://github.com/Kgasil/kgasil.github.io/commit/17707aacc69bfea030e3f9c4c3d8f0376d71e810). [Lab 46082070759](https://github.com/Kgasil/kgasil.github.io/actions/runs/46082070759) SUCCESS, 12 demo + 13 pilot tests, pinned records exactly reproduced; Chromium and Firefox PASS, including commercial scope, language propagation, 4/4 qualification and clearing, original consent/export/revocation, three widths, no observed external requests or storage. [Artifact 15236568890](https://github.com/Kgasil/kgasil.github.io/actions/runs/46082070759/artifacts/15236568890), 1554057 bytes, SHA-256 09dba4bf68715d2f760cb82e6a5be8e6ad3baab76f03f15301f19ab9cb828705 independently matches metadata, CRC PASS, four screenshots, two commercial captures 1064x1444 inspected. [General audit 46082088264](https://github.com/Kgasil/kgasil.github.io/actions/runs/46082088264): static PASS, final browser result pending at this entry. No claim of full WCAG or native acceptance.
