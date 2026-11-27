@@ -27,7 +27,7 @@ jobs:
           root = pathlib.Path(os.environ["RUNNER_TEMP"])
           packages = {
               "genesis": ("Genesis-Mini-v0.1.0-install.zip", "654d46b77439a4c196bd6c70bda0fc664f1f59e8a6fe745cad76e10ed7fc67b4", "0.1.0"),
-              "rubedo": ("Rubedo-Mini-v1.0.0-install.zip", "1799dc6ccadd786eb960f38c4f7d67cf241e9630942a9e69daebfe96fcfe6ab2", "1.0.0"),
+              "rubedo": ("Rubedo-Mini-v1.0.1-install.zip", "a2fd6017a4f5a3813b924b0d249f91090f57857054ff565b80dc633d5eb95424", "1.0.1"),
               "argus": ("Argus-Mini-v0.1.0-install.zip", "3248c6c204b5651a9f63c5630547e1a18f021a0ffdc08feaba1566e7925fb8b1", "0.1.0"),
               "aeris": ("Aeris-Extension-v1.0.0-install.zip", "e77e6e8596c14e54f22303e7a5d368356c19eaa79df8c8597752790755d9a0d9", "1.0.0"),
           }
@@ -47,6 +47,13 @@ jobs:
                   expected = {"default-src":"'none'","script-src":"'self'","style-src":"'self'","img-src":"'self'","object-src":"'none'","connect-src":"http://127.0.0.1:11434","base-uri":"'none'","form-action":"'none'","frame-src":"'none'"}
                   csp = m.get("content_security_policy", {}).get("extension_pages", "")
                   require(dict(s.strip().split(None,1) for s in csp.split(";") if s.strip()) == expected, "aeris: CSP changed")
+          # Reviewed 1.0.1 baseline; retain historical package integrity and require the new restrictive CSP.
+              if project == "rubedo":
+                  expected = {"default-src":"'self'","script-src":"'self'","object-src":"'none'","connect-src":"'none'","base-uri":"'none'","form-action":"'none'","frame-src":"'none'"}
+                  csp = m.get("content_security_policy", {}).get("extension_pages", "")
+                  require(dict(s.strip().split(None,1) for s in csp.split(";") if s.strip()) == expected, "rubedo: CSP changed")
+          old_rubedo = root / "rubedo" / "downloads" / "Rubedo-Mini-v1.0.0-install.zip"
+          require(digest(old_rubedo) == "1799dc6ccadd786eb960f38c4f7d67cf241e9630942a9e69daebfe96fcfe6ab2", "rubedo: historical ZIP changed")
           rows = []
           for project, (name, expected, version) in packages.items():
               path = root / project / "downloads" / name
