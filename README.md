@@ -41,6 +41,20 @@ A iniciativa permanece independente, ainda não constituída como empresa. A pre
 
 [Metodologia / Methodology](https://kgasil.github.io/#graal) · [Soluções / Solutions](https://kgasil.github.io/#solucoes) · [Parcerias / Partnerships](https://kgasil.github.io/#contato)
 
+## Estado atual / Current status — 28/11/2026
+
+Fase de estruturação concluída; manutenção, pesquisa e homologação continuam. Acesso público gratuito às demonstrações; nenhum novo binário liberado. A meta de qualidade 9/10 permanece um requisito, não uma nota já comprovada. / Structuring phase closed; maintenance, research and acceptance continue. Public demos remain free; no new binaries released. The 9/10 quality target remains a gate, not an achieved score.
+
+| Projeto / Project | Disponibilidade e próxima ação / Availability and next action |
+| --- | --- |
+| Genesis · Aprender / Learn | Biblioteca pública; 75 PDFs originais + 40 edições complementares privadas, 5.280 páginas físicas; 6.000 horas nominais planejadas, não certificadas. Mini 0.1.0 suspenso, [Microsoft #1](https://github.com/Kgasil/genesis/issues/1); revisão acadêmica continua. / Public library; 115 private working documents, planned nominal hours; Mini installation paused; academic review continues. |
+| Rubedo · Construir / Build | Public Lab, Workspace e Mini 1.0.1 experimentais; oito modelos, 12 protocolos e Studio; testes CI e aceitação relatada pelo idealizador. / Experimental public 1.0.1; first-party CI and maintainer-reported acceptance, not independent certification. |
+| Argus · Proteger / Protect | Laboratório público 1.0, base V10.2; Mini 0.1.0 suspenso, [Microsoft #1](https://github.com/Kgasil/argus/issues/1); licença, proteção de branch e homologação ainda pendentes. / Public research lab; Mini installation paused; license, branch protection and acceptance pending. |
+| Aeris · Simplificar / Simplify | Extensão 1.0.0, 16 ferramentas, manual; Desktop 1.1.0 RC1, 50 ferramentas, prévias históricas sem liberação estável. Novo candidato não gerado; [ClamAV](https://github.com/Kgasil/aeris/actions/runs/46140744764) inalterado; [PR #2](https://github.com/Kgasil/aeris/pull/2). / Manual extension; historical desktop previews, no new cleared candidate. |
+| Lilium · Evoluir / Evolve | Web Lab 1.0, Mini 0.1.1 manual; Desktop 0.14.0 em homologação fechada, sem novo ZIP disponível. [PR #12](https://github.com/Kgasil/lilium/pull/12) integrou retenção; ClamAV e aceite exato pendentes. / Public web lab and manual Mini; closed Desktop acceptance, no new ZIP. |
+
+[Central de distribuição / Distribution center](https://kgasil.github.io/distribuicao.html) · [Registro de manutenção e homologação / Maintenance and acceptance register](docs/maintenance-and-acceptance.md)
+
 ## English
 
 K&G Vision is an independent technology initiative with a clear ambition: turn knowledge into practical technology, engineer AI for trust, simplify everyday work and empower business growth. Our long-term research direction spans vendor-neutral AI integration, cybersecurity, AI assurance and performance. The initiative is in development and is not an incorporated company; potential collaborations are subject to formal agreement and legal eligibility.
@@ -50,7 +64,7 @@ K&G Vision is an independent technology initiative with a clear ambition: turn k
 | [Project Genesis](https://github.com/Kgasil/genesis) | Independent study collection: 75 private PDFs, 60 thematic volumes and 10 integrated guides | [Public library](https://kgasil.github.io/genesis/biblioteca.html): 1.0 editorial milestone; 11 reading areas, 22 optional reading folders, 11 mini labs and 11 challenges; no courses or certificates · [Genesis Mini](https://kgasil.github.io/genesis/mini/) |
 | [Project Rubedo](https://github.com/Kgasil/rubedo) | Applied science, simulation and computational engineering | [Public Lab 1.0](https://kgasil.github.io/rubedo/), milestone 01 · [Mini and installation](https://kgasil.github.io/rubedo/#instalar) |
 | [Project Argus](https://github.com/Kgasil/argus) | Vendor-neutral AI integration, security, assurance and performance research | 1.0 public research milestone; technical baseline V10.2; [Argus Mini](https://kgasil.github.io/argus/mini/) complementary sample |
-| [Project Aeris](https://github.com/Kgasil/aeris) | Lightweight, modular desktop and browser productivity tools | Desktop 1.1.0 RC1 public experimental preview; Extension 1.0.0 available for free manual installation |
+| [Project Aeris](https://github.com/Kgasil/aeris) | Lightweight, modular desktop and browser productivity tools | Desktop 1.1.0 RC1 historical experimental previews; new candidate blocked; Extension 1.0.0 available for free manual installation |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Business intelligence, reporting and strategic automation | Web Lab 1.0; Desktop v0.14.0 controlled preview; Mini v0.1.1 GitHub-only |
 
 **Learn · Build · Protect · Simplify · Evolve**
@@ -66,7 +80,7 @@ A K&G Vision é uma iniciativa tecnológica independente em desenvolvimento, ain
 | [Project Genesis](https://github.com/Kgasil/genesis) | Acervo independente: 75 PDFs privados, 60 volumes temáticos e 10 guias integrados | [Biblioteca pública](https://kgasil.github.io/genesis/biblioteca.html): 11 áreas, 22 pastas de leitura opcionais, 11 mini laboratórios e 11 desafios; sem cursos ou certificados · [Genesis Mini](https://kgasil.github.io/genesis/mini/) |
 | [Project Rubedo](https://github.com/Kgasil/rubedo) | Pesquisa aplicada, simulação e engenharia computacional | [Public Lab 1.0](https://kgasil.github.io/rubedo/), Marco 01 · [Mini e instalação](https://kgasil.github.io/rubedo/#instalar) |
 | [Project Argus](https://github.com/Kgasil/argus) | Pesquisa em integração, segurança, avaliação e desempenho de IA | Marco 1.0 do laboratório público; base técnica V10.2; [Argus Mini](https://kgasil.github.io/argus/mini/) amostra complementar |
-| [Project Aeris](https://github.com/Kgasil/aeris) | Ferramentas leves e modulares para produtividade | Desktop 1.1.0 RC1 em prévia pública experimental; Extensão 1.0.0 disponível para instalação manual gratuita |
+| [Project Aeris](https://github.com/Kgasil/aeris) | Ferramentas leves e modulares para produtividade | Desktop 1.1.0 RC1 em prévias históricas experimentais; novo candidato bloqueado; Extensão 1.0.0 disponível para instalação manual gratuita |
 | [Project Lilium](https://github.com/Kgasil/lilium) | Inteligência empresarial, relatórios e automação estratégica | Web Lab 1.0; Desktop v0.14.0 em prévia; Mini v0.1.1 pelo GitHub |
 
 **Aprender · Construir · Proteger · Simplificar · Evoluir**
